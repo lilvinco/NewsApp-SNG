@@ -1,9 +1,11 @@
-package com.startng.newsapp;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.startng.newsapp.Activity;
 
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.startng.newsapp.R;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 

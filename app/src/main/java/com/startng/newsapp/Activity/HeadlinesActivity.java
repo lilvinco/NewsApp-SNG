@@ -1,14 +1,13 @@
-package com.startng.newsapp;
+package com.startng.newsapp.Activity;
+
+import android.os.Bundle;
+
+import com.startng.newsapp.Adapter.HeadlinesAdapter;
+import com.startng.newsapp.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
 
 public class HeadlinesActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
