@@ -34,15 +34,11 @@ public class HeadlinesActivity extends AppCompatActivity {
 
         // specify an adapter (see also next example)
         String[] myDataset = getResources().getStringArray(R.array.sports_info);
+
         mAdapter = new HeadlinesAdapter(this, myDataset);
         recyclerView.setAdapter(mAdapter);
 
     }
 
-   /* public void addNumber(View view) {
-        number++;
-        TextView textView = findViewById(R.id.numbertextView);
-        textView.setText(String.valueOf(number));
-    }*/
 }
 

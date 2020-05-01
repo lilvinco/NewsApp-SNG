@@ -13,12 +13,12 @@ public class HeadlinesAdapter extends RecyclerView.Adapter<HeadlinesAdapter.MyVi
     private String[] mDataset;
     private Context mContext;
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
+    static class MyViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
-        public TextView textView;
+        TextView textView;
 
 
-        public MyViewHolder(TextView v) {
+        MyViewHolder(TextView v) {
             super(v);
             textView = v;
         }
