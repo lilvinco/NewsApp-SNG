@@ -25,7 +25,7 @@ public class HeadlinesAdapter extends RecyclerView.Adapter<HeadlinesAdapter.MyVi
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public HeadlinesAdapter(Context context, String[] myDataset) {
+    HeadlinesAdapter(Context context, String[] myDataset) {
         mDataset = myDataset;
         mContext = context;
     }
