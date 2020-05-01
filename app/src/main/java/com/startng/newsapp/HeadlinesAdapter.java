@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -36,7 +35,7 @@ public class HeadlinesAdapter extends RecyclerView.Adapter<HeadlinesAdapter.MyVi
                                                      int viewType) {
         // create a new view
         TextView v = (TextView) LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.headline_item, parent, false);
+                .inflate(R.layout.note_item, parent, false);
         MyViewHolder vh = new MyViewHolder(v);
         return vh;
     }
@@ -51,7 +50,7 @@ public class HeadlinesAdapter extends RecyclerView.Adapter<HeadlinesAdapter.MyVi
         holder.textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(mContext, MainActivity.class);
+                Intent intent = new Intent(mContext, DetailActivity.class);
                 intent.putExtra("headline", mDataset[position]);
                 mContext.startActivity(intent);
             }

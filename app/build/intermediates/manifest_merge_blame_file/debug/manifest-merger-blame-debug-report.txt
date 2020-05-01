@@ -15,7 +15,7 @@
 12        android:allowBackup="true"
 12-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.0.1] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\aa782ce88e4a65071c9b22f6f1fd262a\core-1.0.1\AndroidManifest.xml:22:18-86
+13-->[androidx.core:core:1.1.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\da95e0dd41fd0c634661df2a0f122634\core-1.1.0\AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:icon="@mipmap/ic_launcher"
 15-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:7:9-43
@@ -28,12 +28,12 @@
 19        android:testOnly="true"
 20        android:theme="@style/AppTheme" >
 20-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="com.startng.newsapp.MainActivity" />
-21-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:9-59
-21-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:19-47
-22        <activity android:name="com.startng.newsapp.HeadlinesActivity" >
+21        <activity android:name="com.startng.newsapp.DetailActivity" />
+21-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:9-61
+21-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:19-49
+22        <activity android:name="com.startng.newsapp.WelcomeActivity" >
 22-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:9-19:20
-22-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:19-52
+22-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:19-50
 23            <intent-filter>
 23-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:14:13-18:29
 24                <action android:name="android.intent.action.MAIN" />
