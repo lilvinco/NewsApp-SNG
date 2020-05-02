@@ -17,7 +17,13 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.startng.newsapp.DetailActivity" />
+        <activity
+            android:name="com.startng.newsapp.DetailActivity"
+            android:parentActivityName="com.startng.newsapp.WelcomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WelcomeActivity" />
+        </activity>
         <activity android:name="com.startng.newsapp.WelcomeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

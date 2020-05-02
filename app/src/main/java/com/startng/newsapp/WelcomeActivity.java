@@ -23,7 +23,6 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-
         ArrayList<Notes> notesArrayList = new ArrayList<>();
         notesArrayList.add(new Notes("Millionaire at 21","The above quote is from “Delivering a Lecture,” a chapter in Barbara Gross Davis’ classic text Tools for Teaching. That chapter is an excellent resource for learning how to lecture well. See also Davis’ chapter, “Preparing to Teach the Large Lecture Course.”" ));
 
