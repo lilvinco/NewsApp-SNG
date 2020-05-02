@@ -27,8 +27,6 @@ public class MainActivity extends AppCompatActivity {
             "com.startng.newsapp.EXTRA_ID";
 
     private EditText editTitle, editContent;
-    private String title;
-    private String content;
 
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
@@ -55,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void buttonClickHandler(View view){
-        title = editTitle.getText().toString();
-        content = editContent.getText().toString();
+        String title = editTitle.getText().toString();
+        String content = editContent.getText().toString();
 
         if (title.trim().isEmpty() || content.trim().isEmpty()) {
             Toast.makeText(this, "Please insert a Your note title and note", Toast.LENGTH_LONG).show();
@@ -93,8 +91,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void shareNote() {
-        String subject = title;
-        String text = content;
+        String subject = editTitle.getText().toString();
+        String text = editContent.getText().toString();
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("message/rfc2822");
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);
