@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.startng.newsapp"
+3    package="com.startng.notesapp"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
@@ -28,12 +28,12 @@
 19        android:testOnly="true"
 20        android:theme="@style/AppTheme" >
 20-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="com.startng.newsapp.DetailActivity" />
-21-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:9-61
-21-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:19-49
-22        <activity android:name="com.startng.newsapp.WelcomeActivity" >
+21        <activity android:name="com.startng.notesapp.DetailActivity" />
+21-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:9-81
+21-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:19-69
+22        <activity android:name="com.startng.notesapp.WelcomeActivity" >
 22-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:9-19:20
-22-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:19-50
+22-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:19-70
 23            <intent-filter>
 23-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:14:13-18:29
 24                <action android:name="android.intent.action.MAIN" />
