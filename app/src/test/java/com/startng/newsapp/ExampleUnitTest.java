@@ -1,4 +1,4 @@
-package com.startng.notesapp;
+package com.startng.newsapp;
 
 import org.junit.Test;
 

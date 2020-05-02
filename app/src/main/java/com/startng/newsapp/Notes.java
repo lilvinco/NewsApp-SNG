@@ -1,4 +1,4 @@
-package com.startng.notesapp;
+package com.startng.newsapp;
 
 public class Notes {
     private String noteTitle;

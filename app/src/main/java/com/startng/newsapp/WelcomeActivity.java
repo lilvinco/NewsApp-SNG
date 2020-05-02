@@ -1,4 +1,4 @@
-package com.startng.notesapp;
+package com.startng.newsapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
