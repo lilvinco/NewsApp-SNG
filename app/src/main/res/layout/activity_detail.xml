@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetailActivity">
+    <!--TODO: Navigation Drawer is outstanding-->
 
     <EditText
         android:id="@+id/editTextNoteTitle"

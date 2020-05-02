@@ -11,7 +11,7 @@
 9-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:5:5-24:19
+11-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:5:5-25:19
 12        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 12-->[androidx.core:core:1.1.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\da95e0dd41fd0c634661df2a0f122634\core-1.1.0\AndroidManifest.xml:24:18-86
 13        android:debuggable="true"
@@ -27,32 +27,34 @@
 19        android:theme="@style/AppTheme" >
 19-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:10:9-40
 20        <activity
-20-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:11:9-17:20
+20-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:11:9-18:20
 21            android:name="com.startng.newsapp.DetailActivity"
 21-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:13-62
-22            android:parentActivityName="com.startng.newsapp.WelcomeActivity" >
-22-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:13-58
-23            <meta-data
-23-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:14:13-16:52
-24                android:name="android.support.PARENT_ACTIVITY"
-24-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:17-63
-25                android:value=".WelcomeActivity" />
-25-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:16:17-49
-26        </activity>
-27        <activity android:name="com.startng.newsapp.WelcomeActivity" >
-27-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:18:9-23:20
-27-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:18:19-69
-28            <intent-filter>
-28-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:19:13-22:29
-29                <action android:name="android.intent.action.MAIN" />
-29-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:20:17-69
-29-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:20:25-66
-30
-31                <category android:name="android.intent.category.LAUNCHER" />
-31-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:21:17-77
-31-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:21:27-74
-32            </intent-filter>
-33        </activity>
-34    </application>
-35
-36</manifest>
+22            android:label=""
+22-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:13-29
+23            android:parentActivityName="com.startng.newsapp.WelcomeActivity" >
+23-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:14:13-58
+24            <meta-data
+24-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:13-17:52
+25                android:name="android.support.PARENT_ACTIVITY"
+25-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:16:17-63
+26                android:value=".WelcomeActivity" />
+26-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:17:17-49
+27        </activity>
+28        <activity android:name="com.startng.newsapp.WelcomeActivity" >
+28-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:19:9-24:20
+28-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:19:19-69
+29            <intent-filter>
+29-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:20:13-23:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:21:17-69
+30-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:21:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:22:17-77
+32-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:22:27-74
+33            </intent-filter>
+34        </activity>
+35    </application>
+36
+37</manifest>

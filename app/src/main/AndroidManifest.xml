@@ -10,6 +10,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name="com.startng.newsapp.DetailActivity"
+            android:label=""
             android:parentActivityName=".WelcomeActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

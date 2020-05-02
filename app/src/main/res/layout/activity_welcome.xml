@@ -23,3 +23,6 @@
         app:srcCompat="@drawable/ic_add" />
 
 </RelativeLayout>
+    <!--TODO: Search is outstanding-->
+    <!--TODO: Sort-->
+    <!--TODO: Change view to Grid / Linear-->
