@@ -1,4 +1,4 @@
-package com.startng.newsapp;
+package com.startng.notesapp;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.startng.newsapp", appContext.getPackageName());
+        assertEquals("com.startng.notesapp", appContext.getPackageName());
     }
 }

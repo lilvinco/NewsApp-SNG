@@ -1,8 +1,9 @@
-package com.startng.newsapp;
+package com.startng.notesapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.os.Bundle;
 
@@ -25,7 +26,7 @@ public class WelcomeActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
 
         // use a linear layout manager
-        layoutManager = new LinearLayoutManager(this);
+        layoutManager = new StaggeredGridLayoutManager(3, LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
 
         // specify an adapter (see also next example)
@@ -33,7 +34,6 @@ public class WelcomeActivity extends AppCompatActivity {
 
         mAdapter = new HeadlinesAdapter(this, myDataset);
         recyclerView.setAdapter(mAdapter);
-
     }
 
 }
