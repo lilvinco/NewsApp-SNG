@@ -9,7 +9,6 @@
         android:targetSdkVersion="29" />
 
     <application
-        android:allowBackup=""
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
