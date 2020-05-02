@@ -20,6 +20,7 @@
         android:autofillHints="@string/note_title"
         android:inputType="textAutoCorrect" />
     <EditText
+        android:id="@+id/editTextNoteContent"
         android:autofillHints="@string/notes"
         android:hint="@string/notes"
         android:importantForAutofill="no"

@@ -1492,6 +1492,7 @@ id dimensions
 id direct
 id disableHome
 id dropdown_menu
+id editTextNoteContent
 id editTextNoteTitle
 id edit_query
 id end

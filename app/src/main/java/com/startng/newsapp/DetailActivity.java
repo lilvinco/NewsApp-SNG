@@ -4,37 +4,59 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class DetailActivity extends AppCompatActivity {
+    public final static String NOTE_TITLE_TAG = "title";
+    public final static String NOTE_CONTENT_TAG = "body";
+
+    private EditText titleEditText;
+    private EditText contentEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
+        titleEditText = findViewById(R.id.editTextNoteTitle);
+        contentEditText = findViewById(R.id.editTextNoteContent);
+
+        String title = "";
+        String content = "";
+
         //setup back button
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+
+        Intent intent = getIntent();
+        if (intent != null) {
+            title = intent.getStringExtra(NOTE_TITLE_TAG);
+            content = intent.getStringExtra(NOTE_CONTENT_TAG);
+
+            titleEditText.setText(title);
+            contentEditText.setText(content);
+        }
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu,menu);
+        getMenuInflater().inflate(R.menu.menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             //respond to Save click
             case R.id.save:
                 //TODO: Work on Save Click

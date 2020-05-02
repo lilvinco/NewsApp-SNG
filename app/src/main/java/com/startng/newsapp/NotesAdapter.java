@@ -1,7 +1,9 @@
 package com.startng.newsapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
+import android.renderscript.ScriptIntrinsicYuvToRGB;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,9 +21,12 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
 
     private ArrayList<Notes> notes;
     private LayoutInflater inflater;
+    Context context;
+    int currentPosition = 0;
 
     public NotesAdapter(Context context, ArrayList<Notes> notes){
         this.notes = notes;
+        this.context = context;
         inflater = LayoutInflater.from(context);
     }
 
@@ -34,7 +39,8 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
 
     @Override
     public void onBindViewHolder(@NonNull NotesViewHolder holder, int position) {
-        final Notes currentNote = notes.get(position);
+        currentPosition = position;
+        final Notes currentNote = notes.get(currentPosition);
         holder.noteContentTextView.setText(currentNote.getNoteContent());
         holder.noteTitleTextView.setText(currentNote.getNoteTitle());
 
@@ -57,6 +63,16 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 noteContentTextView.setJustificationMode(JUSTIFICATION_MODE_INTER_WORD);
             }
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(context.getApplicationContext(),DetailActivity.class);
+                    intent.putExtra(DetailActivity.NOTE_TITLE_TAG, notes.get(currentPosition).getNoteTitle());
+                    intent.putExtra(DetailActivity.NOTE_CONTENT_TAG, notes.get(currentPosition).getNoteContent());
+                    context.startActivity(intent);
+                }
+            });
         }
     }
 }
