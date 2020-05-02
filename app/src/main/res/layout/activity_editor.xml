@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".EditorActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/back" />
+
+    <TextView
+        android:id="@+id/note_current_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/rubik_regular"
+        android:textAppearance="?android:textAppearanceSmall"
+        tools:text="Jan 15th 2020, 11:39 PM" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_weight="9">
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/text"
+            android:inputType="textCapSentences|textMultiLine"
+            android:lineSpacingExtra="4dp"
+            android:fontFamily="@font/rubik_regular"
+            android:textAppearance="?android:textAppearanceMedium"
+            tools:text="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+            android:autofillHints="@string/text" />
+
+    </ScrollView>
+
+    <com.thebluealliance.spectrum.SpectrumPalette
+        android:id="@+id/colorSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center_vertical"
+        app:spectrum_colors="@array/slider_colors" />
+
+</LinearLayout>
