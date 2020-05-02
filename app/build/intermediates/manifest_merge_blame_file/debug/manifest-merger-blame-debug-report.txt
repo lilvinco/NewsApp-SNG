@@ -15,7 +15,7 @@
 12        android:allowBackup="true"
 12-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.0.1] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\46da25c3e2ae6308b2227b660caa604d\core-1.0.1\AndroidManifest.xml:22:18-86
+13-->[androidx.core:core:1.1.0] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:icon="@mipmap/ic_launcher"
 15-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:7:9-43
@@ -44,6 +44,15 @@
 25-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:17:27-74
 26            </intent-filter>
 27        </activity>
-28    </application>
-29
-30</manifest>
+28
+29        <service
+29-->[androidx.room:room-runtime:2.2.5] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\a9bb9574960ac3d8b89250e8b7c24155\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+30            android:name="androidx.room.MultiInstanceInvalidationService"
+30-->[androidx.room:room-runtime:2.2.5] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\a9bb9574960ac3d8b89250e8b7c24155\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+31            android:directBootAware="true"
+31-->[androidx.room:room-runtime:2.2.5] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\a9bb9574960ac3d8b89250e8b7c24155\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+32            android:exported="false" />
+32-->[androidx.room:room-runtime:2.2.5] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\a9bb9574960ac3d8b89250e8b7c24155\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+33    </application>
+34
+35</manifest>
