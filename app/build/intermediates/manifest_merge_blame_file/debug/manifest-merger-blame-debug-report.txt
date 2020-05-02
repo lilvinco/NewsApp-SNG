@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.startng.notesapp"
+3    package="com.startng.newsapp"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
@@ -12,8 +12,8 @@
 10
 11    <application
 11-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:5:5-20:19
-12        android:allowBackup="true"
-12-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:6:9-35
+12        android:allowBackup=""
+12-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:6:9-31
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 13-->[androidx.core:core:1.1.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\da95e0dd41fd0c634661df2a0f122634\core-1.1.0\AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
@@ -28,12 +28,12 @@
 19        android:testOnly="true"
 20        android:theme="@style/AppTheme" >
 20-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="com.startng.notesapp.DetailActivity" />
-21-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:9-81
-21-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:19-69
-22        <activity android:name="com.startng.notesapp.WelcomeActivity" >
+21        <activity android:name="com.startng.newsapp.DetailActivity" />
+21-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:9-71
+21-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:19-68
+22        <activity android:name="com.startng.newsapp.WelcomeActivity" >
 22-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:9-19:20
-22-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:19-70
+22-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:19-69
 23            <intent-filter>
 23-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:14:13-18:29
 24                <action android:name="android.intent.action.MAIN" />
