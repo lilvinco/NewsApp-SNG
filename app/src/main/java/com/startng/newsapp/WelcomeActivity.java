@@ -5,7 +5,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
@@ -41,11 +45,19 @@ public class WelcomeActivity extends AppCompatActivity {
         //Used in StaggeredGridLayoutManager
         layoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
-
-
-
         mAdapter = new NotesAdapter(this, notesArrayList);
         recyclerView.setAdapter(mAdapter);
+
+
+        //button to create new Note
+        FloatingActionButton floatingActionButton = findViewById(R.id.fab);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(WelcomeActivity.this, DetailActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }

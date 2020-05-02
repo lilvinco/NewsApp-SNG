@@ -1488,6 +1488,7 @@ id dimensions
 id direct
 id disableHome
 id dropdown_menu
+id editTextNoteTitle
 id edit_query
 id end
 id enterAlways
@@ -1648,8 +1649,6 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView3
-id textView4
 id textViewBody
 id textViewTitle
 id text_input_end_icon
@@ -1886,11 +1885,14 @@ string mtrl_picker_toggle_to_calendar_input_mode
 string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
+string note_title
+string notes
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string random_text
 string search_menu_title
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
