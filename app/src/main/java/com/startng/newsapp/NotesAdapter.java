@@ -1,6 +1,7 @@
 package com.startng.newsapp;
 
 import android.content.Context;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+
+import static android.text.Layout.JUSTIFICATION_MODE_INTER_WORD;
 
 
 public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHolder> {
@@ -51,6 +54,9 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
             super(itemView);
             noteTitleTextView = itemView.findViewById(R.id.textViewTitle);
             noteContentTextView = itemView.findViewById(R.id.textViewBody);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                noteContentTextView.setJustificationMode(JUSTIFICATION_MODE_INTER_WORD);
+            }
         }
     }
 }
