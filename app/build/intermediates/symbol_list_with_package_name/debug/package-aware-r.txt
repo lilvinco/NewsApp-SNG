@@ -1456,6 +1456,7 @@ id blocking
 id bottom
 id buttonPanel
 id cancel_button
+id category
 id center
 id center_horizontal
 id center_vertical
@@ -1480,6 +1481,7 @@ id cut
 id date_picker_actions
 id decor_content_parent
 id default_activity_button
+id delete
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1586,10 +1588,12 @@ id pin
 id progress_circular
 id progress_horizontal
 id radio
+id reminder
 id right
 id right_icon
 id right_side
 id rounded
+id save
 id save_non_transition_alpha
 id save_overlay_view
 id scale
@@ -1611,6 +1615,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id share
 id shortcut
 id showCustom
 id showHome
@@ -1809,6 +1814,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -1839,6 +1845,11 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string action_category
+string action_delete
+string action_reminder
+string action_save
+string action_share
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -1894,7 +1905,6 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
-string random_text
 string search_menu_title
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat

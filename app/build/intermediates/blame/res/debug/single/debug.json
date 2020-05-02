@@ -32,6 +32,10 @@
         "source": "C:\\Users\\Raj\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
     },
     {
+        "merged": "C:\\Users\\Raj\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Raj\\AndroidStudioProjects\\NewsApp-SNG\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
         "merged": "C:\\Users\\Raj\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\Raj\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
     },
