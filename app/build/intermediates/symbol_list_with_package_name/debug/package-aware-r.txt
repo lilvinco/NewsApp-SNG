@@ -1450,6 +1450,7 @@ id all
 id always
 id async
 id auto
+id backup
 id barrier
 id beginning
 id blocking
@@ -1475,6 +1476,7 @@ id container
 id content
 id contentPanel
 id coordinator
+id createCategory
 id custom
 id customPanel
 id cut
@@ -1491,6 +1493,7 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
+id drawer_layout
 id dropdown_menu
 id editTextNoteContent
 id editTextNoteTitle
@@ -1566,7 +1569,9 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
 id my_recycler_view
+id nav_category
 id navigation_header_container
+id navigation_view
 id never
 id noScroll
 id none
@@ -1586,6 +1591,7 @@ id password_toggle
 id peekHeight
 id percent
 id pin
+id profile
 id progress_circular
 id progress_horizontal
 id radio
@@ -1616,6 +1622,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id settings
 id share
 id shortcut
 id showCustom
@@ -1816,6 +1823,7 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu menu
+menu navigation_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -1846,10 +1854,13 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string action_backup
 string action_category
+string action_create_category
 string action_delete
 string action_reminder
 string action_save
+string action_settings
 string action_share
 string app_name
 string appbar_scrolling_view_behavior
@@ -1906,6 +1917,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string profile
 string search_menu_title
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat

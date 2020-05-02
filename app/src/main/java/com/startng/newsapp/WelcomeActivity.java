@@ -1,15 +1,20 @@
 package com.startng.newsapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
@@ -17,12 +22,17 @@ public class WelcomeActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
+
+    private DrawerLayout drawerLayout;
     int number;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+
+        setNavigationDrawer();
+
         ArrayList<Notes> notesArrayList = new ArrayList<>();
         notesArrayList.add(new Notes("Millionaire at 21","The above quote is from “Delivering a Lecture,” a chapter in Barbara Gross Davis’ classic text Tools for Teaching. That chapter is an excellent resource for learning how to lecture well. See also Davis’ chapter, “Preparing to Teach the Large Lecture Course.”" ));
 
@@ -55,6 +65,23 @@ public class WelcomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(WelcomeActivity.this, DetailActivity.class);
                 startActivity(intent);
+            }
+        });
+    }
+
+    private void setNavigationDrawer(){
+        drawerLayout = findViewById(R.id.drawer_layout);
+
+        drawerLayout.closeDrawers();
+
+        NavigationView navigationView = findViewById(R.id.navigation_view);
+
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                Toast.makeText(WelcomeActivity.this, item.getTitle(), Toast.LENGTH_SHORT).show();
+                return true;
             }
         });
     }
