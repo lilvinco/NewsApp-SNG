@@ -1345,7 +1345,9 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_add
 drawable ic_calendar_black_24dp
+drawable ic_category
 drawable ic_clear_black_24dp
+drawable ic_delete
 drawable ic_edit_black_24dp
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
@@ -1357,6 +1359,13 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_reminder
+drawable ic_save
+drawable ic_search
+drawable ic_share
+drawable ic_sort_by
+drawable ic_view_gird
+drawable ic_view_linear
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1448,6 +1457,9 @@ id add
 id alertTitle
 id all
 id always
+id app_bar_change_view
+id app_bar_search
+id app_bar_sort
 id async
 id auto
 id backup
@@ -1822,7 +1834,8 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-menu menu
+menu menu_note_detail
+menu menu_welcome
 menu navigation_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -1860,8 +1873,10 @@ string action_create_category
 string action_delete
 string action_reminder
 string action_save
+string action_search
 string action_settings
 string action_share
+string action_sort
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -1928,6 +1943,7 @@ style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
 style AppTheme
+style AppTheme_NoActionBar
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog

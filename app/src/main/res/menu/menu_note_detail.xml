@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DetailActivity">
+
+    <item android:id="@+id/save"
+        android:title="@string/action_save"
+        android:orderInCategory="2"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+    <item android:id="@+id/category"
+        android:title="@string/action_category"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+    <item android:id="@+id/reminder"
+        android:title="@string/action_reminder"
+        android:orderInCategory="10"
+        app:showAsAction="never" />
+    <item android:id="@+id/delete"
+        android:title="@string/action_delete"
+        android:orderInCategory="11"
+        app:showAsAction="never" />
+    <item android:id="@+id/share"
+        android:title="@string/action_share"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        android:orderInCategory="12"
+        app:showAsAction="never" />
+</menu>

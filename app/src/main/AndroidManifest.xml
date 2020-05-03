@@ -16,7 +16,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".WelcomeActivity" />
         </activity>
-        <activity android:name="com.startng.newsapp.WelcomeActivity">
+        <activity
+            android:name="com.startng.newsapp.WelcomeActivity"
+            android:label="">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

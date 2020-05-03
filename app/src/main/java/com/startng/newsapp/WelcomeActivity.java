@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
@@ -25,6 +26,8 @@ public class WelcomeActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
     int number;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,5 +89,36 @@ public class WelcomeActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_welcome, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    private void changeLayoutManager(MenuItem item){
+        if (layoutManager instanceof StaggeredGridLayoutManager){
+            layoutManager = new LinearLayoutManager(WelcomeActivity.this);
+            item.setIcon(R.drawable.ic_view_gird);
+        } else {
+            layoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
+            item.setIcon(R.drawable.ic_view_linear);
+        }
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(mAdapter);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.app_bar_change_view:
+                changeLayoutManager(item);
+                break;
+            case R.id.app_bar_sort:
+                break;
+            case R.id.app_bar_search:
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }
 
