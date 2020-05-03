@@ -1,5 +1,11 @@
 <resources>
-    <string name="app_name">NewsApp</string>
+    <string name="app_name">NotesApp</string>
+    <string name="delete_all_notes">Delete all notes</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="priority">Priority:</string>
+    <string name="add_word">add_word</string>
+    <string name="add_note">add_note</string>
     <string-array name="sports_info">
         <item>Nike Enters 10-Year </item>
         <item>Indonesia Masters – Saina</item>
