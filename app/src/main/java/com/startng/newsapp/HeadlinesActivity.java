@@ -1,19 +1,34 @@
 package com.startng.newsapp;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import java.util.List;
 
 public class HeadlinesActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
+    public static final int ADD_NOTE_REQUEST = 1;
+    private NoteViewModel mNoteViewModel;
     int number;
 
     @Override
@@ -24,22 +39,75 @@ public class HeadlinesActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.my_recycler_view);
 
-        // use this setting to improve performance if you know that changes
-        // in content do not change the layout size of the RecyclerView
-        recyclerView.setHasFixedSize(true);
 
-        // use a linear layout manager
+        recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        // specify an adapter (see also next example)
-        String[] myDataset = getResources().getStringArray(R.array.sports_info);
-        mAdapter = new HeadlinesAdapter(this, myDataset);
+        //String[] mDataset = getResources().getStringArray(R.array.sports_info);
+        mAdapter = new HeadlinesAdapter(this);
         recyclerView.setAdapter(mAdapter);
+        mNoteViewModel = new ViewModelProvider(this).get(NoteViewModel.class);
+        mNoteViewModel.getAllWords().observe(this, new Observer<List<Note>>() {
+            @Override
+            public void onChanged(@Nullable List<Note> notes) {
+
+               mAdapter.notifyDataSetChanged();
+            }
+        });
+
+        FloatingActionButton fab = findViewById(R.id.fabAdd);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HeadlinesActivity.this, MainActivity.class);
+                startActivityForResult(intent, ADD_NOTE_REQUEST);
+            }
+        });
 
     }
 
-   /* public void addNumber(View view) {
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+      // inflater.inflate(R.menu.more_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch(item.getItemId()){
+            case R.id.action_more:
+               return true;
+            case R.id.delete:
+                return true;
+            case R.id.sort:
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+
+        }
+
+    }
+
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == ADD_NOTE_REQUEST && resultCode == RESULT_OK) {
+            Note note = new Note(data.getStringExtra(MainActivity.EXTRA_TITLE));
+            mNoteViewModel.insert(note);
+
+            Toast.makeText(this,"Note saved", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(
+                    getApplicationContext(),
+                    R.string.empty_not_saved,
+                    Toast.LENGTH_LONG).show();
+        }
+    }
+
+
+    /* public void addNumber(View view) {
         number++;
         TextView textView = findViewById(R.id.numbertextView);
         textView.setText(String.valueOf(number));
