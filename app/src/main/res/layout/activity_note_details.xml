@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/note_details_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="14dp"
+        android:scrollbars="vertical"
+        android:isScrollContainer="true"
+        android:textSize="15sp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/edit_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabCustomSize="50dp"
+        android:scaleType="center"
+        app:maxImageSize="27dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:onClick="editNotes"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:srcCompat="@drawable/drawable_edit_notes"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
