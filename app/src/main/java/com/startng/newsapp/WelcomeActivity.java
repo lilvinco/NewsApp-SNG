@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -20,13 +21,15 @@ import com.google.android.material.navigation.NavigationView;
 import java.util.ArrayList;
 
 public class WelcomeActivity extends AppCompatActivity {
-    private RecyclerView recyclerView;
-    private RecyclerView.Adapter mAdapter;
+    private static RecyclerView recyclerView;
+    private static RecyclerView.Adapter mAdapter;
+    int number;
     private RecyclerView.LayoutManager layoutManager;
 
-    int number;
+    public static void refreshView() {
 
-
+        mAdapter.notifyDataSetChanged();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +63,7 @@ public class WelcomeActivity extends AppCompatActivity {
         });
     }
 
-    private void setNavigationDrawer(){
+    private void setNavigationDrawer() {
         DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
 
         drawerLayout.closeDrawers();
@@ -83,21 +86,22 @@ public class WelcomeActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    private void changeLayoutManager(MenuItem item){
-        if (layoutManager instanceof StaggeredGridLayoutManager){
+    private void changeLayoutManager(MenuItem item) {
+        if (layoutManager instanceof StaggeredGridLayoutManager) {
             layoutManager = new LinearLayoutManager(WelcomeActivity.this);
             item.setIcon(R.drawable.ic_view_gird);
         } else {
             layoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
             item.setIcon(R.drawable.ic_view_linear);
         }
+        mAdapter.notifyDataSetChanged();
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(mAdapter);
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.app_bar_change_view:
                 changeLayoutManager(item);
                 break;
@@ -107,20 +111,6 @@ public class WelcomeActivity extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        mAdapter.startListening();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        if(mAdapter != null) {
-            mAdapter.stopListening();
-        }
     }
 }
 

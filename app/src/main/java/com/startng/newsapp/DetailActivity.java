@@ -86,5 +86,7 @@ public class DetailActivity extends AppCompatActivity {
         String content = contentEditText.getText().toString();
 
         DataManager.addToDB(new Notes(title, content));
+        WelcomeActivity.refreshView();
+        finish();
     }
 }

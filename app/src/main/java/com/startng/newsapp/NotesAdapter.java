@@ -21,8 +21,8 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
 
     private ArrayList<Notes> notes;
     private LayoutInflater inflater;
-    Context context;
-    int currentPosition = 0;
+    private Context context;
+    private int currentPosition;
 
     public NotesAdapter(Context context, ArrayList<Notes> notes){
         this.notes = notes;
@@ -56,7 +56,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
         TextView noteTitleTextView;
         TextView noteContentTextView;
 
-        public NotesViewHolder(@NonNull View itemView) {
+        NotesViewHolder(@NonNull View itemView) {
             super(itemView);
             noteTitleTextView = itemView.findViewById(R.id.textViewTitle);
             noteContentTextView = itemView.findViewById(R.id.textViewBody);
