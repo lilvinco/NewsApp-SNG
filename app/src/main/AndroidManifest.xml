@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.startng.newsapp">
 
     <application
@@ -8,15 +9,45 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".HeadlinesActivity">
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".Notes.AddNotes"
+            android:theme="@style/AppTheme.Activity"
+            android:label="Add notes"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name=".Authentication.LoginActivity"
+            android:theme="@style/AppTheme.NoAction"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Notes.NoteDetails"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name=".HeadlinesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name=".Authentication.RegLog"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoAction">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>
