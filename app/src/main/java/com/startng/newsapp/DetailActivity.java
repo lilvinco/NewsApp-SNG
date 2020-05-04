@@ -57,6 +57,7 @@ public class DetailActivity extends AppCompatActivity {
             //respond to Save click
             case R.id.save:
                 //TODO: Work on Save Click
+                saveNote();
                 break;
             //respond to Category click
             case R.id.category:
@@ -78,5 +79,12 @@ public class DetailActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void saveNote(){
+        String title = titleEditText.getText().toString();
+        String content = contentEditText.getText().toString();
+
+        DataManager.addToDB(new Notes(title, content));
     }
 }

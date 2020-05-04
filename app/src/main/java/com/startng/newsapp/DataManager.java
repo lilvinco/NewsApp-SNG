@@ -22,10 +22,9 @@ public class DataManager {
     private final static String TITLE_FIELD = "Title";
     private final static String CONTENT_FIELD = "Content";
 
-    FirebaseFirestore db;
 
     //TODO: implement writing to DB
-    public static void addToDB(Notes note) {
+    static void addToDB(Notes note) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
         Map<String, Object> noteMap = new HashMap<>();
@@ -36,7 +35,7 @@ public class DataManager {
     }
 
     //TODO: implement reading from DB
-    public static ArrayList<Notes> readFromDB() {
+    static ArrayList<Notes> readFromDB() {
         final ArrayList<Notes> myNotes = new ArrayList<>();
 
         FirebaseFirestore.getInstance().collection(NOTE_COLLECTIONS).get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
