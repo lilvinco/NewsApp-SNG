@@ -53,9 +53,7 @@ public class DataManager {
             }
         });
 
-        DocumentReference documentReference = FirebaseFirestore.getInstance().collection(NOTE_COLLECTIONS);
-
-
+        
         return myNotes;
     }
 
