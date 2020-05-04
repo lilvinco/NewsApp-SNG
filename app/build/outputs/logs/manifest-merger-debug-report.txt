@@ -1,13 +1,15 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-22:12
-MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\85843906538799809b860890e03c3306\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
+ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\1a177af4440cded53120ae842a19d4d0\material-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\dbe493a215c12b16b842e729f6d7f5f8\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\f3727a8777fd24b60f54249987d59532\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [com.firebaseui:firebase-ui-firestore:4.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\800e9a8d44c43e2af23c79d445718366\jetified-firebase-ui-firestore-4.1.0\AndroidManifest.xml:2:1-13:12
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\6d603a410b84297a20ae16898e90454c\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\e638ac50dab736d91312513e2fbc4f15\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\50ff91c0f2e93ef8692a602c66ec5322\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\30c37a07abd2bca62e52d5233e668cdb\jetified-firebase-auth-16.0.5\AndroidManifest.xml:17:1-42:12
 MERGED from [com.google.firebase:firebase-database:16.0.4] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\8fd54eb781e3d46cde87871337c1f57c\jetified-firebase-database-16.0.4\AndroidManifest.xml:15:1-25:12
 MERGED from [com.google.firebase:firebase-storage:16.0.4] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\fe0e49cb1176b9fe6b15bb1295c73f32\jetified-firebase-storage-16.0.4\AndroidManifest.xml:15:1-26:12
@@ -20,53 +22,62 @@ MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Atoms\.
 MERGED from [com.google.firebase:firebase-database-collection:16.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\0546ab4e7608c7715029f0b511261acf\firebase-database-collection-16.0.0\AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\e19c2de602864edf24f9cb242d9ca656\jetified-play-services-basement-16.1.0\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\e0521e32c1a8b86d42e9784023699798\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\10528e3c0516ca018ee98e68ab81a927\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\622efde798c98c070aa4d58a49a3650a\vectordrawable-animated-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\bbf291d06e6d73e5a69cf00e352da007\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.firebaseui:firebase-ui-common:4.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\a18a1a2eb56117621ad28270451d5b2f\jetified-firebase-ui-common-4.1.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\e931d411a782a5bd481cfbbd0f5135cd\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\69aec44613e1926d2c13637932dcedda\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\3e9c67073f4685bc882a5d5b88bb034c\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\1c29eba8257a108da88071c959e58639\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\fcbe7a7bca2d6ec0dc8b9a29dffd4e2b\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\a55e7986de8d8f2644af0f215ba3f8e7\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\d3646f00db847713829affca304a1387\vectordrawable-1.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\7537216abfe2284547983fffe7f1cdc3\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\85803006e29ded2666eadf0130116cfe\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\3c16f5091db1e3ae8df9f2afbbfffb69\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\9d69be0293d4431ce361bf9eef5eb798\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\ef1f2f8209945c9c9b05dff0985ea3c0\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\4890467b861f8e91f6c2216a2f5cc5c6\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\bad4e29915074b3cb8204cb148676412\customview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\3d546ff4cebcd01f3e9ef1c20a0fbff4\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\1ba13e78580396645a1c72528ad933b1\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.media:media:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\6b2c182e11b16cc0a429d7862677a38d\media-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.0.1] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\7af9464903b8a503017df0a97e0258a2\core-1.0.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\08dc003a8d730f1cd14413ef933142f3\versionedparcelable-1.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\f219ed8da0a1f3f157686bd0fcb1ff24\activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\9b282167d5edf2ce15b1570bf9b055c0\core-1.1.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\f6a2e342028971f08b98514d4fe14869\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\be7acfdbfd31e8a0b5dad63939a8f1de\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\878b964d78564d0d46095360e074f07c\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.firebaseui:firebase-ui-common:4.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\a18a1a2eb56117621ad28270451d5b2f\jetified-firebase-ui-common-4.1.0\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\d995825eac125ea0dbe1740b2a77afe8\lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\3f064305456a26d7612792e5dcd01f6c\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\3b5f33a5677108152932e8b8d7b62176\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\46064b9613e01513c77c425125634a03\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\bb3390a370f1a633e35be4c965db9d43\print-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\54b1eff228bc9be080bf4e96bc0126e3\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\be7acfdbfd31e8a0b5dad63939a8f1de\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\04ca6ca8519f3d6559c3627ba70da8d8\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\65b62d34fffb8020447f7298ffab5bbb\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\86fe573e00c587008c6329aa2663058c\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\d6ce7fc378f620ebbf8f0e87bce4ca16\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\b448eeadd9344e377db6ce91ed38f2e9\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\59e7ab5ab881f6d6b18b3207a1f71e29\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:15.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\bb6700a7ad473d82553ac812b27fb9ae\protolite-well-known-types-15.0.0\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-24:12
 	package
-		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:3:5-34
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:4:5-34
 		INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-22:12
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-24:12
 		INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-22:12
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-24:12
 		INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:5:5-20:19
+ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:6:5-22:19
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\1a177af4440cded53120ae842a19d4d0\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\1a177af4440cded53120ae842a19d4d0\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\f3727a8777fd24b60f54249987d59532\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\f3727a8777fd24b60f54249987d59532\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\30c37a07abd2bca62e52d5233e668cdb\jetified-firebase-auth-16.0.5\AndroidManifest.xml:23:5-40:19
@@ -81,54 +92,60 @@ MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Atoms\.
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\792dc7f2a74c0fa37a605408ae53ffe3\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\e19c2de602864edf24f9cb242d9ca656\jetified-play-services-basement-16.1.0\AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\e19c2de602864edf24f9cb242d9ca656\jetified-play-services-basement-16.1.0\AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.core:core:1.0.1] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\7af9464903b8a503017df0a97e0258a2\core-1.0.1\AndroidManifest.xml:22:5-89
-MERGED from [androidx.core:core:1.0.1] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\7af9464903b8a503017df0a97e0258a2\core-1.0.1\AndroidManifest.xml:22:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\08dc003a8d730f1cd14413ef933142f3\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\08dc003a8d730f1cd14413ef933142f3\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.core:core:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\9b282167d5edf2ce15b1570bf9b055c0\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\9b282167d5edf2ce15b1570bf9b055c0\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\3f064305456a26d7612792e5dcd01f6c\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\3f064305456a26d7612792e5dcd01f6c\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.0.1] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\7af9464903b8a503017df0a97e0258a2\core-1.0.1\AndroidManifest.xml:22:18-86
+		ADDED from [androidx.core:core:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\9b282167d5edf2ce15b1570bf9b055c0\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:11:9-35
 	android:label
-		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:9:9-41
+	tools:ignore
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:9-60
 	android:roundIcon
-		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:10:9-54
 	android:icon
-		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:8:9-43
 	android:allowBackup
-		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:7:9-35
 	android:theme
-		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:9-40
 activity#com.startng.newsapp.MainActivity
-ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:9-59
+ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:14:9-20:20
 	android:name
-		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:19-47
-activity#com.startng.newsapp.HeadlinesActivity
-ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:9-19:20
-	android:name
-		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:19-52
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:14:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:14:13-18:29
+ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:17-69
+ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:25-66
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:17:17-77
+ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:17:27-74
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:18:27-74
+activity#com.startng.newsapp.HeadlinesActivity
+ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:21:9-55
+	android:name
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:21:19-52
 uses-sdk
 INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml
-MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\85843906538799809b860890e03c3306\appcompat-1.0.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\85843906538799809b860890e03c3306\appcompat-1.0.2\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\1a177af4440cded53120ae842a19d4d0\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\1a177af4440cded53120ae842a19d4d0\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\dbe493a215c12b16b842e729f6d7f5f8\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\dbe493a215c12b16b842e729f6d7f5f8\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\f3727a8777fd24b60f54249987d59532\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\f3727a8777fd24b60f54249987d59532\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [com.firebaseui:firebase-ui-firestore:4.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\800e9a8d44c43e2af23c79d445718366\jetified-firebase-ui-firestore-4.1.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.firebaseui:firebase-ui-firestore:4.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\800e9a8d44c43e2af23c79d445718366\jetified-firebase-ui-firestore-4.1.0\AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\6d603a410b84297a20ae16898e90454c\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\6d603a410b84297a20ae16898e90454c\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\e638ac50dab736d91312513e2fbc4f15\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\e638ac50dab736d91312513e2fbc4f15\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\50ff91c0f2e93ef8692a602c66ec5322\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\50ff91c0f2e93ef8692a602c66ec5322\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\30c37a07abd2bca62e52d5233e668cdb\jetified-firebase-auth-16.0.5\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\30c37a07abd2bca62e52d5233e668cdb\jetified-firebase-auth-16.0.5\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-database:16.0.4] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\8fd54eb781e3d46cde87871337c1f57c\jetified-firebase-database-16.0.4\AndroidManifest.xml:18:5-20:41
@@ -153,22 +170,28 @@ MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Atom
 MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\e19c2de602864edf24f9cb242d9ca656\jetified-play-services-basement-16.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\e0521e32c1a8b86d42e9784023699798\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\e0521e32c1a8b86d42e9784023699798\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\10528e3c0516ca018ee98e68ab81a927\fragment-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\10528e3c0516ca018ee98e68ab81a927\fragment-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\622efde798c98c070aa4d58a49a3650a\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\622efde798c98c070aa4d58a49a3650a\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\bbf291d06e6d73e5a69cf00e352da007\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\bbf291d06e6d73e5a69cf00e352da007\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.firebaseui:firebase-ui-common:4.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\a18a1a2eb56117621ad28270451d5b2f\jetified-firebase-ui-common-4.1.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-common:4.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\a18a1a2eb56117621ad28270451d5b2f\jetified-firebase-ui-common-4.1.0\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\e931d411a782a5bd481cfbbd0f5135cd\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\e931d411a782a5bd481cfbbd0f5135cd\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\69aec44613e1926d2c13637932dcedda\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\69aec44613e1926d2c13637932dcedda\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\3e9c67073f4685bc882a5d5b88bb034c\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\3e9c67073f4685bc882a5d5b88bb034c\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\1c29eba8257a108da88071c959e58639\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\1c29eba8257a108da88071c959e58639\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\fcbe7a7bca2d6ec0dc8b9a29dffd4e2b\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\fcbe7a7bca2d6ec0dc8b9a29dffd4e2b\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\a55e7986de8d8f2644af0f215ba3f8e7\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\a55e7986de8d8f2644af0f215ba3f8e7\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\d3646f00db847713829affca304a1387\vectordrawable-1.0.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\d3646f00db847713829affca304a1387\vectordrawable-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\7537216abfe2284547983fffe7f1cdc3\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\7537216abfe2284547983fffe7f1cdc3\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\85803006e29ded2666eadf0130116cfe\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\85803006e29ded2666eadf0130116cfe\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\3c16f5091db1e3ae8df9f2afbbfffb69\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\3c16f5091db1e3ae8df9f2afbbfffb69\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\9d69be0293d4431ce361bf9eef5eb798\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\9d69be0293d4431ce361bf9eef5eb798\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\ef1f2f8209945c9c9b05dff0985ea3c0\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\ef1f2f8209945c9c9b05dff0985ea3c0\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\4890467b861f8e91f6c2216a2f5cc5c6\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
@@ -181,32 +204,36 @@ MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\At
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\1ba13e78580396645a1c72528ad933b1\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\6b2c182e11b16cc0a429d7862677a38d\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\6b2c182e11b16cc0a429d7862677a38d\media-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.1] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\7af9464903b8a503017df0a97e0258a2\core-1.0.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.1] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\7af9464903b8a503017df0a97e0258a2\core-1.0.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\08dc003a8d730f1cd14413ef933142f3\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\08dc003a8d730f1cd14413ef933142f3\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\f219ed8da0a1f3f157686bd0fcb1ff24\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\f219ed8da0a1f3f157686bd0fcb1ff24\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\9b282167d5edf2ce15b1570bf9b055c0\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\9b282167d5edf2ce15b1570bf9b055c0\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\f6a2e342028971f08b98514d4fe14869\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\f6a2e342028971f08b98514d4fe14869\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\be7acfdbfd31e8a0b5dad63939a8f1de\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\be7acfdbfd31e8a0b5dad63939a8f1de\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\878b964d78564d0d46095360e074f07c\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\878b964d78564d0d46095360e074f07c\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.firebaseui:firebase-ui-common:4.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\a18a1a2eb56117621ad28270451d5b2f\jetified-firebase-ui-common-4.1.0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.firebaseui:firebase-ui-common:4.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\a18a1a2eb56117621ad28270451d5b2f\jetified-firebase-ui-common-4.1.0\AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\d995825eac125ea0dbe1740b2a77afe8\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\d995825eac125ea0dbe1740b2a77afe8\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\3f064305456a26d7612792e5dcd01f6c\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\3f064305456a26d7612792e5dcd01f6c\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\3b5f33a5677108152932e8b8d7b62176\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\3b5f33a5677108152932e8b8d7b62176\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\46064b9613e01513c77c425125634a03\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\46064b9613e01513c77c425125634a03\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\bb3390a370f1a633e35be4c965db9d43\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\bb3390a370f1a633e35be4c965db9d43\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\54b1eff228bc9be080bf4e96bc0126e3\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\54b1eff228bc9be080bf4e96bc0126e3\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\be7acfdbfd31e8a0b5dad63939a8f1de\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\be7acfdbfd31e8a0b5dad63939a8f1de\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\04ca6ca8519f3d6559c3627ba70da8d8\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\04ca6ca8519f3d6559c3627ba70da8d8\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\65b62d34fffb8020447f7298ffab5bbb\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\65b62d34fffb8020447f7298ffab5bbb\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\86fe573e00c587008c6329aa2663058c\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\86fe573e00c587008c6329aa2663058c\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\d6ce7fc378f620ebbf8f0e87bce4ca16\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\d6ce7fc378f620ebbf8f0e87bce4ca16\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\b448eeadd9344e377db6ce91ed38f2e9\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\b448eeadd9344e377db6ce91ed38f2e9\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\59e7ab5ab881f6d6b18b3207a1f71e29\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\59e7ab5ab881f6d6b18b3207a1f71e29\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:protolite-well-known-types:15.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\bb6700a7ad473d82553ac812b27fb9ae\protolite-well-known-types-15.0.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:protolite-well-known-types:15.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\bb6700a7ad473d82553ac812b27fb9ae\protolite-well-known-types-15.0.0\AndroidManifest.xml:7:5-9:41
 INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml

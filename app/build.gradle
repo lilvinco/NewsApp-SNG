@@ -6,7 +6,7 @@ android {
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.startng.newsapp"
-        minSdkVersion 18
+        minSdkVersion 25
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -39,5 +39,6 @@ dependencies {
 
     // Firestore UI
     implementation 'com.firebaseui:firebase-ui-firestore:4.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
 
 }

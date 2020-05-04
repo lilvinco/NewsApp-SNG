@@ -4,11 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
+
+import com.startng.newsapp.Notes.NotesAdapter;
 
 public class HeadlinesActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
@@ -34,7 +32,7 @@ public class HeadlinesActivity extends AppCompatActivity {
 
         // specify an adapter (see also next example)
         String[] myDataset = getResources().getStringArray(R.array.sports_info);
-        mAdapter = new HeadlinesAdapter(this, myDataset);
+        mAdapter = new NotesAdapter(this, myDataset);
         recyclerView.setAdapter(mAdapter);
 
     }
