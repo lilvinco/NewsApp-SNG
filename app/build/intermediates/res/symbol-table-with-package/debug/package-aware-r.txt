@@ -1386,6 +1386,9 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable drawable_border
+drawable drawable_button
+drawable drawable_edit_notes
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_calendar_black_24dp
@@ -1492,6 +1495,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_title
 id adjust_height
 id adjust_width
 id alertTitle
@@ -1542,6 +1546,7 @@ id dimensions
 id direct
 id disableHome
 id dropdown_menu
+id edit_notes
 id edit_query
 id end
 id end_padder
@@ -1627,6 +1632,7 @@ id noScroll
 id none
 id normal
 id note_content
+id note_details_content
 id note_title
 id notes_recyclerview
 id notification_background
@@ -1651,6 +1657,7 @@ id right
 id right_icon
 id right_side
 id rounded
+id save_button
 id save_non_transition_alpha
 id save_overlay_view
 id scale
@@ -1735,6 +1742,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id view_demacate
 id view_offset_helper
 id visible
 id wide
@@ -1802,8 +1810,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_notes
 layout activity_headlines
 layout activity_main
+layout activity_note_details
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

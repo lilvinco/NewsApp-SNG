@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_regular"
+        android:textSize="25sp"
+        android:layout_marginBottom="25dp"
+        android:text="Welcome login !"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:id="@+id/phone_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/welcome_text"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:orientation="horizontal">
+
+        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+            android:id="@+id/country_code_picker"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/phone_edit_text"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="45dp"
+            android:background="@drawable/drawable_border"
+            android:layout_marginStart="8dp"
+            android:hint="Phone number"
+            android:layout_alignParentEnd="true"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingStart="8dp"
+            android:maxLines="1"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/drawable_border"
+        android:layout_below="@id/phone_edit"
+        android:hint="@string/password"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:inputType="textPassword"
+        android:maxLength="12"
+        android:paddingStart="8dp"
+        android:maxLines="1"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/sigin_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_register_button"
+        android:text="@string/login"
+        android:layout_below="@id/password_edit_text"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="14dp"
+        android:textSize="15sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/forgot_password"
+        android:layout_marginBottom="14dp"
+        android:textSize="15sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/sigin_button"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"/>
+
+
+    <EditText
+        android:id="@+id/OTP_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/drawable_border"
+        android:layout_below="@id/sigin_button"
+        android:hint="OTP"
+        android:visibility="gone"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:inputType="textPassword"
+        android:maxLength="12"
+        android:paddingStart="8dp"
+        android:maxLines="1"
+        android:textSize="18sp" />
+
+</RelativeLayout>
