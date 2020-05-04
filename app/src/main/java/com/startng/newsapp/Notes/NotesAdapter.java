@@ -1,67 +1,110 @@
-package com.startng.newsapp;
+package com.startng.newsapp.Notes;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class HeadlinesAdapter extends RecyclerView.Adapter<HeadlinesAdapter.MyViewHolder> {
-    private String[] mDataset;
-    private Context mContext;
+import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
+import com.firebase.ui.firestore.FirestoreRecyclerOptions;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.startng.newsapp.Models.NotesModel;
+import com.startng.newsapp.R;
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
-        // each data item is just a string in this case
-        public TextView textView;
+public class NotesAdapter extends FirestoreRecyclerAdapter<NotesModel, NotesAdapter.NotesHolder> {
+
+    Context context;
+    private OnItemClickListener listener;
+
+    public NotesAdapter(@NonNull FirestoreRecyclerOptions<NotesModel> options, Context context) {
+        super(options);
+        this.context = context;
+    }
+
+    @Override
+    protected void onBindViewHolder(@NonNull NotesHolder notesHolder, int i, @NonNull final NotesModel notesModel) {
+
+        notesHolder.noteTitle.setText(notesModel.getTitle());
+        notesHolder.noteContent.setText(notesModel.getContent());
+
+    }
+
+    @NonNull
+    @Override
+    public NotesHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+
+        View view = LayoutInflater.from(viewGroup.getContext())
+                .inflate(R.layout.notes_model, viewGroup, false);
+
+        return new NotesHolder(view);
+    }
+
+    public void deleteNote(int position) {
+        getSnapshots().getSnapshot(position).getReference().delete();
+    }
+
+    public class NotesHolder extends RecyclerView.ViewHolder {
+
+        TextView noteTitle, noteContent;
+        ImageView optionsMenu;
 
 
-        public MyViewHolder(TextView v) {
-            super(v);
-            textView = v;
+        public NotesHolder(@NonNull View itemView) {
+
+            super(itemView);
+
+            noteTitle = itemView.findViewById(R.id.note_title);
+            noteContent = itemView.findViewById(R.id.note_content);
+            optionsMenu = itemView.findViewById(R.id.menu_icon);
+
+            // Clicks for the entire view
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int position = getAdapterPosition();
+                    if (position != RecyclerView.NO_POSITION && listener != null){
+
+                        listener.onItemClick(getSnapshots().getSnapshot(position), position);
+                    }
+
+                }
+            });
+
+            // Clicks for the optionsMenu
+            optionsMenu.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int position = getAdapterPosition();
+
+                    if (position != RecyclerView.NO_POSITION && listener != null){
+                        listener.onOptionMenuClick(getSnapshots().getSnapshot(position), position, v);
+                    }
+
+                }
+            });
+
         }
     }
 
-    // Provide a suitable constructor (depends on the kind of dataset)
-    public HeadlinesAdapter(Context context, String[] myDataset) {
-        mDataset = myDataset;
-        mContext = context;
+    public interface OnItemClickListener{
+
+        void onItemClick(DocumentSnapshot documentSnapshot, int position);
+
+        void onOptionMenuClick(DocumentSnapshot documentSnapshot, int position, View view); // View here will be used for popUp menu.(It is optional)
     }
 
-    // Create new views (invoked by the layout manager)
-    @Override
-    public HeadlinesAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent,
-                                                            int viewType) {
-        // create a new view
-        TextView v = (TextView) LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.headline_item, parent, false);
-        MyViewHolder vh = new MyViewHolder(v);
-        return vh;
+    public void setOnItemClickListener(OnItemClickListener listener){
+
+        this.listener = listener;
+
     }
 
-
-    // Replace the contents of a view (invoked by the layout manager)
-    @Override
-    public void onBindViewHolder(MyViewHolder holder, final int position) {
-        // - get element from your dataset at this position
-        // - replace the contents of the view with that element
-        holder.textView.setText(mDataset[position]);
-        holder.textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(mContext, MainActivity.class);
-                intent.putExtra("headline", mDataset[position]);
-                mContext.startActivity(intent);
-            }
-        });
-    }
-
-
-    // Return the size of your dataset (invoked by the layout manager)
-    @Override
-    public int getItemCount() {
-        return mDataset.length;
-    }
 }
+
+
+
