@@ -12,9 +12,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Find textviews, get the extras and assign both to each other
-        TextView textView = findViewById(R.id.textView3);
-        String headline = getIntent().getStringExtra("headline");
-        textView.setText(headline);
     }
 }
