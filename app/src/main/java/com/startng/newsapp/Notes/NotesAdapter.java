@@ -95,7 +95,7 @@ public class NotesAdapter extends FirestoreRecyclerAdapter<NotesModel, NotesAdap
 
         void onItemClick(DocumentSnapshot documentSnapshot, int position);
 
-        void onOptionMenuClick(DocumentSnapshot documentSnapshot, int position, View view); // View here will be used for popUp menu.(It is optional)
+        void onOptionMenuClick(DocumentSnapshot documentSnapshot, int position, View view); // View here will be used for popUp log_out_menu.(It is optional)
     }
 
     public void setOnItemClickListener(OnItemClickListener listener){

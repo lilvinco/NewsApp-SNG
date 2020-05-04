@@ -26,7 +26,6 @@ public class NoteDetails extends AppCompatActivity {
     DocumentReference documentReference;
 
     private String userID = firebaseUser.getUid();
-
     private TextView mContent;
 
     String mTitle, mmContent, mNoteID;

@@ -22,16 +22,42 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.startng.newsapp.Notes.AddNotes" />
-        <activity android:name="com.startng.newsapp.Notes.NoteDetails" />
-        <activity android:name="com.startng.newsapp.MainActivity" >
+        <activity
+            android:name="com.startng.newsapp.Notes.AddNotes"
+            android:label="Add notes"
+            android:parentActivityName="com.startng.newsapp.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Activity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.startng.newsapp.Authentication.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoAction" />
+        <activity
+            android:name="com.startng.newsapp.Notes.NoteDetails"
+            android:parentActivityName="com.startng.newsapp.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Activity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.startng.newsapp.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.startng.newsapp.HeadlinesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.startng.newsapp.Authentication.RegLog"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoAction"
+            android:windowSoftInputMode="adjustPan" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.startng.newsapp.HeadlinesActivity" />
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"

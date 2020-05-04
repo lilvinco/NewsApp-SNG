@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorWhite">
@@ -28,11 +29,11 @@
         android:id="@+id/login_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/register_button"
+        android:layout_below="@id/anonymous_button"
         android:layout_marginStart="30dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="30dp"
-        android:background="@drawable/drawable_register_button"
+        android:background="@drawable/drawable_sigin_button"
         android:onClick="loginBtn"
         android:text="@string/sign_in"
         android:textColor="@color/colorWhite"
@@ -43,7 +44,7 @@
 
 
     <Button
-        android:id="@+id/register_button"
+        android:id="@+id/anonymous_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -52,27 +53,13 @@
         android:layout_marginEnd="30dp"
         android:background="@drawable/drawable_login_button"
         android:onClick="registerBtn"
-        android:text="@string/sign_up"
+        android:text="@string/sign_in_anonymously"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_button" />
 
-    <TextView
-        android:id="@+id/anonymous_login_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/login_button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"
-        android:onClick="anonymousLogin"
-        android:text="@string/sign_in_anonymously"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_button" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -82,7 +69,43 @@
         android:src="@drawable/drawable_clover_down_right"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/anonymous_login_button" />
+        app:layout_constraintTop_toBottomOf="@+id/anonymous_button" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NoteApp"
+        android:textColor="@color/colorWhite"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/login_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.61" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="Task 4"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ProgressBar
+        android:id="@+id/reglog_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/anonymous_button"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/anonymous_button"
+        app:layout_constraintTop_toBottomOf="@+id/anonymous_button" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

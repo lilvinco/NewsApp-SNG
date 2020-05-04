@@ -11,17 +11,43 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name=".Notes.AddNotes"/>
-        <activity android:name=".Notes.NoteDetails"/>
+        <activity android:name=".Notes.AddNotes"
+            android:theme="@style/AppTheme.Activity"
+            android:label="Add notes"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".Authentication.LoginActivity"
+            android:theme="@style/AppTheme.NoAction"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Notes.NoteDetails"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name=".HeadlinesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name=".Authentication.RegLog"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoAction">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HeadlinesActivity" />
+
+
     </application>
 
 </manifest>

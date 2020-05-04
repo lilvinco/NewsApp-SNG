@@ -1380,6 +1380,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable das
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1388,7 +1389,12 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable drawable_border
 drawable drawable_button
+drawable drawable_clover
+drawable drawable_clover_down_right
 drawable drawable_edit_notes
+drawable drawable_login_button
+drawable drawable_register_button
+drawable drawable_sigin_button
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_calendar_black_24dp
@@ -1404,6 +1410,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable log_out
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1431,12 +1438,16 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable vector_add
 drawable vector_options
+font open_sans_light
+font open_sans_regular
+font quicksand_book
 id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
 id META
+id OTP_edit_text
 id SHIFT
 id SYM
 id TOP_END
@@ -1501,6 +1512,7 @@ id adjust_width
 id alertTitle
 id all
 id always
+id anonymous_button
 id async
 id auto
 id barrier
@@ -1578,6 +1590,7 @@ id icon_group
 id icon_only
 id ifRoom
 id image
+id imageView
 id info
 id invisible
 id italic
@@ -1590,8 +1603,11 @@ id left
 id light
 id line1
 id line3
+id linearLayout
 id listMode
 id list_item
+id log_out_btn
+id login_button
 id masked
 id media_actions
 id menu_icon
@@ -1649,10 +1665,13 @@ id parent_matrix
 id password_toggle
 id peekHeight
 id percent
+id phone_edit_text
 id pin
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio
+id reglog_progress_bar
 id right
 id right_icon
 id right_side
@@ -1683,6 +1702,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id sigin_button
 id skipCollapsed
 id slide
 id smallLabel
@@ -1720,6 +1740,8 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
+id textView2
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -1745,6 +1767,7 @@ id useLogo
 id view_demacate
 id view_offset_helper
 id visible
+id welcome_text
 id wide
 id withText
 id wrap
@@ -1812,8 +1835,11 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_notes
 layout activity_headlines
+layout activity_login
 layout activity_main
 layout activity_note_details
+layout activity_reg_log
+layout activity_registration
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1891,6 +1917,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu log_out_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -1921,6 +1948,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string action_settings
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -1953,6 +1981,7 @@ string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string firebase_database_url
+string forgot_password
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
@@ -1960,6 +1989,8 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string login
+string menu_noteList
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_suffix
@@ -1994,6 +2025,7 @@ string mtrl_picker_toggle_to_calendar_input_mode
 string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
+string password
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -2001,6 +2033,9 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string project_id
 string search_menu_title
+string sign_in
+string sign_in_anonymously
+string sign_up
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

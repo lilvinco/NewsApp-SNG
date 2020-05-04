@@ -6,13 +6,10 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.dtechatoms.notetaker.Helper.ToastAndSnacksbar;
-import com.dtechatoms.notetaker.MainActivity;
-import com.dtechatoms.notetaker.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseException;
@@ -20,18 +17,19 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
-import com.rilixtech.widget.countrycodepicker.CountryCodePicker;
+import com.startng.newsapp.Helper.ToastAndSnacksbar;
+import com.startng.newsapp.MainActivity;
+import com.startng.newsapp.R;
 
 import java.util.concurrent.TimeUnit;
 
 public class LoginActivity extends AppCompatActivity {
 
     private Button mLogin;
-    private EditText phoneNumber, mPassWord, mOTP;
-    private CountryCodePicker mCountryCode;
-
-    private String verivicatioID;
+    private EditText phoneNumber, mOTP;
+    private String verificationID;
     private PhoneAuthProvider.ForceResendingToken token;
+    private ProgressBar progressBar;
 
     private Boolean verificationInProgress = false;
 
@@ -42,9 +40,9 @@ public class LoginActivity extends AppCompatActivity {
 
         mLogin = findViewById(R.id.sigin_button);
         phoneNumber = findViewById(R.id.phone_edit_text);
-        mPassWord = findViewById(R.id.password_edit_text);
         mOTP = findViewById(R.id.OTP_edit_text);
-        mCountryCode = findViewById(R.id.country_code_picker);
+        progressBar = findViewById(R.id.progressBar);
+
 
         mLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,10 +50,8 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (!verificationInProgress){ // Trigger the condition to be True
 
-                    String passWord = mPassWord.getText().toString().trim();
-
                     String phoneNum = (phoneNumber.getText().toString());
-                    String countryCode = mCountryCode.getSelectedCountryCodeWithPlus();
+                    String countryCode = "+234";
                     String completeNumber = countryCode + phoneNum;
 
 
@@ -78,7 +74,7 @@ public class LoginActivity extends AppCompatActivity {
                     } else if (OTP.length() < 6){
                         mOTP.setError("OTP is incomplete");
                     } else {
-                        PhoneAuthCredential credential = PhoneAuthProvider.getCredential(verivicatioID, OTP);
+                        PhoneAuthCredential credential = PhoneAuthProvider.getCredential(verificationID, OTP);
                         verifyAuth(credential);
 
                     }
@@ -91,23 +87,31 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void verifyAuth(PhoneAuthCredential credential) {
+        mLogin.setEnabled(false);
+        progressBar.setVisibility(View.VISIBLE);
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
         firebaseAuth.signInWithCredential(credential).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
                     ToastAndSnacksbar.ToastMessage(getApplicationContext(), mLogin, "Success");
-                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                    progressBar.setVisibility(View.INVISIBLE);
                     finish();
 
                 } else {
+                    mLogin.setEnabled(true);
                     ToastAndSnacksbar.ToastMessage(getApplicationContext(), mLogin, "Unsuccessful");
+                    mLogin.setEnabled(false);
+                    progressBar.setVisibility(View.INVISIBLE);
                 }
             }
         });
     }
 
     private void requestOTP(String completeNumber) {
+        mLogin.setEnabled(false);
+        progressBar.setVisibility(View.VISIBLE);
 
         PhoneAuthProvider.getInstance().verifyPhoneNumber(completeNumber, 60L, TimeUnit.SECONDS,
                 this, new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
@@ -126,9 +130,11 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onCodeSent(String s, PhoneAuthProvider.ForceResendingToken forceResendingToken) {
                         super.onCodeSent(s, forceResendingToken);
-                        verivicatioID = s;
+                        verificationID = s;
                         token = forceResendingToken;
 
+                        mLogin.setEnabled(true);
+                        progressBar.setVisibility(View.INVISIBLE);
                         mOTP.setVisibility(View.VISIBLE);
                         phoneNumber.setVisibility(View.GONE);
                         mLogin.setText("Verify");

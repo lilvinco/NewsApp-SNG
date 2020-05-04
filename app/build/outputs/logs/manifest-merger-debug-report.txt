@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-53:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\1a177af4440cded53120ae842a19d4d0\material-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\dbe493a215c12b16b842e729f6d7f5f8\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\f3727a8777fd24b60f54249987d59532\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
@@ -55,27 +55,27 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Atoms\.gradle\
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\b448eeadd9344e377db6ce91ed38f2e9\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\59e7ab5ab881f6d6b18b3207a1f71e29\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:15.0.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\bb6700a7ad473d82553ac812b27fb9ae\protolite-well-known-types-15.0.0\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-53:12
 	package
 		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:4:5-34
 		INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-27:12
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-53:12
 		INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-27:12
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-53:12
 		INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:6:5-25:19
+ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:6:5-51:19
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\1a177af4440cded53120ae842a19d4d0\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\1a177af4440cded53120ae842a19d4d0\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Atoms\.gradle\caches\transforms-2\files-2.1\f3727a8777fd24b60f54249987d59532\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -113,31 +113,75 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\At
 	android:theme
 		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:9-40
 activity#com.startng.newsapp.Notes.AddNotes
-ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:14:9-51
+ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:14:9-19:54
+	android:screenOrientation
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:18:13-49
+	android:parentActivityName
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:17:13-55
+	android:label
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:16:13-38
+	android:windowSoftInputMode
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:19:13-52
+	android:theme
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:13-53
 	android:name
 		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:14:19-49
+activity#com.startng.newsapp.Authentication.LoginActivity
+ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:21:9-23:51
+	android:screenOrientation
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:23:13-49
+	android:theme
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:22:13-53
+	android:name
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:21:19-63
 activity#com.startng.newsapp.Notes.NoteDetails
-ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:9-54
+ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:25:9-29:54
+	android:screenOrientation
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:28:13-49
+	android:parentActivityName
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:26:13-55
+	android:windowSoftInputMode
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:29:13-52
+	android:theme
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:27:13-53
 	android:name
-		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:19-52
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:25:19-52
 activity#com.startng.newsapp.MainActivity
-ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:17:9-23:20
+ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:31:9-33:54
+	android:screenOrientation
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:32:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:33:13-52
 	android:name
-		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:17:19-47
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:18:13-22:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:19:17-69
-	android:name
-		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:19:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:21:17-77
-	android:name
-		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:21:27-74
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:31:19-47
 activity#com.startng.newsapp.HeadlinesActivity
-ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:24:9-55
+ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:35:9-37:54
+	android:screenOrientation
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:36:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:37:13-52
 	android:name
-		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:24:19-52
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:35:19-52
+activity#com.startng.newsapp.Authentication.RegLog
+ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:39:9-48:20
+	android:screenOrientation
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:40:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:41:13-52
+	android:theme
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:42:13-53
+	android:name
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:39:19-56
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:43:13-47:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:44:17-69
+	android:name
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:44:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:46:17-77
+	android:name
+		ADDED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml:46:27-74
 uses-sdk
 INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Atoms\Desktop\NewsApp-SNG\app\src\main\AndroidManifest.xml
