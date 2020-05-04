@@ -1,0 +1,71 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.startng.newsapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="18"
+8-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:5:5-27:19
+12        android:allowBackup="true"
+12-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.1.0] C:\Users\Ugwulo\.gradle\caches\transforms-2\files-2.1\8416fff998c495b3df170f30327ca001\core-1.1.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:7:9-43
+16        android:label="@string/app_name"
+16-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:8:9-41
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:9:9-54
+18        android:supportsRtl="true"
+18-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:10:9-35
+19        android:theme="@style/AppTheme" >
+19-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:11:9-40
+20        <activity android:name="com.startng.newsapp.ProfileActivity" />
+20-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:9-62
+20-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:19-50
+21        <activity
+21-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:9-22:20
+22            android:name="com.startng.newsapp.NoteListActivity"
+22-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:14:13-45
+23            android:label="@string/app_name"
+23-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:13-45
+24            android:theme="@style/AppTheme.NoActionBar" >
+24-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:16:13-56
+25            <intent-filter>
+25-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:17:13-21:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:18:17-69
+26-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:18:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:20:17-77
+28-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:20:27-74
+29            </intent-filter>
+30        </activity>
+31        <activity
+31-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:23:9-26:59
+32            android:name="com.startng.newsapp.NoteActivity"
+32-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:24:13-41
+33            android:label="Edit Note"
+33-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:25:13-38
+34            android:theme="@style/AppTheme.NoActionBar" />
+34-->C:\Users\Ugwulo\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:26:13-56
+35
+36        <service
+36-->[androidx.room:room-runtime:2.2.5] C:\Users\Ugwulo\.gradle\caches\transforms-2\files-2.1\54d8de5f15b0c4e5e62a495363aaa927\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+37            android:name="androidx.room.MultiInstanceInvalidationService"
+37-->[androidx.room:room-runtime:2.2.5] C:\Users\Ugwulo\.gradle\caches\transforms-2\files-2.1\54d8de5f15b0c4e5e62a495363aaa927\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+38            android:directBootAware="true"
+38-->[androidx.room:room-runtime:2.2.5] C:\Users\Ugwulo\.gradle\caches\transforms-2\files-2.1\54d8de5f15b0c4e5e62a495363aaa927\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+39            android:exported="false" />
+39-->[androidx.room:room-runtime:2.2.5] C:\Users\Ugwulo\.gradle\caches\transforms-2\files-2.1\54d8de5f15b0c4e5e62a495363aaa927\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+40    </application>
+41
+42</manifest>
