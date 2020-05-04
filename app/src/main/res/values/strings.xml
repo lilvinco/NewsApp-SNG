@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">NewsApp</string>
     <string-array name="sports_info">
         <item>Nike Enters 10-Year </item>
         <item>Indonesia Masters – Saina</item>
@@ -13,4 +12,19 @@
         <item>Table Tennis Federation Revokes Soumyajit Ghoshs Suspension, 9 Months After Rape Allegations!</item>
         <item>2019 Australian Open odds, predictions for mens finals!</item>
     </string-array>
+    <string name="title_activity_note">NoteActivity</string>
+
+    <!--    My Strings-->
+    <string name="app_name">NoteApp</string>
+    <string name="about">About Developer</string>
+    <string name="note_title">Some  Dummy Title</string>
+    <string name="note_time_stamp">Dec 2020</string>
+    <string name="title_activity_main">NoteApp</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="preferences">Preferences</string>
 </resources>
