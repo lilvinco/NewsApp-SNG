@@ -7,6 +7,7 @@ import androidx.annotation.RequiresApi;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -30,7 +31,6 @@ public class DataManager {
         Map<String, Object> noteMap = new HashMap<>();
         noteMap.put(TITLE_FIELD, note.getNoteTitle());
         noteMap.put(CONTENT_FIELD, note.getNoteContent());
-
         db.collection(NOTE_COLLECTIONS).add(noteMap);
     }
 
@@ -53,6 +53,11 @@ public class DataManager {
             }
         });
 
+        DocumentReference documentReference = FirebaseFirestore.getInstance().collection(NOTE_COLLECTIONS);
+
+
         return myNotes;
     }
+
+
 }

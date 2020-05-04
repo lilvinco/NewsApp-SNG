@@ -45,8 +45,8 @@ public class WelcomeActivity extends AppCompatActivity {
 //        recyclerView.setHasFixedSize(true);
 
         mAdapter = new NotesAdapter(this, DataManager.readFromDB());
-
-        //Used in StaggeredGridLayoutManager
+        mAdapter.notifyDataSetChanged();
+        //Use StaggeredGridLayoutManager
         layoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
 

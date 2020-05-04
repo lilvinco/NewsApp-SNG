@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.renderscript.ScriptIntrinsicYuvToRGB;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,7 +23,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
     private ArrayList<Notes> notes;
     private LayoutInflater inflater;
     private Context context;
-    private int currentPosition;
+
 
     public NotesAdapter(Context context, ArrayList<Notes> notes){
         this.notes = notes;
@@ -39,12 +40,15 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
 
     @Override
     public void onBindViewHolder(@NonNull NotesViewHolder holder, int position) {
-        currentPosition = position;
-        final Notes currentNote = notes.get(currentPosition);
-        holder.noteContentTextView.setText(currentNote.getNoteContent());
-        holder.noteTitleTextView.setText(currentNote.getNoteTitle());
 
+        final Notes currentNote = notes.get(position);
+//        holder.noteContentTextView.setText(currentNote.getNoteContent());
+//        holder.noteTitleTextView.setText(currentNote.getNoteTitle());
+//        Log.v("MApp", "Position" + currentPosition);
+
+        holder.setData(currentNote.getNoteTitle(), currentNote.getNoteContent(), position);
     }
+
 
     @Override
     public int getItemCount() {
@@ -55,11 +59,13 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
 
         TextView noteTitleTextView;
         TextView noteContentTextView;
+        int currentPosition;
 
         NotesViewHolder(@NonNull View itemView) {
             super(itemView);
             noteTitleTextView = itemView.findViewById(R.id.textViewTitle);
             noteContentTextView = itemView.findViewById(R.id.textViewBody);
+
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 noteContentTextView.setJustificationMode(JUSTIFICATION_MODE_INTER_WORD);
             }
@@ -70,9 +76,15 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
                     Intent intent = new Intent(context.getApplicationContext(),DetailActivity.class);
                     intent.putExtra(DetailActivity.NOTE_TITLE_TAG, notes.get(currentPosition).getNoteTitle());
                     intent.putExtra(DetailActivity.NOTE_CONTENT_TAG, notes.get(currentPosition).getNoteContent());
+                    Log.v("MApp", "Position for Detail Activity " + currentPosition);
                     context.startActivity(intent);
                 }
             });
+        }
+        void setData(String title, String content, int position){
+            noteContentTextView.setText(content);
+            noteTitleTextView.setText(title);
+            currentPosition = position;
         }
     }
 }
