@@ -5,11 +5,10 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class HeadlinesAdapter extends RecyclerView.Adapter<HeadlinesAdapter.MyViewHolder> {
+public class NoteListAdapter extends RecyclerView.Adapter<NoteListAdapter.MyViewHolder> {
     private String[] mDataset;
     private Context mContext;
 
@@ -25,18 +24,18 @@ public class HeadlinesAdapter extends RecyclerView.Adapter<HeadlinesAdapter.MyVi
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public HeadlinesAdapter(Context context, String[] myDataset) {
+    public NoteListAdapter(Context context, String[] myDataset) {
         mDataset = myDataset;
         mContext = context;
     }
 
     // Create new views (invoked by the layout manager)
     @Override
-    public HeadlinesAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent,
-                                                     int viewType) {
+    public NoteListAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent,
+                                                           int viewType) {
         // create a new view
         TextView v = (TextView) LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.headline_item, parent, false);
+                .inflate(R.layout.note_item, parent, false);
         MyViewHolder vh = new MyViewHolder(v);
         return vh;
     }

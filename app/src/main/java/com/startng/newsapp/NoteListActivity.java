@@ -4,13 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
 
-public class HeadlinesActivity extends AppCompatActivity {
+public class NoteListActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -19,7 +15,7 @@ public class HeadlinesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_headlines);
+        setContentView(R.layout.activity_notelists);
 
 
         recyclerView = findViewById(R.id.my_recycler_view);
@@ -34,7 +30,7 @@ public class HeadlinesActivity extends AppCompatActivity {
 
         // specify an adapter (see also next example)
         String[] myDataset = getResources().getStringArray(R.array.sports_info);
-        mAdapter = new HeadlinesAdapter(this, myDataset);
+        mAdapter = new NoteListAdapter(this, myDataset);
         recyclerView.setAdapter(mAdapter);
 
     }
