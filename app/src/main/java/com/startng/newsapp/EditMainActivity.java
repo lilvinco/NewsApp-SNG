@@ -1,6 +1,5 @@
 package com.startng.newsapp;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -44,7 +43,7 @@ public class EditMainActivity extends AppCompatActivity {
             setTitle("Create Note");
         }
     }
-    
+
 
     private void saveNote() {
         //Get the extras and assign both to each other
@@ -71,15 +70,16 @@ public class EditMainActivity extends AppCompatActivity {
         finish();
     }
 
-    //For the save button
+    //Initializes the content of the menu
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.my_menu, menu);
         return true;
     }
 
+    //For the save button
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.save_note:
                 saveNote();
