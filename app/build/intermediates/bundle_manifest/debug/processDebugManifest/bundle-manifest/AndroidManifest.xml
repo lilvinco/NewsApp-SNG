@@ -19,7 +19,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.startng.newsapp.AddNoteActivity"
+            android:name="com.startng.newsapp.AddEditNoteActivity"
             android:parentActivityName="com.startng.newsapp.MainActivity" />
         <activity android:name="com.startng.newsapp.HeadlinesActivity" />
         <activity
