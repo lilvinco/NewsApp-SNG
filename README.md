@@ -3,3 +3,5 @@ A basic android application for beginners that covers topics like Recycler view,
 
 
 This is my own edit to the forked repo
+
+https://github.com/Joules007/NewsApp-SNG/blob/master/Screenshot_20200504-221336%5B1%5D.png
