@@ -3,6 +3,8 @@ package com.startng.newsapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,5 +18,11 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.textView3);
         String headline = getIntent().getStringExtra("headline");
         textView.setText(headline);
+    }
+
+    public boolean onCreateOptionMenu (Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.save_menu, menu);
+        return true;
     }
 }

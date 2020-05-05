@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/welcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_welcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/inputs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@id/welcome"
+        app:layout_constraintStart_toStartOf="@id/welcome"
+        app:layout_constraintTop_toBottomOf="@+id/welcome">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:text="Please fill the feilds provided"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="EMAIL"
+            app:hintTextColor="#fff"
+            app:endIconMode="clear_text"
+            android:padding="10dp"
+            app:startIconDrawable="@drawable/ic_mail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mail"
+                android:textSize="16dp"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PASSWORD"
+            app:hintTextColor="#fff"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/ic_key"
+            android:padding="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pass"
+                android:textSize="16dp"
+                android:textColor="@color/colorAccent"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/forgot_pw"
+        style="@style/view"
+        android:padding="5dp"
+        android:textAlignment="viewEnd"
+        android:text="@string/forgot_password"
+        app:layout_constraintEnd_toEndOf="@id/inputs"
+        app:layout_constraintStart_toStartOf="@id/inputs"
+        app:layout_constraintTop_toBottomOf="@id/inputs" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/button"
+        android:layout_marginTop="10dp"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="@id/forgot_pw"
+        app:layout_constraintStart_toStartOf="@id/forgot_pw"
+        app:layout_constraintTop_toBottomOf="@id/forgot_pw" />
+
+
+    <TextView
+        android:id="@+id/sign_up"
+        style="@style/view"
+        android:text="@string/noAccount"
+        app:layout_constraintEnd_toEndOf="@id/button_login"
+        app:layout_constraintStart_toStartOf="@id/button_login"
+        app:layout_constraintTop_toBottomOf="@+id/button_login" />
+
+
+    <TextView
+        android:id="@+id/or"
+        style="@style/view"
+        android:layout_marginTop="30dp"
+        android:text="OR"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/sign_up"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/sign_up"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@id/or"
+        app:layout_constraintStart_toStartOf="@id/or"
+        app:layout_constraintTop_toBottomOf="@+id/or" />
+
+
+    <TextView
+        android:id="@+id/alternativeLogin"
+        style="@style/view"
+        android:layout_width="wrap_content"
+        android:background="#000"
+        android:alpha="0.9"
+        android:layout_marginTop="33dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/login_with"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/or"
+        app:layout_constraintStart_toStartOf="@id/or"
+        app:layout_constraintTop_toBottomOf="@+id/or"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@id/view2"
+        app:layout_constraintStart_toStartOf="@id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        >
+    <ImageView
+        android:id="@+id/google"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_google"/>
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/ic_facebook"
+        android:layout_weight="1" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
