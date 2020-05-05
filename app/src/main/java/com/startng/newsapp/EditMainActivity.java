@@ -44,6 +44,7 @@ public class EditMainActivity extends AppCompatActivity {
             setTitle("Create Note");
         }
     }
+    
 
     private void saveNote() {
         //Get the extras and assign both to each other
