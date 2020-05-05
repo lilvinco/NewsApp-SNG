@@ -1,0 +1,81 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.startng.newsapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="18"
+8-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml
+10
+11    <application
+11-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:5:5-26:19
+12        android:allowBackup="true"
+12-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.1.0] /Users/admin/.gradle/caches/transforms-2/files-2.1/34b4ab0d8b65ac74ddd00d45b26dd963/core-1.1.0/AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:7:9-43
+16        android:label="@string/app_name"
+16-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:8:9-41
+17        android:roundIcon="@mipmap/ic_launcher"
+17-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:9:9-48
+18        android:supportsRtl="true"
+18-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:10:9-35
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:11:9-40
+21        <activity
+21-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:12:9-19:20
+22            android:name="com.startng.newsapp.MainActivity"
+22-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:12:19-47
+23            android:launchMode="singleTop" >
+23-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:13:13-43
+24            <intent-filter>
+24-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:14:13-18:29
+25                <action android:name="android.intent.action.MAIN" />
+25-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:15:17-69
+25-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:15:25-66
+26
+27                <category android:name="android.intent.category.LAUNCHER" />
+27-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:17:17-77
+27-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:17:27-74
+28            </intent-filter>
+29        </activity>
+30        <activity
+30-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:20:9-21:67
+31            android:name="com.startng.newsapp.AddNoteActivity"
+31-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:20:19-50
+32            android:parentActivityName="com.startng.newsapp.MainActivity" />
+32-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:21:13-55
+33
+34        <meta-data
+34-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:23:9-25:57
+35            android:name="preloaded_fonts"
+35-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:24:13-43
+36            android:resource="@array/preloaded_fonts" />
+36-->/Users/admin/Documents/NewsApp-SNG/app/src/main/AndroidManifest.xml:25:13-54
+37
+38        <service
+38-->[androidx.room:room-runtime:2.2.1] /Users/admin/.gradle/caches/transforms-2/files-2.1/f03d34e2cc132ec0d3665c3710ad5115/room-runtime-2.2.1/AndroidManifest.xml:25:9-27:40
+39            android:name="androidx.room.MultiInstanceInvalidationService"
+39-->[androidx.room:room-runtime:2.2.1] /Users/admin/.gradle/caches/transforms-2/files-2.1/f03d34e2cc132ec0d3665c3710ad5115/room-runtime-2.2.1/AndroidManifest.xml:26:13-74
+40            android:exported="false" />
+40-->[androidx.room:room-runtime:2.2.1] /Users/admin/.gradle/caches/transforms-2/files-2.1/f03d34e2cc132ec0d3665c3710ad5115/room-runtime-2.2.1/AndroidManifest.xml:27:13-37
+41
+42        <provider
+42-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/admin/.gradle/caches/transforms-2/files-2.1/a7777210eeae7ec0839470505116d148/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+43            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+43-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/admin/.gradle/caches/transforms-2/files-2.1/a7777210eeae7ec0839470505116d148/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+44            android:authorities="com.startng.newsapp.lifecycle-process"
+44-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/admin/.gradle/caches/transforms-2/files-2.1/a7777210eeae7ec0839470505116d148/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+45            android:exported="false"
+45-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/admin/.gradle/caches/transforms-2/files-2.1/a7777210eeae7ec0839470505116d148/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+46            android:multiprocess="true" />
+46-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/admin/.gradle/caches/transforms-2/files-2.1/a7777210eeae7ec0839470505116d148/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+47    </application>
+48
+49</manifest>
