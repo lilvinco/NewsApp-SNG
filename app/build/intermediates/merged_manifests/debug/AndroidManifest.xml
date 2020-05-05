@@ -18,8 +18,13 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.startng.newsapp.AddNoteActivity"
+            android:parentActivityName="com.startng.newsapp.MainActivity" />
         <activity android:name="com.startng.newsapp.HeadlinesActivity" />
-        <activity android:name="com.startng.newsapp.MainActivity" >
+        <activity
+            android:name="com.startng.newsapp.MainActivity"
+            android:launchMode="singleTop" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

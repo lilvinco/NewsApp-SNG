@@ -11,7 +11,7 @@
 9-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:5:5-20:19
+11-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:5:5-25:19
 12        android:allowBackup="true"
 12-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -28,41 +28,50 @@
 19        android:testOnly="true"
 20        android:theme="@style/AppTheme" >
 20-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="com.startng.newsapp.HeadlinesActivity" />
-21-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:9-64
-21-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:19-52
-22        <activity android:name="com.startng.newsapp.MainActivity" >
-22-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:9-19:20
-22-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:19-47
-23            <intent-filter>
-23-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:14:13-18:29
-24                <action android:name="android.intent.action.MAIN" />
-24-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:17-69
-24-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:25-66
-25
-26                <category android:name="android.intent.category.LAUNCHER" />
-26-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:17:17-77
-26-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:17:27-74
-27            </intent-filter>
-28        </activity>
-29
-30        <service
-30-->[androidx.room:room-runtime:2.2.0] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\1e99c14c9441faae30083380f6200d97\room-runtime-2.2.0\AndroidManifest.xml:25:9-27:40
-31            android:name="androidx.room.MultiInstanceInvalidationService"
-31-->[androidx.room:room-runtime:2.2.0] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\1e99c14c9441faae30083380f6200d97\room-runtime-2.2.0\AndroidManifest.xml:26:13-74
-32            android:exported="false" />
-32-->[androidx.room:room-runtime:2.2.0] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\1e99c14c9441faae30083380f6200d97\room-runtime-2.2.0\AndroidManifest.xml:27:13-37
-33
-34        <provider
-34-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\14a502eb64e42adb43f297b05d7981c0\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
-35            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-35-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\14a502eb64e42adb43f297b05d7981c0\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
-36            android:authorities="com.startng.newsapp.lifecycle-process"
-36-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\14a502eb64e42adb43f297b05d7981c0\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
-37            android:exported="false"
-37-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\14a502eb64e42adb43f297b05d7981c0\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
-38            android:multiprocess="true" />
-38-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\14a502eb64e42adb43f297b05d7981c0\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
-39    </application>
-40
-41</manifest>
+21        <activity
+21-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:9-14:57
+22            android:name="com.startng.newsapp.AddNoteActivity"
+22-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:13-44
+23            android:parentActivityName="com.startng.newsapp.MainActivity" />
+23-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:14:13-55
+24        <activity android:name="com.startng.newsapp.HeadlinesActivity" />
+24-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:9-55
+24-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:19-52
+25        <activity
+25-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:16:9-24:20
+26            android:name="com.startng.newsapp.MainActivity"
+26-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:17:13-41
+27            android:launchMode="singleTop" >
+27-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:18:13-43
+28            <intent-filter>
+28-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:19:13-23:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:20:17-69
+29-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:20:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:22:17-77
+31-->C:\Users\Jomoflash\Desktop\statyNg tasks\NewsApp-SNG\app\src\main\AndroidManifest.xml:22:27-74
+32            </intent-filter>
+33        </activity>
+34
+35        <service
+35-->[androidx.room:room-runtime:2.2.0] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\1e99c14c9441faae30083380f6200d97\room-runtime-2.2.0\AndroidManifest.xml:25:9-27:40
+36            android:name="androidx.room.MultiInstanceInvalidationService"
+36-->[androidx.room:room-runtime:2.2.0] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\1e99c14c9441faae30083380f6200d97\room-runtime-2.2.0\AndroidManifest.xml:26:13-74
+37            android:exported="false" />
+37-->[androidx.room:room-runtime:2.2.0] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\1e99c14c9441faae30083380f6200d97\room-runtime-2.2.0\AndroidManifest.xml:27:13-37
+38
+39        <provider
+39-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\14a502eb64e42adb43f297b05d7981c0\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+40            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+40-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\14a502eb64e42adb43f297b05d7981c0\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+41            android:authorities="com.startng.newsapp.lifecycle-process"
+41-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\14a502eb64e42adb43f297b05d7981c0\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+42            android:exported="false"
+42-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\14a502eb64e42adb43f297b05d7981c0\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+43            android:multiprocess="true" />
+43-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Jomoflash\.gradle\caches\transforms-2\files-2.1\14a502eb64e42adb43f297b05d7981c0\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+44    </application>
+45
+46</manifest>

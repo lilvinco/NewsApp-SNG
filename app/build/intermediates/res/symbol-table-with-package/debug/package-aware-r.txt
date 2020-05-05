@@ -1349,8 +1349,10 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_add
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
+drawable ic_close
 drawable ic_edit_black_24dp
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
@@ -1362,6 +1364,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_save
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1459,6 +1462,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btn_add_note
 id buttonPanel
 id cancel_button
 id center
@@ -1485,6 +1489,7 @@ id cut
 id date_picker_actions
 id decor_content_parent
 id default_activity_button
+id delete_all_notes
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1496,6 +1501,8 @@ id direct
 id disableHome
 id dropdown_menu
 id edit_query
+id edit_text_description
+id edit_text_title
 id end
 id enterAlways
 id enterAlwaysCollapsed
@@ -1596,6 +1603,7 @@ id right_icon
 id right_side
 id rounded
 id save_non_transition_alpha
+id save_note
 id save_overlay_view
 id scale
 id screen
@@ -1746,6 +1754,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_note
 layout activity_headlines
 layout activity_main
 layout custom_dialog
@@ -1816,6 +1825,8 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu add_note_menu
+menu main_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
