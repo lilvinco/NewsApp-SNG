@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".EditMainActivity"
             android:parentActivityName= ".HeadlinesActivity"/>
 
     </application>
