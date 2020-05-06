@@ -2,66 +2,101 @@ package com.startng.newsapp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.sip.SipSession;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.DiffUtil;
+import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class HeadlinesAdapter extends RecyclerView.Adapter<HeadlinesAdapter.MyViewHolder> {
-    private String[] mDataset;
-    private Context mContext;
+import java.util.ArrayList;
+import java.util.List;
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
+public class HeadlinesAdapter extends ListAdapter<Note, HeadlinesAdapter.MyViewHolder> {
+    //private String[] mDataset;
+    //private Context mContext;
+    int position;
+    private OnItemClickListener listener;
+
+    public HeadlinesAdapter() {
+        super(DIFF_CALLBACK);
+    }
+    private static final DiffUtil.ItemCallback<Note> DIFF_CALLBACK = new DiffUtil.ItemCallback<Note>() {
+        @Override
+        public boolean areItemsTheSame(@NonNull Note oldItem, @NonNull Note newItem) {
+            return oldItem.getId() == newItem.getId();
+        }
+
+        @Override
+        public boolean areContentsTheSame(@NonNull Note oldItem, @NonNull Note newItem) {
+            return oldItem.getNote().equals(newItem.getNote());
+        }
+    };
+
+    public class MyViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
-        public TextView textView;
+        private TextView noteItemView;
 
 
-        public MyViewHolder(TextView v) {
-            super(v);
-            textView = v;
+        public MyViewHolder(View itemView) {
+            super(itemView);
+            noteItemView = itemView.findViewById(R.id.Textview);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int position = getAdapterPosition();
+                    if (listener != null && position != RecyclerView.NO_POSITION) {
+                        listener.onItemClick(getItem(position));
+                    }
+                }
+            });
         }
     }
 
+    //private final LayoutInflater mInflater;
+    //private List<Note> mNotes = new ArrayList<>();
+    //private List<Note> mWords;
+
     // Provide a suitable constructor (depends on the kind of dataset)
-    public HeadlinesAdapter(Context context, String[] myDataset) {
-        mDataset = myDataset;
-        mContext = context;
-    }
+   /* public HeadlinesAdapter(Context mContext) {
+        mInflater = LayoutInflater.from(mContext);
+    }*/
 
     // Create new views (invoked by the layout manager)
+    @NonNull
     @Override
-    public HeadlinesAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent,
-                                                     int viewType) {
+    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // create a new view
-        TextView v = (TextView) LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.headline_item, parent, false);
-        MyViewHolder vh = new MyViewHolder(v);
-        return vh;
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.headline_item, parent, false);
+        return new MyViewHolder(itemView);
     }
 
-
-    // Replace the contents of a view (invoked by the layout manager)
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
-        // - get element from your dataset at this position
-        // - replace the contents of the view with that element
-        holder.textView.setText(mDataset[position]);
-        holder.textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(mContext, MainActivity.class);
-                intent.putExtra("headline", mDataset[position]);
-                mContext.startActivity(intent);
-            }
-        });
+
+        Note mDataset = getItem(position);
+        holder.noteItemView.setText(mDataset.getNote());
+
     }
 
 
-    // Return the size of your dataset (invoked by the layout manager)
-    @Override
-    public int getItemCount() {
-        return mDataset.length;
+    public Note getNoteAt(int position) {
+        return getItem(position);
     }
+
+    public interface OnItemClickListener {
+        void onItemClick(Note note);
+    }
+
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        this.listener = listener;
+    }
+
 }
