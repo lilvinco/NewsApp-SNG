@@ -14,7 +14,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+import androidx.appcompat.widget.Toolbar;
 
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class HeadlinesActivity extends AppCompatActivity {
@@ -29,6 +31,9 @@ public class HeadlinesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_headlines);
+
+        Toolbar toolbar = findViewById(R.id.toolbar_flexible_space);
+        setSupportActionBar(toolbar);
 
         //the floating action button will add a new note on click
         FloatingActionButton buttonAddNote = findViewById(R.id.button_add_note);
