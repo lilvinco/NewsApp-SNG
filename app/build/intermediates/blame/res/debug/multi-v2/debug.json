@@ -113,6 +113,21 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\values-small-v4_values-small-v4.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\a60e2e126b28fc5d54f106cfd4243af2\\material-1.2.0-alpha06\\res\\values-small-v4\\values-small-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,128,198,270",
+                        "endColumns": "72,69,71,69",
+                        "endOffsets": "123,193,265,335"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\values-is_values-is.arsc.flat",
             "map": [
                 {
@@ -140,21 +155,6 @@
                         "startOffsets": "2859",
                         "endColumns": "100",
                         "endOffsets": "2955"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\values-small-v4_values-small-v4.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\a60e2e126b28fc5d54f106cfd4243af2\\material-1.2.0-alpha06\\res\\values-small-v4\\values-small-v4.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,128,198,270",
-                        "endColumns": "72,69,71,69",
-                        "endOffsets": "123,193,265,335"
                     }
                 }
             ]

@@ -24,24 +24,24 @@
         "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\anim\\btn_checkbox_to_unchecked_box_inner_merged_animation.xml"
     },
     {
-        "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_ripple_color.xml.flat",
-        "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\a60e2e126b28fc5d54f106cfd4243af2\\material-1.2.0-alpha06\\res\\color\\mtrl_tabs_ripple_color.xml"
-    },
-    {
         "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_tooltip_exit.xml.flat",
         "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\anim\\abc_tooltip_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_ripple_color.xml.flat",
+        "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\a60e2e126b28fc5d54f106cfd4243af2\\material-1.2.0-alpha06\\res\\color\\mtrl_tabs_ripple_color.xml"
     },
     {
         "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_test_chip_zero_corner_radius.xml.flat",
         "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\a60e2e126b28fc5d54f106cfd4243af2\\material-1.2.0-alpha06\\res\\layout\\test_chip_zero_corner_radius.xml"
     },
     {
-        "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
-        "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
-    },
-    {
         "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_icon_color_selector.xml.flat",
         "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\a60e2e126b28fc5d54f106cfd4243af2\\material-1.2.0-alpha06\\res\\color\\mtrl_tabs_icon_color_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -64,12 +64,12 @@
         "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\a60e2e126b28fc5d54f106cfd4243af2\\material-1.2.0-alpha06\\res\\color\\mtrl_tabs_icon_color_selector_colored.xml"
     },
     {
-        "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
-        "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
-    },
-    {
         "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\anim_mtrl_bottom_sheet_slide_out.xml.flat",
@@ -80,12 +80,12 @@
         "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg.xml.flat",
-        "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\5628de8801a64985cc88e035c73ed575\\core-1.2.0\\res\\drawable\\notification_bg.xml"
-    },
-    {
         "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_spinner.xml.flat",
         "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\color-v23\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg.xml.flat",
+        "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\5628de8801a64985cc88e035c73ed575\\core-1.2.0\\res\\drawable\\notification_bg.xml"
     },
     {
         "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_checkbox_to_unchecked_icon_null_animation.xml.flat",
@@ -136,12 +136,12 @@
         "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\a60e2e126b28fc5d54f106cfd4243af2\\material-1.2.0-alpha06\\res\\drawable\\mtrl_ic_cancel.xml"
     },
     {
-        "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_cascading_menu_item_layout.xml.flat",
-        "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\layout\\abc_cascading_menu_item_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_item_layout.xml.flat",
         "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_cascading_menu_item_layout.xml.flat",
+        "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\layout\\abc_cascading_menu_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_textfield_search_material.xml.flat",
@@ -240,20 +240,20 @@
         "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\a60e2e126b28fc5d54f106cfd4243af2\\material-1.2.0-alpha06\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
-        "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_bottom_sheet_dialog.xml.flat",
         "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\a60e2e126b28fc5d54f106cfd4243af2\\material-1.2.0-alpha06\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_expanded_menu_layout.xml.flat",
-        "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\layout\\abc_expanded_menu_layout.xml"
+        "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\color_material_slider_halo_color.xml.flat",
         "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\a60e2e126b28fc5d54f106cfd4243af2\\material-1.2.0-alpha06\\res\\color\\material_slider_halo_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_expanded_menu_layout.xml.flat",
+        "source": "C:\\Users\\Slumber Warrior\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
         "merged": "C:\\Users\\Slumber Warrior\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
