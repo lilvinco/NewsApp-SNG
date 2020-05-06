@@ -28,7 +28,6 @@ import java.util.ArrayList;
 public class WelcomeActivity extends AppCompatActivity {
     private static RecyclerView recyclerView;
     private static RecyclerView.Adapter mAdapter;
-    int number;
     private RecyclerView.LayoutManager layoutManager;
     private DrawerLayout drawerLayout;
 
