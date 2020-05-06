@@ -53,7 +53,7 @@ public class DataManager {
             }
         });
 
-        
+
         return myNotes;
     }
 

@@ -1400,6 +1400,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_reminder
 drawable ic_save
 drawable ic_search
+drawable ic_settings
 drawable ic_share
 drawable ic_sort_by
 drawable ic_view_gird
@@ -1502,7 +1503,6 @@ id app_bar_search
 id app_bar_sort
 id async
 id auto
-id backup
 id barrier
 id beginning
 id blocking
@@ -1624,9 +1624,8 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
 id my_recycler_view
-id nav_category
+id nav_view
 id navigation_header_container
-id navigation_view
 id never
 id noScroll
 id none
@@ -1646,7 +1645,6 @@ id password_toggle
 id peekHeight
 id percent
 id pin
-id profile
 id progress_circular
 id progress_horizontal
 id radio
@@ -1730,6 +1728,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -1743,6 +1742,8 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id userEmailTextView
+id userNameTextView
 id view_offset_helper
 id visible
 id wide
@@ -1856,6 +1857,7 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
+layout nav_header
 layout note_item
 layout notification_action
 layout notification_action_tombstone
@@ -1925,11 +1927,13 @@ string action_sort
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
+string category
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string close_navigation_drawer
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
 string common_google_play_services_enable_title
@@ -1997,6 +2001,7 @@ string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string note_title
 string notes
+string open_navigation_drawer
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
