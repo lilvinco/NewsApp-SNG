@@ -1,4 +1,4 @@
-#Mon May 04 17:58:28 WAT 2020
-base.0=C\:\\Users\\ChibuFirst\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Wed May 06 22:24:12 WAT 2020
+base.0=C\:\\Users\\ChibuFirst\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

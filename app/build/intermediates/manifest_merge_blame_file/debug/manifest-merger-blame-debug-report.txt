@@ -15,7 +15,7 @@
 12        android:allowBackup="true"
 12-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.1.0] C:\Users\ChibuFirst\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:18-86
+13-->[androidx.core:core:1.1.0] C:\Users\ChibuFirst\.gradle\caches\transforms-2\files-2.1\34b4ab0d8b65ac74ddd00d45b26dd963\core-1.1.0\AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:icon="@mipmap/ic_launcher"
 15-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:7:9-43
@@ -25,28 +25,47 @@
 17-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:9:9-54
 18        android:supportsRtl="true"
 18-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:10:9-35
-19        android:theme="@style/AppTheme" >
-19-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:11:9-40
-20        <activity
-20-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:9-83
-21            android:name="com.startng.newsapp.MainActivity"
-21-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:19-47
-22            android:label="@string/add_note" />
-22-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:48-80
-23        <activity android:name="com.startng.newsapp.NoteListActivity" >
-23-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:9-19:20
-23-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:19-51
-24            <intent-filter>
-24-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:14:13-18:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:17-69
-25-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:17:17-77
-27-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:17:27-74
-28            </intent-filter>
-29        </activity>
-30    </application>
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:11:9-40
+21        <activity
+21-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:9-83
+22            android:name="com.startng.newsapp.MainActivity"
+22-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:19-47
+23            android:label="@string/add_note" />
+23-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:48-80
+24        <activity android:name="com.startng.newsapp.NoteListActivity" >
+24-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:9-19:20
+24-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:19-51
+25            <intent-filter>
+25-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:14:13-18:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:17-69
+26-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:17:17-77
+28-->C:\Users\ChibuFirst\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:17:27-74
+29            </intent-filter>
+30        </activity>
 31
-32</manifest>
+32        <service
+32-->[androidx.room:room-runtime:2.2.0] C:\Users\ChibuFirst\.gradle\caches\transforms-2\files-2.1\0cae4c316fb8ca3580f4f2a56ad0d22d\room-runtime-2.2.0\AndroidManifest.xml:25:9-27:40
+33            android:name="androidx.room.MultiInstanceInvalidationService"
+33-->[androidx.room:room-runtime:2.2.0] C:\Users\ChibuFirst\.gradle\caches\transforms-2\files-2.1\0cae4c316fb8ca3580f4f2a56ad0d22d\room-runtime-2.2.0\AndroidManifest.xml:26:13-74
+34            android:exported="false" />
+34-->[androidx.room:room-runtime:2.2.0] C:\Users\ChibuFirst\.gradle\caches\transforms-2\files-2.1\0cae4c316fb8ca3580f4f2a56ad0d22d\room-runtime-2.2.0\AndroidManifest.xml:27:13-37
+35
+36        <provider
+36-->[androidx.lifecycle:lifecycle-process:2.2.0-beta01] C:\Users\ChibuFirst\.gradle\caches\transforms-2\files-2.1\499769bd1a62aa8eefa582eb37a5229d\jetified-lifecycle-process-2.2.0-beta01\AndroidManifest.xml:25:9-29:43
+37            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+37-->[androidx.lifecycle:lifecycle-process:2.2.0-beta01] C:\Users\ChibuFirst\.gradle\caches\transforms-2\files-2.1\499769bd1a62aa8eefa582eb37a5229d\jetified-lifecycle-process-2.2.0-beta01\AndroidManifest.xml:26:13-79
+38            android:authorities="com.startng.newsapp.lifecycle-process"
+38-->[androidx.lifecycle:lifecycle-process:2.2.0-beta01] C:\Users\ChibuFirst\.gradle\caches\transforms-2\files-2.1\499769bd1a62aa8eefa582eb37a5229d\jetified-lifecycle-process-2.2.0-beta01\AndroidManifest.xml:27:13-69
+39            android:exported="false"
+39-->[androidx.lifecycle:lifecycle-process:2.2.0-beta01] C:\Users\ChibuFirst\.gradle\caches\transforms-2\files-2.1\499769bd1a62aa8eefa582eb37a5229d\jetified-lifecycle-process-2.2.0-beta01\AndroidManifest.xml:28:13-37
+40            android:multiprocess="true" />
+40-->[androidx.lifecycle:lifecycle-process:2.2.0-beta01] C:\Users\ChibuFirst\.gradle\caches\transforms-2\files-2.1\499769bd1a62aa8eefa582eb37a5229d\jetified-lifecycle-process-2.2.0-beta01\AndroidManifest.xml:29:13-40
+41    </application>
+42
+43</manifest>

@@ -17,13 +17,13 @@ public class NoteListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_note_list);
 
-        recyclerView = findViewById(R.id.recycler_notes);
-        recyclerView.setHasFixedSize(true);
-        layoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(layoutManager);
-        String[] myDataset = getResources().getStringArray(R.array.sports_info);
-        mAdapter = new NoteRecyclerAdapter(this, myDataset);
-        recyclerView.setAdapter(mAdapter);
+//        recyclerView = findViewById(R.id.recycler_notes);
+//        recyclerView.setHasFixedSize(true);
+//        layoutManager = new LinearLayoutManager(this);
+//        recyclerView.setLayoutManager(layoutManager);
+//        String[] myDataset = getResources().getStringArray(R.array.sports_info);
+//        mAdapter = new NoteRecyclerAdapter(this, myDataset);
+//        recyclerView.setAdapter(mAdapter);
 
     }
 
