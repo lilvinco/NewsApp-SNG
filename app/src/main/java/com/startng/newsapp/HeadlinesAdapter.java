@@ -1,67 +1,72 @@
 package com.startng.newsapp;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
 public class HeadlinesAdapter extends RecyclerView.Adapter<HeadlinesAdapter.MyViewHolder> {
-    private String[] mDataset;
-    private Context mContext;
+    private Context context;
+    private  List<Note> list;
+    private  OnNoteItemClick onNoteItemClick;
+    private  LayoutInflater layoutInflater;
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
-        // each data item is just a string in this case
-        public TextView textView;
-
-
-        public MyViewHolder(TextView v) {
-            super(v);
-            textView = v;
-        }
+    public  HeadlinesAdapter(List<Note> list, Context context) {
+        layoutInflater = LayoutInflater.from(context);
+        this.list = list;
+        this.context = context;
+        this.onNoteItemClick = (OnNoteItemClick) context;
     }
 
-    // Provide a suitable constructor (depends on the kind of dataset)
-    public HeadlinesAdapter(Context context, String[] myDataset) {
-        mDataset = myDataset;
-        mContext = context;
-    }
 
     // Create new views (invoked by the layout manager)
     @Override
-    public HeadlinesAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent,
+    public MyViewHolder onCreateViewHolder(ViewGroup parent,
                                                      int viewType) {
         // create a new view
-        TextView v = (TextView) LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.headline_item, parent, false);
-        MyViewHolder vh = new MyViewHolder(v);
-        return vh;
+        View view = layoutInflater.inflate(R.layout.all_noote_list,parent,false);
+        return new MyViewHolder(view);
     }
 
 
     // Replace the contents of a view (invoked by the layout manager)
     @Override
-    public void onBindViewHolder(MyViewHolder holder, final int position) {
+    public void onBindViewHolder(MyViewHolder holder, int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
-        holder.textView.setText(mDataset[position]);
-        holder.textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(mContext, MainActivity.class);
-                intent.putExtra("headline", mDataset[position]);
-                mContext.startActivity(intent);
-            }
-        });
+        holder.textViewHeading.setText(list.get(position).getHeading());
+        holder.textViewBody.setText(list.get(position).getBody());
     }
 
 
     // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
-        return mDataset.length;
+        return list.size();
+    }
+    public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+
+        TextView textViewHeading;
+        TextView textViewBody;
+
+        public MyViewHolder(View itemView) {
+            super(itemView);
+            itemView.setOnClickListener(this);
+            textViewHeading = itemView.findViewById(R.id.item_text);
+            textViewBody = itemView.findViewById(R.id.tv_title);
+        }
+
+        @Override
+        public void onClick(View view) {
+            onNoteItemClick.onNoteClick(getAdapterPosition());
+        }
+    }
+
+    public interface OnNoteItemClick {
+        void onNoteClick(int pos);
     }
 }
