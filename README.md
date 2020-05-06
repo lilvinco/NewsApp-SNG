@@ -10,6 +10,6 @@ This is the images showing all operations in the application
 ![alt text](https://github.com/damade/NewsApp-SNG/blob/master/GmailMailIntent.png)
 ![alt text](https://github.com/damade/NewsApp-SNG/blob/master/HomeMenuBar.png)
 ![alt text](https://github.com/damade/NewsApp-SNG/blob/master/PersonalSentMessage.png)
-![alt text](https://github.com/damade/NewsApp-SNG/blob/master/WhatsAppIntent.png)
+![alt text](https://github.com/damade/NewsApp-SNG/blob/master/WhatsAppShareIntent.png)
 ![alt text](https://github.com/damade/NewsApp-SNG/blob/master/WhatsappSend.png)
 ![alt text](https://github.com/damade/NewsApp-SNG/blob/master/YahooMailIntent.png)
