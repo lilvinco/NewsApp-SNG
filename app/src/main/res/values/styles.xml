@@ -1,11 +1,60 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryVariant</item>
+        <item name="colorAccent">@color/colorSecondary</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Note.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Note.MediumComponent
+        </item>
     </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CourseTitle" parent="@android:style/TextAppearance.Material.Large">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Note.SmallComponent</item>
+    </style>
+
+    <style name="Note" parent="@android:style/TextAppearance.Material.Medium">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Note.SmallComponent</item>
+    </style>
+
+    <style name="Note_time" parent="@android:style/TextAppearance.Material.Medium">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Note.SmallComponent</item>
+    </style>
+
+    <style name="CardView" parent="Theme.MaterialComponents.Light">
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Note.MediumComponent
+        </item>
+    </style>
+
+    <style name="ShapeAppearance.Note.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Note.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="DateStyle" parent="@android:style/TextAppearance.Material.Small">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Note.SmallComponent</item>
+    </style>
+
 
 </resources>
