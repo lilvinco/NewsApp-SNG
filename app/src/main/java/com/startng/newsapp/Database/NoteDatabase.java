@@ -42,7 +42,7 @@ public abstract class NoteDatabase extends RoomDatabase {
         try {
             SimpleDateFormat fmt = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             Date date = fmt.parse(dateStr);
-            SimpleDateFormat fmtOut = new SimpleDateFormat("d/MMM/yy");
+            SimpleDateFormat fmtOut = new SimpleDateFormat("yy/MM/dd");
             return fmtOut.format(date);
         } catch (ParseException e) {
 
@@ -64,10 +64,10 @@ public abstract class NoteDatabase extends RoomDatabase {
         protected Void doInBackground(Void... voids) {
             noteDao.insert(new Note("First Sample",
                     "This is just a sample o, nothing more.",
-                    formatDate("2020-02-21 00:15:42")));
+                    "2020-02-21 00:15:42"));
             noteDao.insert(new Note("Second Sample",
                     "This is the second sample, nothing much also",
-                    formatDate("2020-03-22 00:14:22")));
+                    "2020-03-22 00:14:22"));
             return null;
         }
     }

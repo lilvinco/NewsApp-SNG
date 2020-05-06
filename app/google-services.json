@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "882251400638",
+    "firebase_url": "https://hngnote.firebaseio.com",
+    "project_id": "hngnote",
+    "storage_bucket": "hngnote.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882251400638:android:b7fedbd03bddfc4a42e5ef",
+        "android_client_info": {
+          "package_name": "com.startng.newsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882251400638-igm1io6j34l17k7nk5q88i786li43d3o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.startng.newsapp",
+            "certificate_hash": "76a8aceb57b95df1b8211bd65d4db38d42c29f2e"
+          }
+        },
+        {
+          "client_id": "882251400638-1l2lo83j8aanr15lab06281s68bo0hvn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsfM5-nmNOh1sXgJgJJS5-7WOgBYO32Vg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882251400638-1l2lo83j8aanr15lab06281s68bo0hvn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
