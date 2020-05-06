@@ -28,14 +28,14 @@ public class EditMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Used a toolbar instaed of an action bar
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        //Find the textViews
+        //Find the editTextViews
         editTextTitle = findViewById(R.id.edit_text_title);
         editTextDescription = findViewById(R.id.edit_text_description);
-
 
         Intent intent = getIntent();
 
@@ -54,6 +54,7 @@ public class EditMainActivity extends AppCompatActivity {
         String title = editTextTitle.getText().toString();
         String note = editTextDescription.getText().toString();
 
+        //Done if nothing is inputted in the title and note fields in the app
         if (title.trim().isEmpty() || note.trim().isEmpty()) {
             Toast.makeText(this, "Please insert a title and note", Toast.LENGTH_SHORT).show();
             return;

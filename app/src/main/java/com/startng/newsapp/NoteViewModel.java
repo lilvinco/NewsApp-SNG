@@ -8,6 +8,9 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
+//Gateway between the UI controller and the repository
+/*Extending AndroidViewModel, we handle the application context
+* which we then use to instantiate our RoomDatabase*/
 public class NoteViewModel extends AndroidViewModel {
     private NoteRepository repository;
     private LiveData<List<Note>> allNotes;

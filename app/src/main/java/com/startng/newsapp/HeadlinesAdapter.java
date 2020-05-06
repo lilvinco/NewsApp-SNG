@@ -75,10 +75,7 @@ public class HeadlinesAdapter extends ListAdapter<Note, HeadlinesAdapter.NoteHol
                     }
                 }
             });
-
         }
-
-        ;
     }
 
     //click listener for editing of note on click

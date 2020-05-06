@@ -18,7 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".HeadlinesActivity"
-            android:launchMode="singleTop"/>
+            android:launchMode="singleTop"
+            android:parentActivityName=".HomeActivity"/>
         <activity
             android:name=".EditMainActivity"
             android:parentActivityName=".HeadlinesActivity" />

@@ -32,8 +32,10 @@ public class HeadlinesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_headlines);
 
+        //for the collapsing toolbar
         Toolbar toolbar = findViewById(R.id.toolbar_flexible_space);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //the floating action button will add a new note on click
         FloatingActionButton buttonAddNote = findViewById(R.id.button_add_note);
@@ -60,6 +62,7 @@ public class HeadlinesActivity extends AppCompatActivity {
         noteViewModel = new ViewModelProvider(this).get(NoteViewModel.class);
         noteViewModel.getAllNotes().observe(this, adapter::submitList);
 
+        //swiping action for deleting notes
         new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0,
                 ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
             @Override
@@ -91,6 +94,7 @@ public class HeadlinesActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
+        //creation and updating of the note
         if(requestCode == ADD_NOTE_REQUEST && resultCode == RESULT_OK) {
             String title = data.getStringExtra(EditMainActivity.EXTRA_TITLE);
             String description = data.getStringExtra(EditMainActivity.EXTRA_DESCRIPTION);
@@ -115,7 +119,7 @@ public class HeadlinesActivity extends AppCompatActivity {
 
             noteViewModel.update(note);
         } else {
-            Toast.makeText(this, "Note not saved", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Note could not be saved", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -126,6 +130,7 @@ public class HeadlinesActivity extends AppCompatActivity {
         return true;
     }
 
+    //overflow menu on the second activity
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {

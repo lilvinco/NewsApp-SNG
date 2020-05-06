@@ -11,7 +11,7 @@
 9-->C:\Users\FEJIRO\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\FEJIRO\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:5:5-25:19
+11-->C:\Users\FEJIRO\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:5:5-26:19
 12        android:allowBackup="true"
 12-->C:\Users\FEJIRO\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -45,37 +45,39 @@
 27            </intent-filter>
 28        </activity>
 29        <activity
-29-->C:\Users\FEJIRO\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:20:9-21:45
+29-->C:\Users\FEJIRO\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:20:9-22:57
 30            android:name="com.startng.newsapp.HeadlinesActivity"
 30-->C:\Users\FEJIRO\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:20:19-52
-31            android:launchMode="singleTop" />
+31            android:launchMode="singleTop"
 31-->C:\Users\FEJIRO\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:21:13-43
-32        <activity
-32-->C:\Users\FEJIRO\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:22:9-24:63
-33            android:name="com.startng.newsapp.EditMainActivity"
-33-->C:\Users\FEJIRO\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:23:13-45
-34            android:parentActivityName="com.startng.newsapp.HeadlinesActivity" />
-34-->C:\Users\FEJIRO\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:24:13-60
-35
-36        <service
-36-->[androidx.room:room-runtime:2.2.5] C:\Users\FEJIRO\.gradle\wrapper\dists\gradle-5.6.4\caches\transforms-2\files-2.1\ab2aa51fb16126b41a75dd64b9f4247a\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
-37            android:name="androidx.room.MultiInstanceInvalidationService"
-37-->[androidx.room:room-runtime:2.2.5] C:\Users\FEJIRO\.gradle\wrapper\dists\gradle-5.6.4\caches\transforms-2\files-2.1\ab2aa51fb16126b41a75dd64b9f4247a\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
-38            android:directBootAware="true"
-38-->[androidx.room:room-runtime:2.2.5] C:\Users\FEJIRO\.gradle\wrapper\dists\gradle-5.6.4\caches\transforms-2\files-2.1\ab2aa51fb16126b41a75dd64b9f4247a\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
-39            android:exported="false" />
-39-->[androidx.room:room-runtime:2.2.5] C:\Users\FEJIRO\.gradle\wrapper\dists\gradle-5.6.4\caches\transforms-2\files-2.1\ab2aa51fb16126b41a75dd64b9f4247a\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
-40
-41        <provider
-41-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FEJIRO\.gradle\wrapper\dists\gradle-5.6.4\caches\transforms-2\files-2.1\090434a1b2305b2572c380a8c896bb3c\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
-42            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-42-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FEJIRO\.gradle\wrapper\dists\gradle-5.6.4\caches\transforms-2\files-2.1\090434a1b2305b2572c380a8c896bb3c\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
-43            android:authorities="com.startng.newsapp.lifecycle-process"
-43-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FEJIRO\.gradle\wrapper\dists\gradle-5.6.4\caches\transforms-2\files-2.1\090434a1b2305b2572c380a8c896bb3c\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
-44            android:exported="false"
-44-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FEJIRO\.gradle\wrapper\dists\gradle-5.6.4\caches\transforms-2\files-2.1\090434a1b2305b2572c380a8c896bb3c\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
-45            android:multiprocess="true" />
-45-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FEJIRO\.gradle\wrapper\dists\gradle-5.6.4\caches\transforms-2\files-2.1\090434a1b2305b2572c380a8c896bb3c\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
-46    </application>
-47
-48</manifest>
+32            android:parentActivityName="com.startng.newsapp.HomeActivity" />
+32-->C:\Users\FEJIRO\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:22:13-55
+33        <activity
+33-->C:\Users\FEJIRO\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:23:9-25:63
+34            android:name="com.startng.newsapp.EditMainActivity"
+34-->C:\Users\FEJIRO\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:24:13-45
+35            android:parentActivityName="com.startng.newsapp.HeadlinesActivity" />
+35-->C:\Users\FEJIRO\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:25:13-60
+36
+37        <service
+37-->[androidx.room:room-runtime:2.2.5] C:\Users\FEJIRO\.gradle\wrapper\dists\gradle-5.6.4\caches\transforms-2\files-2.1\ab2aa51fb16126b41a75dd64b9f4247a\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+38            android:name="androidx.room.MultiInstanceInvalidationService"
+38-->[androidx.room:room-runtime:2.2.5] C:\Users\FEJIRO\.gradle\wrapper\dists\gradle-5.6.4\caches\transforms-2\files-2.1\ab2aa51fb16126b41a75dd64b9f4247a\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+39            android:directBootAware="true"
+39-->[androidx.room:room-runtime:2.2.5] C:\Users\FEJIRO\.gradle\wrapper\dists\gradle-5.6.4\caches\transforms-2\files-2.1\ab2aa51fb16126b41a75dd64b9f4247a\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+40            android:exported="false" />
+40-->[androidx.room:room-runtime:2.2.5] C:\Users\FEJIRO\.gradle\wrapper\dists\gradle-5.6.4\caches\transforms-2\files-2.1\ab2aa51fb16126b41a75dd64b9f4247a\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+41
+42        <provider
+42-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FEJIRO\.gradle\wrapper\dists\gradle-5.6.4\caches\transforms-2\files-2.1\090434a1b2305b2572c380a8c896bb3c\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+43            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+43-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FEJIRO\.gradle\wrapper\dists\gradle-5.6.4\caches\transforms-2\files-2.1\090434a1b2305b2572c380a8c896bb3c\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+44            android:authorities="com.startng.newsapp.lifecycle-process"
+44-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FEJIRO\.gradle\wrapper\dists\gradle-5.6.4\caches\transforms-2\files-2.1\090434a1b2305b2572c380a8c896bb3c\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+45            android:exported="false"
+45-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FEJIRO\.gradle\wrapper\dists\gradle-5.6.4\caches\transforms-2\files-2.1\090434a1b2305b2572c380a8c896bb3c\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+46            android:multiprocess="true" />
+46-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FEJIRO\.gradle\wrapper\dists\gradle-5.6.4\caches\transforms-2\files-2.1\090434a1b2305b2572c380a8c896bb3c\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+47    </application>
+48
+49</manifest>

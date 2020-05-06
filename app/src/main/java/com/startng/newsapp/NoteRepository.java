@@ -7,6 +7,7 @@ import java.util.List;
 
 import androidx.lifecycle.LiveData;
 
+//The repository provides a clean API to the ViewModel
 public class NoteRepository {
     private NoteDao noteDao;
     private LiveData<List<Note>> allNotes;
@@ -17,6 +18,8 @@ public class NoteRepository {
         allNotes = noteDao.getAllNotes();
     }
 
+    /*Room doesn't allow database queries on the main thread,
+    * we use AsyncTasks to execute them asynchronously*/
     public void insert(Note note) {
         new InsertNoteAsyncTask(noteDao).execute(note);
     }

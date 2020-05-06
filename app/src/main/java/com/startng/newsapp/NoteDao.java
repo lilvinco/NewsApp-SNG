@@ -9,6 +9,7 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
+//All database operations we want to do on our entity are written here
 @Dao
 public interface NoteDao {
 

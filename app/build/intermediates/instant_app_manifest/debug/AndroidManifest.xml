@@ -29,7 +29,8 @@
         </activity>
         <activity
             android:name="com.startng.newsapp.HeadlinesActivity"
-            android:launchMode="singleTop" />
+            android:launchMode="singleTop"
+            android:parentActivityName="com.startng.newsapp.HomeActivity" />
         <activity
             android:name="com.startng.newsapp.EditMainActivity"
             android:parentActivityName="com.startng.newsapp.HeadlinesActivity" />

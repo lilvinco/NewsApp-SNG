@@ -765,6 +765,7 @@ color bright_foreground_material_dark
 color bright_foreground_material_light
 color button_material_dark
 color button_material_light
+color button_text
 color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
@@ -1380,6 +1381,8 @@ drawable mtrl_ic_error
 drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_dark
 drawable mtrl_tabs_default_indicator
+drawable my_background
+drawable my_button_bg
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -1553,6 +1556,7 @@ id line1
 id line3
 id listMode
 id list_item
+id main_name
 id masked
 id media_actions
 id message
@@ -1586,8 +1590,6 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
 id my_recycler_view
-id nDate
-id nTime
 id navigation_header_container
 id never
 id noScroll
@@ -1657,6 +1659,7 @@ id src_in
 id src_over
 id standard
 id start
+id start_button
 id status_bar_latest_event_content
 id stretch
 id submenuarrow
