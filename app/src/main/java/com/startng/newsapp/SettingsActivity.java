@@ -1,45 +1,42 @@
 package com.startng.newsapp;
 
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.ArrayList;
-
 public class SettingsActivity extends AppCompatActivity {
+
+    private TextView bodyTextView;
+    private TextView titleTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
 
-        Spinner spinnerFonSize = findViewById(R.id.textViewSizeSpinner);
+        titleTextView = findViewById(R.id.textViewTitle);
+        bodyTextView = findViewById(R.id.textViewBody);
 
+        Spinner spinner = findViewById(R.id.textViewSizeSpinner);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                float size = Float.parseFloat(parent.getItemAtPosition(position).toString());
 
-        ArrayList<String> fontSizes = new ArrayList<>();
-        fontSizes.add("12");
-        fontSizes.add("14");
-        fontSizes.add("16");
-        fontSizes.add("18");
-        fontSizes.add("20");
+                titleTextView.setTextSize(size);
+                bodyTextView.setTextSize(size);
+            }
 
-        ArrayAdapter<String> fontSizeAdapter = new ArrayAdapter<>(this, R.layout.activity_setting, fontSizes);
-        fontSizeAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
-        spinnerFonSize.setAdapter(fontSizeAdapter);
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
 
-//        fontSizeSpinnerAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
-//        spinnerFonSize.setAdapter(fontSizeSpinnerAdapter);
-//
-//        Spinner spinner = (Spinner) findViewById(R.id.spinner);
-//// Create an ArrayAdapter using the string array and a default spinner layout
-//        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-//                R.array.planets_array, android.R.layout.simple_spinner_item);
-//// Specify the layout to use when the list of choices appears
-//        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//// Apply the adapter to the spinner
-//        spinner.setAdapter(adapter);
+            }
+        });
 
-    }
+        }
 }
