@@ -97,7 +97,14 @@ public class WelcomeActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-                Toast.makeText(WelcomeActivity.this, item.getTitle(), Toast.LENGTH_SHORT).show();
+                switch (item.getItemId()) {
+                    case R.id.settings:
+                        startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
+                        break;
+
+                    case R.id.createCategory:
+                        break;
+                }
                 return true;
             }
         });

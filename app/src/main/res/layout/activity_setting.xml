@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/textViewFontSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/font_size" />
+
+    <Spinner
+        android:id="@+id/textViewSizeSpinner"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:prompt="@string/font_size"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textViewFontFamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFontSize"
+        android:layout_alignEnd="@id/textViewFontSize"
+        android:layout_alignParentStart="true"
+        android:text="@string/font" />
+
+    <Spinner
+        android:id="@+id/textViewFontFamilySpinner"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:prompt="@string/font"
+        android:layout_below="@id/textViewSizeSpinner"
+        android:layout_alignEnd="@id/textViewFontFamily"
+        android:layout_alignParentEnd="true" />
+
+    <Switch
+        android:id="@+id/switchDarkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFontFamily"
+        android:layout_alignEnd="@id/textViewDarkMode"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textViewDarkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFontFamily"
+        android:text="@string/enable_dark_mode"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+</RelativeLayout>
