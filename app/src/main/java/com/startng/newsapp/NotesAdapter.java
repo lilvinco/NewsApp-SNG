@@ -1,8 +1,7 @@
 package com.startng.newsapp;
 
-import android.content.Intent;
 import android.os.Build;
-import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -16,7 +15,7 @@ import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import static android.text.Layout.JUSTIFICATION_MODE_INTER_WORD;
 
 
-public class NotesAdapter extends FirestoreRecyclerAdapter {
+public class NotesAdapter extends FirestoreRecyclerAdapter<Notes, NotesAdapter.NotesViewHolder> {
 
 
     /**
@@ -30,15 +29,17 @@ public class NotesAdapter extends FirestoreRecyclerAdapter {
     }
 
     @Override
-    protected void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position, @NonNull Object model) {
-
+    protected void onBindViewHolder(@NonNull NotesViewHolder holder, int position, @NonNull Notes model) {
+        holder.setData(model.getNoteTitle(), model.getNoteContent(), position);
     }
 
     @NonNull
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+    public NotesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.note_item, parent, false);
+        return new NotesViewHolder(view);
     }
+
 
     class NotesViewHolder extends RecyclerView.ViewHolder {
 
@@ -58,17 +59,19 @@ public class NotesAdapter extends FirestoreRecyclerAdapter {
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(context.getApplicationContext(),DetailActivity.class);
-                    intent.putExtra(DetailActivity.NOTE_TITLE_TAG, notes.get(currentPosition).getNoteTitle());
-                    intent.putExtra(DetailActivity.NOTE_CONTENT_TAG, notes.get(currentPosition).getNoteContent());
-                    Log.v("MApp", "Position for Detail Activity " + currentPosition);
-                    context.startActivity(intent);
+//                    Intent intent = new Intent(context.getApplicationContext(), DetailActivity.class);
+//                    intent.putExtra(DetailActivity.NOTE_TITLE_TAG, notes.get(currentPosition).getNoteTitle());
+//                    intent.putExtra(DetailActivity.NOTE_CONTENT_TAG, notes.get(currentPosition).getNoteContent());
+//                    Log.v("MApp", "Position for Detail Activity " + currentPosition);
+//                    context.startActivity(intent);
                 }
             });
         }
-        void setData(String title, String content, int position){
+
+        void setData(String title, String content, int position) {
             noteContentTextView.setText(content);
             noteTitleTextView.setText(title);
             currentPosition = position;
         }
+    }
 }
