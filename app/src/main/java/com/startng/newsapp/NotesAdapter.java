@@ -1,5 +1,6 @@
 package com.startng.newsapp;
 
+import android.content.Context;
 import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,8 +19,15 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
     private ArrayList<Notes> notes;
     private LayoutInflater inflater;
 
+    private Context context;
+
     NotesAdapter(ArrayList<Notes> notes){
         this.notes = notes;
+    }
+
+    NotesAdapter(Context context){
+        this.context = context;
+        notes = new ArrayList<>();
     }
 
     void setNotes(ArrayList<Notes> notesArrayList) {

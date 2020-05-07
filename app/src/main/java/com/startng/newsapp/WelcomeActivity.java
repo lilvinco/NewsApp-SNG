@@ -20,14 +20,13 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 
-import java.util.ArrayList;
-
 public class WelcomeActivity extends AppCompatActivity  {
     private RecyclerView recyclerView;
     private NotesAdapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
     private DrawerLayout drawerLayout;
 
+    private 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,14 +56,15 @@ public class WelcomeActivity extends AppCompatActivity  {
     }
 
     private void setUpRecyclerView() {
-        ArrayList<Notes> notes = new ArrayList<>();
-        notes.add(new Notes("Tales", "Boys in the street"));
-        notes.add(new Notes("Tales ver2", "In part 3 of the FirebaseUI Firestore tutorial, we will finally create our FirestoreRecyclerAdapter and display the documents from the Firestore database in our app.\n" +
-                "The FirestoreRecyclerAdapter is a subclass of the normal RecyclerView.Adapter and takes care of"));
+//        ArrayList<Notes> notes = new ArrayList<>();
+//        notes.add(new Notes("Tales", "Boys in the street"));
+//        notes.add(new Notes("Tales ver2", "In part 3 of the FirebaseUI Firestore tutorial, we will finally create our FirestoreRecyclerAdapter and display the documents from the Firestore database in our app.\n" +
+//                "The FirestoreRecyclerAdapter is a subclass of the normal RecyclerView.Adapter and takes care of"));
 
 
-        
-        mAdapter = new NotesAdapter(notes);
+
+        mAdapter = new NotesAdapter(this);
+        mAdapter.setNotes(DataManager.fetchAllNotes);
         //setup recyclerview
         recyclerView = findViewById(R.id.my_recycler_view);
         recyclerView.setHasFixedSize(true);
