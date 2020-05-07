@@ -57,7 +57,6 @@ public class WelcomeActivity extends AppCompatActivity  {
 //        recyclerView.setHasFixedSize(true);
 
         mAdapter = new NotesAdapter(this, notesArrayList);
-        mAdapter.notifyDataSetChanged();
         //Use StaggeredGridLayoutManager
         layoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
@@ -102,6 +101,15 @@ public class WelcomeActivity extends AppCompatActivity  {
                 return true;
             }
         });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        notesArrayList = DataManager.readFromDB();
+        mAdapter = new NotesAdapter(this, notesArrayList);
+        recyclerView.setAdapter(mAdapter);
+
     }
 
     @Override

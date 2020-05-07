@@ -25,13 +25,22 @@ public class DataManager {
 
 
     //TODO: implement writing to DB
-    static void addToDB(Notes note) {
+    static boolean addToDB(Notes note) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-
+        final boolean[] status = {false};
         Map<String, Object> noteMap = new HashMap<>();
         noteMap.put(TITLE_FIELD, note.getNoteTitle());
         noteMap.put(CONTENT_FIELD, note.getNoteContent());
-        db.collection(NOTE_COLLECTIONS).add(noteMap);
+        db.collection(NOTE_COLLECTIONS).add(noteMap).addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
+            @Override
+            public void onComplete(@NonNull Task<DocumentReference> task) {
+                if (task.isSuccessful()){
+                    status[0] = true;
+                }
+            }
+        });
+
+        return status[0];
     }
 
     //TODO: implement reading from DB

@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class DetailActivity extends AppCompatActivity {
     public final static String NOTE_TITLE_TAG = "title";
@@ -81,11 +82,19 @@ public class DetailActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void saveNote(){
+    private void saveNote() {
         String title = titleEditText.getText().toString();
         String content = contentEditText.getText().toString();
 
-        DataManager.addToDB(new Notes(title, content));
-        finish();
+        if (title.length() != 0) {
+            boolean success = DataManager.addToDB(new Notes(title, content));
+
+            if (success) {
+                Toast.makeText(getApplicationContext(), "Added to DB", Toast.LENGTH_SHORT).show();
+            }
+            finish();
+        } else {
+            Toast.makeText(this, "Kindly give a name to the note", Toast.LENGTH_SHORT).show();
+        }
     }
 }
