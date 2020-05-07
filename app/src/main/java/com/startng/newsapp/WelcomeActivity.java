@@ -1,9 +1,9 @@
 package com.startng.newsapp;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -11,35 +11,32 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
-import android.widget.ToggleButton;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
-public class WelcomeActivity extends AppCompatActivity {
-    private static RecyclerView recyclerView;
-    private static RecyclerView.Adapter mAdapter;
+public class WelcomeActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
+    private RecyclerView recyclerView;
+    private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
     private DrawerLayout drawerLayout;
 
-    public static void refreshView() {
+    private ArrayList<Notes> notesArrayList;
 
-        mAdapter.notifyDataSetChanged();
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+
+        notesArrayList = DataManager.readFromDB();
 
         //Setup Toolbar and DrawerLayout
         drawerLayout = findViewById(R.id.drawer_layout);
@@ -59,7 +56,7 @@ public class WelcomeActivity extends AppCompatActivity {
         // in content do not change the layout size of the RecyclerView
 //        recyclerView.setHasFixedSize(true);
 
-        mAdapter = new NotesAdapter(this, DataManager.readFromDB());
+        mAdapter = new NotesAdapter(this, notesArrayList);
         mAdapter.notifyDataSetChanged();
         //Use StaggeredGridLayoutManager
         layoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
@@ -112,6 +109,11 @@ public class WelcomeActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_welcome, menu);
+
+        MenuItem menuItem = findViewById(R.id.app_bar_search);
+        SearchView searchView =(SearchView) menuItem.getActionView();
+        searchView.setOnQueryTextListener(this);
+
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -136,10 +138,26 @@ public class WelcomeActivity extends AppCompatActivity {
                 break;
             case R.id.app_bar_sort:
                 break;
-            case R.id.app_bar_search:
-                break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        return false;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+        ArrayList<Notes> notesList = new ArrayList<>();
+        for (Notes note : notesArrayList) {
+            if (note.getNoteTitle().toLowerCase().contains(newText.toLowerCase()) || note.getNoteContent().toLowerCase().contains(newText.toLowerCase())) {
+                notesList.add(note);
+            }
+        }
+
+        mAdapter.updateList(notesList);
+        return false;
     }
 }
 

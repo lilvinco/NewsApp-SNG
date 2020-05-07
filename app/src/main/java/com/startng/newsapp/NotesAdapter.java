@@ -23,12 +23,18 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
     private ArrayList<Notes> notes;
     private LayoutInflater inflater;
     private Context context;
+    //UPDATE VIEW WITH SEARCH ITEM
 
-
-    public NotesAdapter(Context context, ArrayList<Notes> notes){
+    NotesAdapter(Context context, ArrayList<Notes> notes){
         this.notes = notes;
         this.context = context;
         inflater = LayoutInflater.from(context);
+    }
+
+    public void updateList(ArrayList<Notes> notesArrayList){
+        notes = new ArrayList<Notes>();
+        notes.addAll(notesArrayList);
+        notifyDataSetChanged();
     }
 
     @NonNull
@@ -42,13 +48,8 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
     public void onBindViewHolder(@NonNull NotesViewHolder holder, int position) {
 
         final Notes currentNote = notes.get(position);
-//        holder.noteContentTextView.setText(currentNote.getNoteContent());
-//        holder.noteTitleTextView.setText(currentNote.getNoteTitle());
-//        Log.v("MApp", "Position" + currentPosition);
-
         holder.setData(currentNote.getNoteTitle(), currentNote.getNoteContent(), position);
     }
-
 
     @Override
     public int getItemCount() {
@@ -86,5 +87,6 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
             noteTitleTextView.setText(title);
             currentPosition = position;
         }
+
     }
 }

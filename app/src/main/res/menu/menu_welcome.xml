@@ -8,7 +8,7 @@
         android:icon="@drawable/ic_search"
         android:title="@string/action_search"
         app:actionViewClass="android.widget.SearchView"
-        app:showAsAction="always|withText" />
+        app:showAsAction="always|withText|collapseActionView" />
 
     <item
         android:id="@+id/app_bar_change_view"

@@ -27,9 +27,7 @@ public class SettingsActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 float size = Float.parseFloat(parent.getItemAtPosition(position).toString());
-
-                titleTextView.setTextSize(size);
-                bodyTextView.setTextSize(size);
+                //Todo: implement font size change
             }
 
             @Override
