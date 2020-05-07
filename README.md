@@ -1,0 +1,5 @@
+![dashboard](https://user-images.githubusercontent.com/55540640/81252122-fc06a780-901c-11ea-9849-1f30a687ec9b.PNG)
+![New Note](https://user-images.githubusercontent.com/55540640/81252112-f9a44d80-901c-11ea-896f-c52d59e77e29.PNG)
+![Welcome page](https://user-images.githubusercontent.com/55540640/81252121-fc06a780-901c-11ea-84d1-78f9b24391c9.PNG)
+![sign in page](https://user-images.githubusercontent.com/55540640/81252117-fad57a80-901c-11ea-925f-bcb7b5d433b1.PNG)
+![sign up page](https://user-images.githubusercontent.com/55540640/81252120-fb6e1100-901c-11ea-90d0-00dc45e20b34.PNG)
