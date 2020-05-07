@@ -6,50 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView3"
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:textSize="30sp"
-        android:background="@color/colorPrimary"
-        android:textColor="#FFF"
-        android:textAlignment="center"
-        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/Setofnotes"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:textSize="24sp"
-        android:textAlignment="center"
-        android:text="TextView"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Setofnotes"
+        android:layout_width="417dp"
+        android:layout_height="653dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
-
-        <!--Text view to describe scrollView children-->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="mdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsd"/>
-    </ScrollView>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
