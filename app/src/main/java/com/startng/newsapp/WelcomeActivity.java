@@ -69,7 +69,7 @@ public class WelcomeActivity extends AppCompatActivity  {
         mAdapter = new NotesAdapter(options);
         //setup recyclerview
         recyclerView = findViewById(R.id.my_recycler_view);
-
+        recyclerView.setHasFixedSize(true);
         //Use StaggeredGridLayoutManager
         layoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
