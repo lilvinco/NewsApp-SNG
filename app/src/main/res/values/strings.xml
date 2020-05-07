@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">NewsApp</string>
+    <string name="sign_in">sign_in</string>
+    <string name="sign_in_here">Sign In</string>
+    <string name="register">Register</string>
+    <string name="welcome">Welcome</string>
     <string-array name="sports_info">
         <item>Nike Enters 10-Year </item>
         <item>Indonesia Masters – Saina</item>
