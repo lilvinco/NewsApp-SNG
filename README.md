@@ -3,6 +3,8 @@
 <br><br>
 
 <br>
+Used SQLite DB
+<br>
 
 
 <img src="/img/home.png" width=200 height=350 alt = "welcome activity">
