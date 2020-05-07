@@ -9,8 +9,10 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class HeadlinesAdapter extends RecyclerView.Adapter<HeadlinesAdapter.MyViewHolder> {
-    private String[] mDataset;
+import java.util.List;
+
+public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.MyViewHolder> {
+    private List<String> mDataset;
     private Context mContext;
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
@@ -25,18 +27,20 @@ public class HeadlinesAdapter extends RecyclerView.Adapter<HeadlinesAdapter.MyVi
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public HeadlinesAdapter(Context context, String[] myDataset) {
+    public NotesAdapter(Context context, List<String> myDataset) {
         mDataset = myDataset;
         mContext = context;
     }
 
+
+
     // Create new views (invoked by the layout manager)
     @Override
-    public HeadlinesAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent,
-                                                     int viewType) {
+    public NotesAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent,
+                                                        int viewType) {
         // create a new view
         TextView v = (TextView) LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.headline_item, parent, false);
+                .inflate(R.layout.note_item, parent, false);
         MyViewHolder vh = new MyViewHolder(v);
         return vh;
     }
@@ -47,12 +51,12 @@ public class HeadlinesAdapter extends RecyclerView.Adapter<HeadlinesAdapter.MyVi
     public void onBindViewHolder(MyViewHolder holder, final int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
-        holder.textView.setText(mDataset[position]);
+        holder.textView.setText(mDataset.get(position));
         holder.textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(mContext, MainActivity.class);
-                intent.putExtra("headline", mDataset[position]);
+                Intent intent = new Intent(mContext, NoteEditorActivity.class);
+                intent.putExtra("noteId", position);
                 mContext.startActivity(intent);
             }
         });
@@ -62,6 +66,6 @@ public class HeadlinesAdapter extends RecyclerView.Adapter<HeadlinesAdapter.MyVi
     // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
-        return mDataset.length;
+        return mDataset.size();
     }
 }
