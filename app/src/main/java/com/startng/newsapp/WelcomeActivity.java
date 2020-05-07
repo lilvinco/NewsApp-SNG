@@ -25,8 +25,7 @@ public class WelcomeActivity extends AppCompatActivity  {
     private NotesAdapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
     private DrawerLayout drawerLayout;
-
-    private 
+    private NoteDBHelper databaseHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,9 +61,9 @@ public class WelcomeActivity extends AppCompatActivity  {
 //                "The FirestoreRecyclerAdapter is a subclass of the normal RecyclerView.Adapter and takes care of"));
 
 
-
+        databaseHelper = new NoteDBHelper(this);
         mAdapter = new NotesAdapter(this);
-        mAdapter.setNotes(DataManager.fetchAllNotes);
+        mAdapter.setNotes(DataManager.fetchAllNotes(databaseHelper));
         //setup recyclerview
         recyclerView = findViewById(R.id.my_recycler_view);
         recyclerView.setHasFixedSize(true);
