@@ -59,10 +59,5 @@ public class NoteDatabase extends SQLiteOpenHelper {
         return ID;
 
     }
-    public Note getNote(long id){
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.query(DATABASE_TABLE,new String[](KEY_TITLE,KEY_CONTENT,KEY_DATE,KEY_TIME), selection: KEY_ID+"=?",
-                new String[] (String.valueOf(id)), groupBy: null);
-    };
-    getNote();
+
 }
