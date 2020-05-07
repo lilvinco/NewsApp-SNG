@@ -60,12 +60,12 @@
         "source": "C:\\Users\\Raj\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_save.png"
     },
     {
-        "merged": "C:\\Users\\Raj\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_save.png.flat",
-        "source": "C:\\Users\\Raj\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_save.png"
-    },
-    {
         "merged": "C:\\Users\\Raj\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_search.png.flat",
         "source": "C:\\Users\\Raj\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_search.png"
+    },
+    {
+        "merged": "C:\\Users\\Raj\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_save.png.flat",
+        "source": "C:\\Users\\Raj\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_save.png"
     },
     {
         "merged": "C:\\Users\\Raj\\AndroidStudioProjects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_share.xml.flat",

@@ -3,24 +3,26 @@ package com.startng.newsapp;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
-import android.renderscript.ScriptIntrinsicYuvToRGB;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import static android.text.Layout.JUSTIFICATION_MODE_INTER_WORD;
 
 
-public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHolder> {
+public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHolder> implements Filterable {
 
-    private ArrayList<Notes> notes;
+    private ArrayList<Notes> notes, notesArrayList;
     private LayoutInflater inflater;
     private Context context;
     //UPDATE VIEW WITH SEARCH ITEM
@@ -28,6 +30,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
     NotesAdapter(Context context, ArrayList<Notes> notes){
         this.notes = notes;
         this.context = context;
+        notesArrayList = new ArrayList<>(notes);
         inflater = LayoutInflater.from(context);
     }
 
@@ -55,6 +58,41 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
     public int getItemCount() {
         return notes.size();
     }
+
+    @Override
+    public Filter getFilter() {
+        return notesFilter;
+    }
+
+    private Filter notesFilter = new Filter() {
+        @Override
+        protected FilterResults performFiltering(CharSequence constraint) {
+            List<Notes> filteredList = new ArrayList<Notes>();
+
+            if (constraint == null || constraint.length() == 0){
+                //filteredList.addAll(notesArrayList);
+            } else{
+                String searchPattern = constraint.toString().toLowerCase().trim();
+                for (Notes myNote : notesArrayList){
+                    if (myNote.getNoteTitle().contains(searchPattern)){
+                        filteredList.add(myNote);
+                    }
+                }
+            }
+
+            FilterResults results = new FilterResults();
+            results.values = filteredList;
+
+            return results;
+        }
+
+        @Override
+        protected void publishResults(CharSequence constraint, FilterResults results) {
+            notes.clear();
+            notes.addAll((List<Notes>)results.values);
+            notifyDataSetChanged();
+        }
+    };
 
     class NotesViewHolder extends RecyclerView.ViewHolder {
 

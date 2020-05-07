@@ -1,5 +1,11 @@
 package com.startng.newsapp;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,20 +17,14 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
-public class WelcomeActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
+public class WelcomeActivity extends AppCompatActivity  {
     private RecyclerView recyclerView;
-    private RecyclerView.Adapter mAdapter;
+    private NotesAdapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
     private DrawerLayout drawerLayout;
 
@@ -63,8 +63,6 @@ public class WelcomeActivity extends AppCompatActivity implements SearchView.OnQ
         recyclerView.setLayoutManager(layoutManager);
 
         recyclerView.setAdapter(mAdapter);
-
-
         //button to create new Note
         FloatingActionButton floatingActionButton = findViewById(R.id.fab);
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
@@ -109,10 +107,22 @@ public class WelcomeActivity extends AppCompatActivity implements SearchView.OnQ
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_welcome, menu);
+//
+        //MenuItem menuItem = findViewById(R.id.app_bar_search);
+        SearchView searchView =(SearchView) menu.findItem(R.id.app_bar_search).getActionView();
 
-        MenuItem menuItem = findViewById(R.id.app_bar_search);
-        SearchView searchView =(SearchView) menuItem.getActionView();
-        searchView.setOnQueryTextListener(this);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                //mAdapter.getFilter().filter(newText);
+                return false;
+            }
+        });
 
         return super.onCreateOptionsMenu(menu);
     }
@@ -142,22 +152,6 @@ public class WelcomeActivity extends AppCompatActivity implements SearchView.OnQ
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    public boolean onQueryTextSubmit(String query) {
-        return false;
-    }
 
-    @Override
-    public boolean onQueryTextChange(String newText) {
-        ArrayList<Notes> notesList = new ArrayList<>();
-        for (Notes note : notesArrayList) {
-            if (note.getNoteTitle().toLowerCase().contains(newText.toLowerCase()) || note.getNoteContent().toLowerCase().contains(newText.toLowerCase())) {
-                notesList.add(note);
-            }
-        }
-
-        mAdapter.updateList(notesList);
-        return false;
-    }
 }
 

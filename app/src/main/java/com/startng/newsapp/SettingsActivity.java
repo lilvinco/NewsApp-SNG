@@ -19,8 +19,8 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
 
-        titleTextView = findViewById(R.id.textViewTitle);
-        bodyTextView = findViewById(R.id.textViewBody);
+//        titleTextView = findViewById(R.id.textViewTitle);
+//        bodyTextView = findViewById(R.id.textViewBody);
 
         Spinner spinner = findViewById(R.id.textViewSizeSpinner);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
