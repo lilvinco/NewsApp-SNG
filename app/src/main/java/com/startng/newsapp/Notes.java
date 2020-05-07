@@ -3,7 +3,10 @@ package com.startng.newsapp;
 public class Notes {
     private String noteTitle;
     private String noteContent;
-    private Long timeMillSeconds;
+
+    public Notes(){
+        
+    }
 
     public Notes(String noteTitle, String noteContent){
         this.noteContent = noteContent;
@@ -26,11 +29,4 @@ public class Notes {
         this.noteContent = noteContent;
     }
 
-    public Long getTimeMillSeconds() {
-        return timeMillSeconds;
-    }
-
-    public void setTimeMillSeconds(Long timeMillSeconds) {
-        this.timeMillSeconds = timeMillSeconds;
-    }
 }
