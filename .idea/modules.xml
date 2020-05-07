@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/NewsApp.iml" filepath="$PROJECT_DIR$/NewsApp.iml" group="NewsApp" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/NewsApp-SNG.iml" filepath="$PROJECT_DIR$/.idea/NewsApp-SNG.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="NewsApp/app" />
     </modules>
   </component>

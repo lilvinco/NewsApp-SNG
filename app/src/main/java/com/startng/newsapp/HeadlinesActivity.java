@@ -1,48 +1,108 @@
 package com.startng.newsapp;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.PopupMenu;
+import android.widget.Toast;
 
-public class HeadlinesActivity extends AppCompatActivity {
-    private RecyclerView recyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager layoutManager;
-    int number;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.io.Serializable;
+import java.util.List;
+
+public class HeadlinesActivity extends AppCompatActivity implements UpdateInteraction {
+
+    private NotesViewModel mWordViewModel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_headlines);
 
-
-        recyclerView = findViewById(R.id.my_recycler_view);
+        RecyclerView recyclerView = findViewById(R.id.my_recycler_view);
 
         // use this setting to improve performance if you know that changes
         // in content do not change the layout size of the RecyclerView
         recyclerView.setHasFixedSize(true);
 
         // use a linear layout manager
-        layoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         // specify an adapter (see also next example)
-        String[] myDataset = getResources().getStringArray(R.array.sports_info);
-        mAdapter = new HeadlinesAdapter(this, myDataset);
+        HeadlinesAdapter mAdapter = new HeadlinesAdapter(this, this);
         recyclerView.setAdapter(mAdapter);
 
+        mWordViewModel = new ViewModelProvider(this).get((NotesViewModel.class));
+        // Update the cached copy of the words in the adapter.
+        mWordViewModel.getNoteBooks().observe(this, mAdapter::setNoteBook);
+
+
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(view -> {
+            Intent intent = new Intent(HeadlinesActivity.this, MainActivity.class);
+            startActivityForResult(intent, NEW_WORD_ACTIVITY_REQUEST_CODE);
+        });
     }
 
-   /* public void addNumber(View view) {
+    /* public void addNumber(View view) {
         number++;
         TextView textView = findViewById(R.id.numbertextView);
         textView.setText(String.valueOf(number));
     }*/
+    public static final int NEW_WORD_ACTIVITY_REQUEST_CODE = 1;
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode != NEW_WORD_ACTIVITY_REQUEST_CODE && resultCode != RESULT_OK) {
+            Toast.makeText(
+                    getApplicationContext(),
+                    "Empty: Not Saved",
+                    Toast.LENGTH_LONG).show();
+        }
+    }
+
+    @Override
+    public void onNewActivity(NoteBook noteBookList) {
+        Intent intent1 = new Intent(this, MainActivity.class);
+        intent1.putExtra("stuff", (Serializable) noteBookList);
+        startActivity(intent1);
+    }
+
+    @Override
+    public void deleteRow(NoteBook deleteNote) {
+        mWordViewModel.delete(deleteNote);
+    }
+
+    @Override
+    public void deleteRow2(NoteBook... deleteNote) {
+        mWordViewModel.delete2();
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.delete_all_options, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case R.id.delete_all:
+                mWordViewModel.clearTable();
+            case R.id.add_note:
+                Intent intent = new Intent(HeadlinesActivity.this, MainActivity.class);
+                startActivityForResult(intent, NEW_WORD_ACTIVITY_REQUEST_CODE);
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }
 
