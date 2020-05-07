@@ -17,8 +17,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
+import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
 
 import java.util.ArrayList;
 
@@ -30,6 +34,8 @@ public class WelcomeActivity extends AppCompatActivity  {
 
     private ArrayList<Notes> notesArrayList;
 
+    private FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private CollectionReference docRef = db.collection(DataManager.NOTE_COLLECTIONS);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,21 +53,10 @@ public class WelcomeActivity extends AppCompatActivity  {
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open_navigation_drawer, R.string.close_navigation_drawer);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+
         setNavigationDrawer();
 
-        //setup recyclerview
-        recyclerView = findViewById(R.id.my_recycler_view);
-
-        // use this setting to improve performance if you know that changes
-        // in content do not change the layout size of the RecyclerView
-//        recyclerView.setHasFixedSize(true);
-
-        mAdapter = new NotesAdapter(this, notesArrayList);
-        //Use StaggeredGridLayoutManager
-        layoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
-        recyclerView.setLayoutManager(layoutManager);
-
-        recyclerView.setAdapter(mAdapter);
+        setUpRecyclerView();
         //button to create new Note
         FloatingActionButton floatingActionButton = findViewById(R.id.fab);
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
@@ -70,6 +65,33 @@ public class WelcomeActivity extends AppCompatActivity  {
                 startActivity(new Intent(WelcomeActivity.this, DetailActivity.class));
             }
         });
+    }
+
+    private void setUpRecyclerView() {
+        Query query = docRef.orderBy(DataManager.TITLE_FIELD, Query.Direction.DESCENDING);
+        FirestoreRecyclerOptions options = new FirestoreRecyclerOptions.Builder<Notes>()
+                .setQuery(query, Notes.class)
+                .build();
+        mAdapter = new NotesAdapter(options);
+        //setup recyclerview
+        recyclerView = findViewById(R.id.my_recycler_view);
+
+        //Use StaggeredGridLayoutManager
+        layoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(mAdapter);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        mAdapter.startListening();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mAdapter.stopListening();
     }
 
     @Override
@@ -103,14 +125,6 @@ public class WelcomeActivity extends AppCompatActivity  {
         });
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        notesArrayList = DataManager.readFromDB();
-        mAdapter = new NotesAdapter(this, notesArrayList);
-        recyclerView.setAdapter(mAdapter);
-
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

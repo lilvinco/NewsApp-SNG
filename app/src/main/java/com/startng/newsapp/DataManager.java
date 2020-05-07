@@ -18,10 +18,10 @@ import java.util.Map;
 import java.util.Objects;
 
 public class DataManager {
-    private final static String NOTE_COLLECTIONS = "Notes";
+    public final static String NOTE_COLLECTIONS = "Notes";
 
-    private final static String TITLE_FIELD = "Title";
-    private final static String CONTENT_FIELD = "Content";
+    public final static String TITLE_FIELD = "Title";
+    public final static String CONTENT_FIELD = "Content";
 
 
     //TODO: implement writing to DB
