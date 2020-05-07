@@ -17,21 +17,16 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
-import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
-import com.google.firebase.firestore.CollectionReference;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.Query;
+
+import java.util.ArrayList;
 
 public class WelcomeActivity extends AppCompatActivity  {
     private RecyclerView recyclerView;
     private NotesAdapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
     private DrawerLayout drawerLayout;
-
-    private FirebaseFirestore db = FirebaseFirestore.getInstance();
-    private CollectionReference notesRef = db.collection(DataManager.NOTE_COLLECTIONS);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,11 +57,14 @@ public class WelcomeActivity extends AppCompatActivity  {
     }
 
     private void setUpRecyclerView() {
-        Query query = notesRef.orderBy(DataManager.TITLE_FIELD, Query.Direction.DESCENDING);
-        FirestoreRecyclerOptions<Notes> options = new FirestoreRecyclerOptions.Builder<Notes>()
-                .setQuery(query, Notes.class)
-                .build();
-        mAdapter = new NotesAdapter(options);
+        ArrayList<Notes> notes = new ArrayList<>();
+        notes.add(new Notes("Tales", "Boys in the street"));
+        notes.add(new Notes("Tales ver2", "In part 3 of the FirebaseUI Firestore tutorial, we will finally create our FirestoreRecyclerAdapter and display the documents from the Firestore database in our app.\n" +
+                "The FirestoreRecyclerAdapter is a subclass of the normal RecyclerView.Adapter and takes care of"));
+
+
+        
+        mAdapter = new NotesAdapter(notes);
         //setup recyclerview
         recyclerView = findViewById(R.id.my_recycler_view);
         recyclerView.setHasFixedSize(true);
@@ -74,18 +72,6 @@ public class WelcomeActivity extends AppCompatActivity  {
         layoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(mAdapter);
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        mAdapter.startListening();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        mAdapter.stopListening();
     }
 
     @Override

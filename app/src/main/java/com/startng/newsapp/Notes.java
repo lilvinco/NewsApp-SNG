@@ -1,11 +1,14 @@
 package com.startng.newsapp;
 
 public class Notes {
+    private int ID;
     private String noteTitle;
     private String noteContent;
 
-    public Notes(){
-
+    public Notes(int ID, String noteTitle, String noteContent){
+        this.noteTitle = noteTitle;
+        this.noteContent = noteContent;
+        this.ID = ID;
     }
 
     public Notes(String noteTitle, String noteContent){
@@ -21,4 +24,7 @@ public class Notes {
         return noteContent;
     }
 
+    public int getID() {
+        return ID;
+    }
 }

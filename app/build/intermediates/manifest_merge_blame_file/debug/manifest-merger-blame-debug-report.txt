@@ -14,112 +14,58 @@
 11-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:5:5-67
 11-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:5:22-64
 12
-13    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-14    <!-- <uses-sdk android:minSdkVersion="14"/> -->
-15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-15-->[com.google.firebase:firebase-database:19.3.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\a858482f0d85511048b88d680e761880\jetified-firebase-database-19.3.0\AndroidManifest.xml:25:5-79
-15-->[com.google.firebase:firebase-database:19.3.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\a858482f0d85511048b88d680e761880\jetified-firebase-database-19.3.0\AndroidManifest.xml:25:22-76
-16
-17    <application
-17-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:7:5-32:19
-18        android:name="androidx.multidex.MultiDexApplication"
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.1.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\bcfc0b80df78591183083cc148e1cf2c\core-1.1.0\AndroidManifest.xml:24:18-86
-20        android:debuggable="true"
-21        android:icon="@mipmap/ic_launcher"
-21-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:8:9-43
-22        android:label="@string/app_name"
-22-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:9:9-41
-23        android:roundIcon="@mipmap/ic_launcher_round"
-23-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:10:9-54
-24        android:supportsRtl="true"
-24-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:11:9-35
-25        android:theme="@style/AppTheme" >
-25-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:9-40
-26        <activity android:name="com.startng.newsapp.SettingsActivity" />
-26-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:9-63
-26-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:19-51
-27        <activity
-27-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:14:9-21:20
-28            android:name="com.startng.newsapp.DetailActivity"
-28-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:13-43
-29            android:label=""
-29-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:16:13-29
-30            android:parentActivityName="com.startng.newsapp.WelcomeActivity" >
-30-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:17:13-58
-31            <meta-data
-31-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:18:13-20:52
-32                android:name="android.support.PARENT_ACTIVITY"
-32-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:19:17-63
-33                android:value=".WelcomeActivity" />
-33-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:20:17-49
-34        </activity>
-35        <activity
-35-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:22:9-30:20
-36            android:name="com.startng.newsapp.WelcomeActivity"
-36-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:23:13-44
-37            android:theme="@style/AppTheme.NoActionBar" >
-37-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:24:13-56
-38            <intent-filter>
-38-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:25:13-29:29
-39                <action android:name="android.intent.action.MAIN" />
-39-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:26:17-69
-39-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:26:25-66
-40
-41                <category android:name="android.intent.category.LAUNCHER" />
-41-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:28:17-77
-41-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:28:27-74
-42            </intent-filter>
-43        </activity>
-44
-45        <service
-45-->[com.google.firebase:firebase-database:19.3.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\a858482f0d85511048b88d680e761880\jetified-firebase-database-19.3.0\AndroidManifest.xml:29:9-35:19
-46            android:name="com.google.firebase.components.ComponentDiscoveryService"
-46-->[com.google.firebase:firebase-database:19.3.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\a858482f0d85511048b88d680e761880\jetified-firebase-database-19.3.0\AndroidManifest.xml:30:13-84
-47            android:directBootAware="true"
-47-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
-48            android:exported="false" >
-48-->[com.google.firebase:firebase-database:19.3.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\a858482f0d85511048b88d680e761880\jetified-firebase-database-19.3.0\AndroidManifest.xml:31:13-37
-49            <meta-data
-49-->[com.google.firebase:firebase-database:19.3.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\a858482f0d85511048b88d680e761880\jetified-firebase-database-19.3.0\AndroidManifest.xml:32:13-34:85
-50                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-50-->[com.google.firebase:firebase-database:19.3.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\a858482f0d85511048b88d680e761880\jetified-firebase-database-19.3.0\AndroidManifest.xml:33:17-109
-51                android:value="com.google.firebase.components.ComponentRegistrar" />
-51-->[com.google.firebase:firebase-database:19.3.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\a858482f0d85511048b88d680e761880\jetified-firebase-database-19.3.0\AndroidManifest.xml:34:17-82
-52            <meta-data
-52-->[com.google.firebase:firebase-firestore:21.4.3] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\1dc1d8b46e8da592d1f149b8329b2922\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:20:13-22:85
-53                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-53-->[com.google.firebase:firebase-firestore:21.4.3] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\1dc1d8b46e8da592d1f149b8329b2922\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:21:17-111
-54                android:value="com.google.firebase.components.ComponentRegistrar" />
-54-->[com.google.firebase:firebase-firestore:21.4.3] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\1dc1d8b46e8da592d1f149b8329b2922\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:22:17-82
-55        </service>
-56
-57        <activity
-57-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\2be5ef2959ea5355d833f1cf7554bfda\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-58            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-58-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\2be5ef2959ea5355d833f1cf7554bfda\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-59            android:exported="false"
-59-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\2be5ef2959ea5355d833f1cf7554bfda\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-60            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-60-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\2be5ef2959ea5355d833f1cf7554bfda\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-61
-62        <provider
-62-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
-63            android:name="com.google.firebase.provider.FirebaseInitProvider"
-63-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
-64            android:authorities="com.startng.newsapp.firebaseinitprovider"
-64-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
-65            android:exported="false"
-65-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
-66            android:initOrder="100" />
-66-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
-67
-68        <meta-data
-68-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\164bb505b81f338baa0db13edd04c1d1\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-69            android:name="com.google.android.gms.version"
-69-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\164bb505b81f338baa0db13edd04c1d1\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-70            android:value="@integer/google_play_services_version" />
-70-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\164bb505b81f338baa0db13edd04c1d1\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-71    </application>
-72
-73</manifest>
+13    <application
+13-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:7:5-32:19
+14        android:name="androidx.multidex.MultiDexApplication"
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.1.0] C:\Users\Raj\.gradle\caches\transforms-2\files-2.1\bcfc0b80df78591183083cc148e1cf2c\core-1.1.0\AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:8:9-43
+18        android:label="@string/app_name"
+18-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:9:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:10:9-54
+20        android:supportsRtl="true"
+20-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:11:9-35
+21        android:testOnly="true"
+22        android:theme="@style/AppTheme" >
+22-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:9-40
+23        <activity android:name="com.startng.newsapp.SettingsActivity" />
+23-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:9-63
+23-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:19-51
+24        <activity
+24-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:14:9-21:20
+25            android:name="com.startng.newsapp.DetailActivity"
+25-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:13-43
+26            android:label=""
+26-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:16:13-29
+27            android:parentActivityName="com.startng.newsapp.WelcomeActivity" >
+27-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:17:13-58
+28            <meta-data
+28-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:18:13-20:52
+29                android:name="android.support.PARENT_ACTIVITY"
+29-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:19:17-63
+30                android:value=".WelcomeActivity" />
+30-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:20:17-49
+31        </activity>
+32        <activity
+32-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:22:9-30:20
+33            android:name="com.startng.newsapp.WelcomeActivity"
+33-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:23:13-44
+34            android:theme="@style/AppTheme.NoActionBar" >
+34-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:24:13-56
+35            <intent-filter>
+35-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:25:13-29:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:26:17-69
+36-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:26:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:28:17-77
+38-->C:\Users\Raj\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:28:27-74
+39            </intent-filter>
+40        </activity>
+41    </application>
+42
+43</manifest>

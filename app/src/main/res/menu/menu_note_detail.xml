@@ -19,7 +19,6 @@
         android:title="@string/action_reminder"
         android:icon="@drawable/ic_reminder"
         android:orderInCategory="10"
-        android:onClick="createNotification"
         app:showAsAction="never|withText" />
 
     <item android:id="@+id/delete"

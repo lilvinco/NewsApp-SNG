@@ -1,69 +1,82 @@
 package com.startng.newsapp;
 
-import android.os.Build;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
-
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.QuerySnapshot;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
+
+import static com.startng.newsapp.NoteDBContract.*;
 
 public class DataManager {
-    public final static String NOTE_COLLECTIONS = "Notes";
 
-    public final static String TITLE_FIELD = "Title";
-    public final static String CONTENT_FIELD = "Content";
+    public static ArrayList<Notes> fetchAllNotes(NoteDBHelper helper) {
+        ArrayList<Notes> notes = new ArrayList<>();
+        SQLiteDatabase database = helper.getWritableDatabase();
+
+        String[] columns = {NoteEntry.COLUMN_ID,
+                NoteEntry.COLUMN_TITLE,
+                NoteEntry.COLUMN_CONTENT};
+
+        Cursor cursor = database.query(
+                NoteEntry.TABLE_NAME,
+                columns,
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+
+        int positionID = cursor.getColumnIndex(NoteEntry.COLUMN_ID);
+        int positionTitle = cursor.getColumnIndex(NoteEntry.COLUMN_TITLE);
+        int positionContent = cursor.getColumnIndex(NoteEntry.COLUMN_CONTENT);
 
 
-    //TODO: implement writing to DB
-    static boolean addToDB(Notes note) {
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
-        final boolean[] status = {false};
-        Map<String, Object> noteMap = new HashMap<>();
-        noteMap.put(TITLE_FIELD, note.getNoteTitle());
-        noteMap.put(CONTENT_FIELD, note.getNoteContent());
-        db.collection(NOTE_COLLECTIONS).add(noteMap).addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
-            @Override
-            public void onComplete(@NonNull Task<DocumentReference> task) {
-                if (task.isSuccessful()){
-                    status[0] = true;
-                }
-            }
-        });
+        while (cursor.moveToNext()) {
+            int ID = cursor.getInt(positionID);
+            String title = cursor.getString(positionTitle);
+            String content = cursor.getString(positionContent);
 
-        return status[0];
+            notes.add(new Notes(ID, title, content));
+        }
+        cursor.close();
+        return notes;
     }
 
-    //TODO: implement reading from DB
-    static ArrayList<Notes> readFromDB() {
-        final ArrayList<Notes> myNotes = new ArrayList<>();
+    public static Notes fetchEmployee(NoteDBHelper helper, int noteID) {
+        SQLiteDatabase database = helper.getWritableDatabase();
+        Notes notes = null;
+        String[] columns = {NoteEntry.COLUMN_ID,
+                NoteEntry.COLUMN_TITLE,
+                NoteEntry.COLUMN_CONTENT};
 
-        FirebaseFirestore.getInstance().collection(NOTE_COLLECTIONS).get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-            @Override
-            public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                if (task.isSuccessful()) {
-                    for (DocumentSnapshot documentSnapshot : Objects.requireNonNull(task.getResult())) {
-                        String title = Objects.requireNonNull(documentSnapshot.get(TITLE_FIELD)).toString();
-                        String content = Objects.requireNonNull(documentSnapshot.get(CONTENT_FIELD)).toString();
+        String selection = NoteEntry.COLUMN_ID + " LIKE ?";
+        String[] selectionArgs = {String.valueOf(noteID)};
 
-                        myNotes.add(new Notes(title, content));
-                    }
-                }
-            }
-        });
+        Cursor cursor = database.query(
+                NoteEntry.TABLE_NAME,
+                columns,
+                selection,
+                selectionArgs,
+                null,
+                null,
+                null
+        );
+
+        int positionID = cursor.getColumnIndex(NoteEntry.COLUMN_ID);
+        int positionTitle = cursor.getColumnIndex(NoteEntry.COLUMN_TITLE);
+        int positionContent = cursor.getColumnIndex(NoteEntry.COLUMN_CONTENT);
 
 
-        return myNotes;
+        while (cursor.moveToNext()) {
+            int ID = cursor.getInt(positionID);
+            String title = cursor.getString(positionTitle);
+            String content = cursor.getString(positionContent);
+
+            notes = new Notes(ID, title, content);
+        }
+        cursor.close();
+        return notes;
     }
 
 

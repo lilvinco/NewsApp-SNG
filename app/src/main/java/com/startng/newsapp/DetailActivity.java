@@ -1,6 +1,8 @@
 package com.startng.newsapp;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,12 +13,17 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import static com.startng.newsapp.NoteDBContract.NoteEntry;
+
 public class DetailActivity extends AppCompatActivity {
     public final static String NOTE_TITLE_TAG = "title";
     public final static String NOTE_CONTENT_TAG = "body";
 
     private EditText titleEditText;
     private EditText contentEditText;
+
+    private NoteDBHelper databaseHelper;
+    private SQLiteDatabase database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,15 +94,21 @@ public class DetailActivity extends AppCompatActivity {
         String content = contentEditText.getText().toString();
 
         if (title.length() != 0) {
-            boolean success = DataManager.addToDB(new Notes(title, content));
+            databaseHelper = new NoteDBHelper(this);
+            database = databaseHelper.getWritableDatabase();
 
-            if (success) {
-                Toast.makeText(getApplicationContext(), "Added to DB", Toast.LENGTH_SHORT).show();
+            ContentValues contentValues = new ContentValues();
+            contentValues.put(NoteEntry.COLUMN_CONTENT, content);
+            contentValues.put(NoteEntry.COLUMN_TITLE, title);
+
+            long insert = database.insert(NoteEntry.TABLE_NAME, null, contentValues);
+            if (insert > 0) {
+                Toast.makeText(getApplicationContext(), "Added to DB :" + insert, Toast.LENGTH_SHORT).show();
             }
             finish();
         } else {
-            Toast.makeText(this, "Kindly give a name to the note", Toast.LENGTH_SHORT).show();
+            titleEditText.setError("Required Field");
         }
     }
 
-    }
+}

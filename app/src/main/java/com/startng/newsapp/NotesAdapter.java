@@ -1,6 +1,5 @@
 package com.startng.newsapp;
 
-import android.content.Context;
 import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,24 +15,34 @@ import static android.text.Layout.JUSTIFICATION_MODE_INTER_WORD;
 
 public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHolder> {
 
-    private ArrayList<Notes> notes, notesArrayList;
+    private ArrayList<Notes> notes;
     private LayoutInflater inflater;
-    private Context context;
+
+    NotesAdapter(ArrayList<Notes> notes){
+        this.notes = notes;
+    }
+
+    void setNotes(ArrayList<Notes> notesArrayList) {
+        notes = notesArrayList;
+        notifyDataSetChanged();
+    }
 
     @NonNull
     @Override
     public NotesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.note_item, parent, false);
+        return new NotesViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull NotesViewHolder holder, int position) {
-
+        final Notes currentNote = notes.get(position);
+        holder.setData(currentNote.getNoteTitle(), currentNote.getNoteContent(), position);
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return notes.size();
     }
 
     class NotesViewHolder extends RecyclerView.ViewHolder {
