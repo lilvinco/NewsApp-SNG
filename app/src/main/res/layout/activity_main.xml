@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> app commit
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     tools:context=".MainActivity">
 
     <TextView
@@ -53,3 +58,31 @@
             android:text="mdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsd"/>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
+=======
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+    <EditText
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type your note"/>
+
+
+    </ScrollView>
+
+
+    <Button
+        android:background="@drawable/savenote"
+        android:id="@+id/savedBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+</LinearLayout>
+>>>>>>> app commit
