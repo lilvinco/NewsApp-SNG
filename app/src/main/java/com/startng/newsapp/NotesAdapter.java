@@ -1,6 +1,7 @@
 package com.startng.newsapp;
 
 import android.os.Build;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,6 +32,7 @@ public class NotesAdapter extends FirestoreRecyclerAdapter<Notes, NotesAdapter.N
     @Override
     protected void onBindViewHolder(@NonNull NotesViewHolder holder, int position, @NonNull Notes model) {
         //holder.setData(model.getNoteTitle(), model.getNoteContent(), position);
+        Log.v("MyApp", ""+model.getNoteTitle());
         holder.noteTitleTextView.setText(model.getNoteTitle());
         holder.noteContentTextView.setText(model.getNoteContent());
     }
@@ -43,7 +45,7 @@ public class NotesAdapter extends FirestoreRecyclerAdapter<Notes, NotesAdapter.N
     }
 
 
-    class NotesViewHolder extends RecyclerView.ViewHolder {
+    static class NotesViewHolder extends RecyclerView.ViewHolder {
 
         TextView noteTitleTextView;
         TextView noteContentTextView;
