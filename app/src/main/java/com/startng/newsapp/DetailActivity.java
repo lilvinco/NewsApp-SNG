@@ -1,15 +1,15 @@
 package com.startng.newsapp;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class DetailActivity extends AppCompatActivity {
     public final static String NOTE_TITLE_TAG = "title";
@@ -97,4 +97,5 @@ public class DetailActivity extends AppCompatActivity {
             Toast.makeText(this, "Kindly give a name to the note", Toast.LENGTH_SHORT).show();
         }
     }
-}
+
+    }
