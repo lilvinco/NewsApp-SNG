@@ -1,0 +1,178 @@
+[
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_save_black_24dp.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\drawable\\ic_save_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\menu_nav_menu.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\menu\\nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_black_24dp.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\drawable\\ic_add_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_up.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\anim\\slide_up.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_note_view_layout.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\layout\\note_view_layout.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_sync_black_24dp.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\drawable\\ic_sync_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_note.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\layout\\activity_add_note.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cover.jpg.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\drawable\\cover.jpg"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\layout\\nav_header.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_note_details.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\layout\\activity_note_details.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\menu_close_menu.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\menu\\close_menu.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_main.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\layout\\content_main.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_edit_black_24dp.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\drawable\\ic_edit_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_note_details.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\layout\\content_note_details.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_event_note_black_24dp.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\drawable\\ic_event_note_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_circle_black_24dp.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\drawable\\ic_add_circle_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_vpn_key_black_24dp.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\drawable\\ic_vpn_key_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_add_note.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\layout\\content_add_note.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_more_vert_black_24dp.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\drawable\\ic_more_vert_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_share_black_24dp.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\drawable\\ic_share_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_down.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\anim\\slide_down.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mode_edit_black_24dp.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\drawable\\ic_mode_edit_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_edit_note.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\layout\\activity_edit_note.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_star_half_black_24dp.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\drawable\\ic_star_half_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_close_black_24dp.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\drawable\\ic_close_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\menu_option_menu.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\menu\\option_menu.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Android_Projects\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Android_Projects\\NewsApp-SNG\\app\\src\\main\\res\\layout\\activity_login.xml"
+    }
+]
