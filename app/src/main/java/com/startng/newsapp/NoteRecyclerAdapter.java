@@ -1,54 +1,116 @@
 package com.startng.newsapp;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class NoteRecyclerAdapter extends RecyclerView.Adapter<NoteRecyclerAdapter.MyViewHolder> {
-    private String[] mDataset;
+import java.util.List;
+
+public class NoteRecyclerAdapter extends RecyclerView.Adapter<NoteRecyclerAdapter.NoteViewHolder> {
+    private final LayoutInflater layoutInflater;
     private Context mContext;
+    private List<Note> mNotes;
+    private OnDeleteClickListener onDeleteClickListener;
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
-
-        public MyViewHolder(@NonNull View itemView) {
-            super(itemView);
-        }
-    }
-
-    public NoteRecyclerAdapter(Context context, String[] myDataset) {
-        mDataset = myDataset;
+    public NoteRecyclerAdapter(Context context, OnDeleteClickListener listener) {
+        layoutInflater = LayoutInflater.from(context);
         mContext = context;
+        this.onDeleteClickListener = listener;
     }
 
     // Create new views (invoked by the layout manager)
     @Override
-    public NoteRecyclerAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new MyViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.note_list_item, parent, false));
+    public NoteViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        return new NoteViewHolder(layoutInflater.inflate(R.layout.note_list_item, parent, false));
     }
 
     @Override
-    public void onBindViewHolder(MyViewHolder holder, final int position) {
-        // - get element from your dataset at this position
-        // - replace the contents of the view with that element
-//        holder.textView.setText(mDataset[position]);
-//        holder.textView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(mContext, MainActivity.class);
-//                intent.putExtra("headline", mDataset[position]);
-//                mContext.startActivity(intent);
-//            }
-//        });
+    public void onBindViewHolder(NoteViewHolder holder, final int position) {
+        if (mNotes != null) {
+            Note note = mNotes.get(position);
+            holder.setData(note.getNoteTitle(), note.getNoteContent(), position);
+            holder.setListeners();
+        }
+        else {
+            holder.textNoteTitle.setText("No Title");
+            holder.textNoteContent.setText("No Content");
+        }
     }
 
     @Override
     public int getItemCount() {
-        return mDataset.length;
+        if (mNotes != null)
+            return mNotes.size();
+        else return 0;
+    }
+
+    public void setNotes(List<Note> notes) {
+        mNotes = notes;
+        notifyDataSetChanged();
+    }
+
+    public class NoteViewHolder extends RecyclerView.ViewHolder {
+        private TextView textNoteTitle;
+        private TextView textNoteContent;
+        private ImageView imageDelete;
+        private int mPosition;
+
+        public NoteViewHolder(@NonNull View itemView) {
+            super(itemView);
+            textNoteTitle = itemView.findViewById(R.id.text_note_title);
+            textNoteContent = itemView.findViewById(R.id.text_note_content);
+            imageDelete = itemView.findViewById(R.id.image_delete);
+        }
+
+        public void setData(String noteTitle, String noteContent, int position) {
+            if (noteTitle.isEmpty()) {
+                textNoteTitle.setVisibility(View.GONE);
+            }
+            else {
+                textNoteTitle.setVisibility(View.VISIBLE);
+            }
+            textNoteTitle.setText(noteTitle);
+
+            if (noteContent.isEmpty()) {
+                textNoteContent.setVisibility(View.GONE);
+            }
+            else {
+                textNoteContent.setVisibility(View.VISIBLE);
+            }
+            textNoteContent.setText(noteContent);
+            mPosition = position;
+        }
+
+        public void setListeners() {
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(mContext, EditActivity.class);
+                    intent.putExtra(EditActivity.NOTE_ID, mNotes.get(mPosition).getNoteId());
+                    ((Activity)mContext).startActivityForResult(intent, NoteListActivity.UPDATE_REQUEST_CODE);
+                }
+            });
+
+            imageDelete.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (onDeleteClickListener != null) {
+                        onDeleteClickListener.OnDeleteClickListener(mNotes.get(mPosition));
+                    }
+                }
+            });
+        }
+    }
+
+    public interface OnDeleteClickListener {
+        void OnDeleteClickListener(Note myNote);
     }
 }

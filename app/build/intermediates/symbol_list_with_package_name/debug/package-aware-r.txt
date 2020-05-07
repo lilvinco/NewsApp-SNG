@@ -1352,7 +1352,10 @@ drawable design_snackbar_background
 drawable ic_add_white_24dp
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
+drawable ic_delete_sweep_white_24dp
+drawable ic_delete_white_24dp
 drawable ic_edit_black_24dp
+drawable ic_edit_white_24dp
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_launcher_background
@@ -1440,6 +1443,8 @@ id action_bar_subtitle
 id action_bar_title
 id action_container
 id action_context_bar
+id action_delete
+id action_delete_all
 id action_divider
 id action_image
 id action_menu_divider
@@ -1528,6 +1533,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id image_delete
 id info
 id invisible
 id italic
@@ -1659,6 +1665,7 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id text_info
 id text_input_end_icon
 id text_input_start_icon
 id text_note_content
@@ -1818,6 +1825,8 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu menu_delete
+menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -1857,6 +1866,8 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string delete
+string delete_all
 string edit_note
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
