@@ -24,15 +24,11 @@ import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 
-import java.util.ArrayList;
-
 public class WelcomeActivity extends AppCompatActivity  {
     private RecyclerView recyclerView;
     private NotesAdapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
     private DrawerLayout drawerLayout;
-
-    private ArrayList<Notes> notesArrayList;
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private CollectionReference docRef = db.collection(DataManager.NOTE_COLLECTIONS);
@@ -41,8 +37,6 @@ public class WelcomeActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-
-        notesArrayList = DataManager.readFromDB();
 
         //Setup Toolbar and DrawerLayout
         drawerLayout = findViewById(R.id.drawer_layout);
