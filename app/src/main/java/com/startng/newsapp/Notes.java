@@ -5,7 +5,7 @@ public class Notes {
     private String noteContent;
 
     public Notes(){
-        
+
     }
 
     public Notes(String noteTitle, String noteContent){
@@ -17,16 +17,8 @@ public class Notes {
         return noteTitle;
     }
 
-    public void setNoteTitle(String noteTitle) {
-        this.noteTitle = noteTitle;
-    }
-
     public String getNoteContent() {
         return noteContent;
-    }
-
-    public void setNoteContent(String noteContent) {
-        this.noteContent = noteContent;
     }
 
 }
