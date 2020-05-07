@@ -31,7 +31,7 @@ public class WelcomeActivity extends AppCompatActivity  {
     private DrawerLayout drawerLayout;
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
-    private CollectionReference docRef = db.collection(DataManager.NOTE_COLLECTIONS);
+    private CollectionReference notesRef = db.collection(DataManager.NOTE_COLLECTIONS);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,8 +62,8 @@ public class WelcomeActivity extends AppCompatActivity  {
     }
 
     private void setUpRecyclerView() {
-        Query query = docRef.orderBy(DataManager.TITLE_FIELD, Query.Direction.DESCENDING);
-        FirestoreRecyclerOptions options = new FirestoreRecyclerOptions.Builder<Notes>()
+        Query query = notesRef.orderBy(DataManager.TITLE_FIELD, Query.Direction.DESCENDING);
+        FirestoreRecyclerOptions<Notes> options = new FirestoreRecyclerOptions.Builder<Notes>()
                 .setQuery(query, Notes.class)
                 .build();
         mAdapter = new NotesAdapter(options);
