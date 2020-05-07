@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/nav_menu_block_1">
+        <menu>
+
+
+            <item
+                android:id="@+id/addNote"
+                android:icon="@drawable/ic_add_circle_black_24dp"
+                android:title="@string/nav_menu_general_add" />
+
+            <item
+                android:id="@+id/sync"
+                android:icon="@drawable/ic_sync_black_24dp"
+                android:title="@string/nav_menu_general_Sync" />
+
+        </menu>
+
+    </item>
+
+
+    <item android:title="@string/nav_menu_block_3">
+        <menu>
+
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_vpn_key_black_24dp"
+                android:title="@string/nav_menu_logout" />
+
+        </menu>
+
+    </item>
+
+</menu>

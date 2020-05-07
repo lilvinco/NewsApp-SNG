@@ -1,16 +1,37 @@
 <resources>
-    <string name="app_name">NewsApp</string>
-    <string-array name="sports_info">
-        <item>Nike Enters 10-Year </item>
-        <item>Indonesia Masters – Saina</item>
-        <item>College Basketball 2018–19</item>
-        <item>Local bowler lands 132 perfect games, shares his secret for success!</item>
-        <item>Sierra solos to win at womens Cadel Evans Great Ocean Road Race!</item>
-        <item>Tiger Woods Friday live blog:</item>
-        <item>The 5km fun run was organised by Ironman</item>
-        <item>Soccer insider notes: Liverpool not the only Premier League club eyeing Weston McKennie!</item>
-        <item>Chloe Grimme, a USA Swimming Scholastic All American 1!</item>
-        <item>Table Tennis Federation Revokes Soumyajit Ghoshs Suspension, 9 Months After Rape Allegations!</item>
-        <item>2019 Australian Open odds, predictions for mens finals!</item>
-    </string-array>
+    <string name="app_name">YourNotes</string>
+    <string name="nav_header_main_text">YourNotes</string>
+    <string name="nav_header_user_display_name">Tobi Adeniji</string>
+    <string name="nav_header_user_display_email">adenijitobi94@gmail.com</string>
+    <string name="nav_menu_block_1">General</string>
+    <string name="nav_menu_general_notes">Notes</string>
+    <string name="nav_menu_general_add">Add Note</string>
+    <string name="nav_menu_general_Sync">Sync Notes</string>
+    <string name="nav_menu_block_2">Support</string>
+    <string name="nav_menu_support_rate">Rate App</string>
+    <string name="nav_menu_support_share">Share App</string>
+    <string name="nav_menu_block_3">Logout</string>
+    <string name="nav_menu_logout">Logout</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="content_text">ciecmiccoie</string>
+    <string name="title_activity_note_details">Note Details</string>
+    <string name="add_title_hint">Note Title</string>
+    <string name="edit_title_hint">Note Title</string>
+    <string name="title_activity_add_note">Add Note</string>
+    <string name="login">Login</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_forgot_password">Forgot Password ?</string>
+    <string name="login_create_new_acc">Create New Account</string>
+    <string name="sync">Sync Now</string>
+    <string name="sync_full_name_hint">Full Name</string>
+    <string name="sync_email_hint">Email Address</string>
+    <string name="sync_password_hint">Password</string>
+    <string name="sync_confirm_password_hint">Confirm Password?</string>
+    <string name="sync_login">Already have an account ?, Login here</string>
+    <string name="splash_title">YourNotes</string>
+
+
+
 </resources>
