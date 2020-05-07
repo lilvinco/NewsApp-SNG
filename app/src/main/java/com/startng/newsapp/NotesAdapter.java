@@ -30,7 +30,9 @@ public class NotesAdapter extends FirestoreRecyclerAdapter<Notes, NotesAdapter.N
 
     @Override
     protected void onBindViewHolder(@NonNull NotesViewHolder holder, int position, @NonNull Notes model) {
-        holder.setData(model.getNoteTitle(), model.getNoteContent(), position);
+        //holder.setData(model.getNoteTitle(), model.getNoteContent(), position);
+        holder.noteTitleTextView.setText(model.getNoteTitle());
+        holder.noteContentTextView.setText(model.getNoteContent());
     }
 
     @NonNull
@@ -68,10 +70,10 @@ public class NotesAdapter extends FirestoreRecyclerAdapter<Notes, NotesAdapter.N
             });
         }
 
-        void setData(String title, String content, int position) {
-            noteContentTextView.setText(content);
-            noteTitleTextView.setText(title);
-            currentPosition = position;
-        }
+//        void setData(String title, String content, int position) {
+//            noteContentTextView.setText(content);
+//            noteTitleTextView.setText(title);
+//            currentPosition = position;
+//        }
     }
 }
