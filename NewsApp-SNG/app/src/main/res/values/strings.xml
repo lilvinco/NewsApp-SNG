@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string-array name="sports_info">
+        <item>Nike Enters 10-Year </item>
+        <item>Indonesia Masters – Saina</item>
+        <item>College Basketball 2018–19</item>
+        <item>Local bowler lands 132 perfect games, shares his secret for success!</item>
+        <item>Sierra solos to win at womens Cadel Evans Great Ocean Road Race!</item>
+        <item>Tiger Woods Friday live blog:</item>
+        <item>The 5km fun run was organised by Ironman</item>
+        <item>Soccer insider notes: Liverpool not the only Premier League club eyeing Weston McKennie!</item>
+        <item>Chloe Grimme, a USA Swimming Scholastic All American 1!</item>
+        <item>Table Tennis Federation Revokes Soumyajit Ghoshs Suspension, 9 Months After Rape Allegations!</item>
+        <item>2019 Australian Open odds, predictions for mens finals!</item>
+    </string-array>
+</resources>
