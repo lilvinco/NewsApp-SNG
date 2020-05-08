@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="hint_title">Title</string>
+    <string name="note_hint">Note</string>
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+
+    <string name="action_delete_all_entries">Delete All Notes</string>
+
+    <string name="main_activity_label">Add a Note</string>
+
+    <string name="action_save">Save</string>
+
+    <string name="action_delete">Delete</string>
+    <string name="action_send">Send</string>
+    <string name="share_using">Share Using</string>
+</resources>
