@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 deleteIcon.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        DocumentReference docRef =  fStore.collection("notes").document(user.getUid()).collection("myNotes").document();
+                        DocumentReference docRef =  fStore.collection("notes").document(user.getUid()).collection("myNotes").document(docId);
                         docRef.delete().addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
