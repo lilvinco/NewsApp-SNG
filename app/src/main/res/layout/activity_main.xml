@@ -8,7 +8,6 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/bar_title"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_margin="20dp"
@@ -22,11 +21,10 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
             android:fontFamily="cursive"
             android:text="Title"
             android:textAlignment="center"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp" />
 
 

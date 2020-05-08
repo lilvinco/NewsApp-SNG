@@ -1560,6 +1560,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_nav_header_background_background
 drawable ic_nav_menu
 drawable ic_not_editable
 drawable ic_note_5
@@ -1571,6 +1572,7 @@ drawable ic_share
 drawable ic_smartphone
 drawable ic_trash_can
 drawable ic_user
+drawable ic_user1
 drawable ic_welcome
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
@@ -1771,7 +1773,6 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
-id fab
 id facebook
 id fade
 id fill
@@ -1873,7 +1874,7 @@ id nav_host_fragment
 id nav_host_fragment_container
 id nav_invite
 id nav_log_out
-id nav_menu
+id nav_new_notes
 id nav_notes
 id nav_settings
 id nav_slideshow
@@ -1919,7 +1920,6 @@ id right_icon
 id right_side
 id root
 id rounded
-id save_menu
 id save_non_transition_alpha
 id save_overlay_view
 id scale
@@ -1987,7 +1987,6 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView
 id textView2
 id textView3
 id text_gallery
@@ -2189,7 +2188,6 @@ layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout nav_header_nav
-layout nav_header_nav2
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -2224,9 +2222,11 @@ layout text_view_without_line_height
 menu activity_nav_drawer
 menu crop_image_menu
 menu nav
-menu nav_drawer
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap ic_nav_header_background
+mipmap ic_nav_header_background_foreground
+mipmap ic_nav_header_background_round
 navigation mobile_navigation
 plurals fui_error_weak_password
 plurals mtrl_badge_content_description
@@ -2419,6 +2419,7 @@ string home_second
 string icon_content_description
 string label
 string local
+string log_out
 string login
 string login_with
 string logo_note
@@ -2469,6 +2470,7 @@ string nav_header_subtitle
 string nav_header_title
 string navigation_drawer_close
 string navigation_drawer_open
+string new_note
 string noAccount
 string or
 string password
@@ -2484,6 +2486,7 @@ string save_menu
 string search
 string search_menu_title
 string settings
+string share
 string sign_up
 string sign_up_with
 string status_bar_notification_info_overflow
@@ -2717,7 +2720,6 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
-style DrawerStyle
 style EmptyTheme
 style FirebaseUI
 style FirebaseUI_AuthMethodPicker
@@ -3232,6 +3234,7 @@ style Widget_MaterialProgressBar_ProgressBar_NoPadding
 style Widget_MaterialProgressBar_ProgressBar_Small
 style Widget_MaterialProgressBar_ProgressBar_Small_NoPadding
 style Widget_Support_CoordinatorLayout
+style bar_heading
 style button
 style landing_imageViewEnd
 style landing_imageViewStart

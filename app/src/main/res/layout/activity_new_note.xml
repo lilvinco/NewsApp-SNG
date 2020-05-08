@@ -8,26 +8,23 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/bar_title"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:layout_margin="5dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginBottom="5dp"
-        android:layout_weight="2"
-        app:layout_constraintEnd_toStartOf="parent"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
             android:fontFamily="cursive"
             android:text="Title"
             android:textAlignment="center"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp" />
 
 
@@ -37,7 +34,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="500dp"
         android:layout_marginTop="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/bar_title"

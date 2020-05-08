@@ -69,4 +69,7 @@
     <string name="delete">Delete</string>
     <string name="Open">open</string>
     <string name="Close">Close</string>
+    <string name="new_note">New note</string>
+    <string name="log_out">Log Out</string>
+    <string name="share">Share with Friends</string>
 </resources>

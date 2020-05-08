@@ -1,11 +1,7 @@
 package com.startng.newsapp;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -17,8 +13,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.startng.newsapp.nav_drawer.NavActivity;
 
 public class HeadlinesActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
@@ -70,7 +66,7 @@ public class HeadlinesActivity extends AppCompatActivity {
 
 
     private void new_note() {
-        Intent new_note = new Intent(HeadlinesActivity.this, NewNoteActivity.class);
+        Intent new_note = new Intent(HeadlinesActivity.this, NavActivity.class);
         startActivity(new_note);
     }
 

@@ -22,7 +22,7 @@
 
         <ImageView
             android:id="@+id/my_image"
-            android:layout_width="80dp"
+            android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
             android:contentDescription="@string/todo"
@@ -64,7 +64,7 @@
             android:padding="10dp"
             app:endIconMode="clear_text"
             app:hintTextColor="#fff"
-            app:startIconDrawable="@drawable/ic_user">
+            app:startIconDrawable="@drawable/ic_user1">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/name"
