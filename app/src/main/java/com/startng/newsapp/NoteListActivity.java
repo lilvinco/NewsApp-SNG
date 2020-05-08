@@ -4,12 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.startng.newsapp.db.NotesDB;
+import com.startng.newsapp.db.NotesDao;
+
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class NoteListActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
@@ -17,6 +22,7 @@ public class NoteListActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager layoutManager;
     private ArrayList<Note> notes;
     private ImageView btn_add;
+    private NotesDao dao;
 
 
     @Override
@@ -35,6 +41,8 @@ public class NoteListActivity extends AppCompatActivity {
             }
         });
 
+        dao = NotesDB.getInstance(this).notesDao();
+
         // use this setting to improve performance if you know that changes
         // in content do not change the layout size of the RecyclerView
         recyclerView.setHasFixedSize(true);
@@ -47,21 +55,15 @@ public class NoteListActivity extends AppCompatActivity {
 
     private void loadNote() {
         this.notes = new ArrayList<>();
-        for (int i = 0; i<12; i++) {
-            notes.add(new Note("This is a note application that allow users create,edit ,view and delete note. this app\n" +
-                    "             must be submitted today",
-                    new Date().getTime()));
-        }
-        adapter = new NoteListAdapter(notes,this);
-        recyclerView.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
+        List<Note> list = dao.getNotes();
+        this.notes.addAll(list);
+        this.adapter = new NoteListAdapter(notes,this);
+        this.recyclerView.setAdapter(adapter);
+       // adapter.notifyDataSetChanged();
     }
 
     private void onAddNewNote() {
-        if (notes != null)
-            notes.add(new Note("This is a new note", new Date().getTime()));
-        if (adapter!= null)
-            adapter.notifyDataSetChanged();
+     startActivity(new Intent(this, MainActivity.class));
     }
 
     @Override

@@ -18,8 +18,13 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.startng.newsapp.MainActivity" />
-        <activity android:name="com.startng.newsapp.NoteListActivity" >
+        <activity
+            android:name="com.startng.newsapp.MainActivity"
+            android:label="@string/edit_app" >
+        </activity>
+        <activity
+            android:name="com.startng.newsapp.NoteListActivity"
+            android:label="@string/main_app" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
