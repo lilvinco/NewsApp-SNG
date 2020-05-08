@@ -11,11 +11,11 @@
 9-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:5:5-20:19
+11-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:5:5-32:19
 12        android:allowBackup="true"
 12-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.0.1] /Users/chrisandasei/.gradle/caches/transforms-2/files-2.1/46da25c3e2ae6308b2227b660caa604d/core-1.0.1/AndroidManifest.xml:22:18-86
+13-->[androidx.core:core:1.1.0] /Users/chrisandasei/.gradle/caches/transforms-2/files-2.1/7f6c41cc2a14c0fbaa8d0166c17dc544/core-1.1.0/AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:icon="@mipmap/ic_launcher"
 15-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:7:9-43
@@ -28,23 +28,45 @@
 19        android:testOnly="true"
 20        android:theme="@style/AppTheme" >
 20-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:11:9-40
-21        <activity android:name="com.startng.newsapp.MainActivity" />
-21-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:12:9-59
-21-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:12:19-47
-22        <activity android:name="com.startng.newsapp.AddNote" >
-22-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:13:9-19:20
-22-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:13:19-42
-23            <intent-filter>
-23-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:14:13-18:29
-24                <action android:name="android.intent.action.MAIN" />
-24-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:15:17-69
-24-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:15:25-66
-25
-26                <category android:name="android.intent.category.LAUNCHER" />
-26-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:17:17-77
-26-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:17:27-74
-27            </intent-filter>
+21        <activity
+21-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:12:9-19:20
+22            android:name="com.startng.newsapp.Details"
+22-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:13:13-36
+23            android:label="@string/title_activity_details"
+23-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:14:13-59
+24            android:theme="@style/AppTheme.NoActionBar" >
+24-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:15:13-56
+25            <meta-data
+25-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:16:13-18:49
+26                android:name="android.support.PARENT_ACTIVITY"
+26-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:17:17-63
+27                android:value=".MainActivity" />
+27-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:18:17-46
 28        </activity>
-29    </application>
-30
-31</manifest>
+29        <activity android:name="com.startng.newsapp.AddNote" >
+29-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:20:9-24:20
+29-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:20:19-42
+30            <meta-data
+30-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:16:13-18:49
+31                android:name="android.support.PARENT_ACTIVITY"
+31-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:17:17-63
+32                android:value=".MainActivity" />
+32-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:18:17-46
+33        </activity>
+34        <activity android:name="com.startng.newsapp.MainActivity" >
+34-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:25:9-31:20
+34-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:25:19-47
+35            <intent-filter>
+35-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:26:13-30:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:27:17-69
+36-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:27:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:29:17-77
+38-->/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/AndroidManifest.xml:29:27-74
+39            </intent-filter>
+40        </activity>
+41    </application>
+42
+43</manifest>

@@ -3,6 +3,7 @@ package com.startng.newsapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -10,12 +11,18 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.Adapter;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     Toolbar toolbar;
     RecyclerView recyclerView;
+    NoteAdapter adapter;
+    List<Note> notes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +30,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        NoteDatabase sqLiteDatabase = new NoteDatabase((this));
+        notes = sqLiteDatabase.getNotes();
         recyclerView = findViewById(R.id.listOfNotes);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        adapter = new NoteAdapter(this,notes);
+        recyclerView.setAdapter(adapter);
     }
 
     @Override
