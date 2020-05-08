@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+
+    <LinearLayout
+        android:id="@+id/welcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_welcome"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/my_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/todo"
+            android:background="@drawable/background"
+            android:src="@drawable/ic_user" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Upload" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inputs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/welcome"
+        app:layout_constraintStart_toStartOf="@id/welcome"
+        app:layout_constraintTop_toBottomOf="@+id/welcome">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/label"
+            android:textAlignment="center"
+            android:textStyle="italic" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/full_name"
+            android:padding="10dp"
+            app:endIconMode="clear_text"
+            app:hintTextColor="#fff"
+            app:startIconDrawable="@drawable/ic_user1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:padding="10dp"
+            app:endIconMode="clear_text"
+            app:hintTextColor="#fff"
+            app:startIconDrawable="@drawable/ic_mail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:padding="10dp"
+            app:endIconMode="password_toggle"
+            app:hintTextColor="#fff"
+            app:startIconDrawable="@drawable/ic_key">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm_password"
+            android:padding="10dp"
+            app:endIconMode="password_toggle"
+            app:hintTextColor="#fff"
+            app:startIconDrawable="@drawable/ic_key">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirm_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+    
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_signUp"
+        style="@style/button"
+        android:text="@string/sign_up"
+        app:layout_constraintEnd_toEndOf="@id/inputs"
+        app:layout_constraintStart_toStartOf="@id/inputs"
+        app:layout_constraintTop_toBottomOf="@id/inputs" />
+
+
+    <TextView
+        android:id="@+id/login"
+        style="@style/view"
+        android:text="@string/haveAccount"
+        app:layout_constraintEnd_toEndOf="@id/button_signUp"
+        app:layout_constraintStart_toStartOf="@id/button_signUp"
+        app:layout_constraintTop_toBottomOf="@+id/button_signUp" />
+
+
+    <TextView
+        android:id="@+id/or"
+        style="@style/view"
+        android:layout_marginTop="20dp"
+        android:text="@string/or"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/login"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@id/or"
+        app:layout_constraintStart_toStartOf="@id/or"
+        app:layout_constraintTop_toBottomOf="@+id/or" />
+
+
+    <TextView
+        android:id="@+id/alternativeLogin"
+        style="@style/view"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="23dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="#000"
+        android:alpha="0.9"
+        android:text="@string/sign_up_with"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/or"
+        app:layout_constraintStart_toStartOf="@id/or"
+        app:layout_constraintTop_toBottomOf="@+id/or"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="@id/view2"
+        app:layout_constraintStart_toStartOf="@id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/view2">
+
+        <ImageView
+            android:id="@+id/google"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            android:padding="10dp"
+            android:src="@drawable/ic_google" />
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            android:paddingTop="10dp"
+            android:src="@drawable/ic_facebook" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

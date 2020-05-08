@@ -1,0 +1,15 @@
+<vector android:height="200dp" android:viewportHeight="512"
+    android:viewportWidth="512" android:width="200dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#664B34" android:pathData="M151,0h-45C81.186,0 61,20.186 61,45v422c0,24.814 20.186,45 45,45h45l30,-30V30L151,0z"/>
+    <path android:fillColor="#13C37B" android:pathData="M481,45v422c0,24.901 -20.099,45 -45,45H151V0h285C460.901,0 481,20.099 481,45z"/>
+    <path android:fillColor="#0DA656" android:pathData="M481,45v422c0,24.901 -20.099,45 -45,45H316V0h120C460.901,0 481,20.099 481,45z"/>
+    <path android:fillColor="#A8AFF1" android:pathData="M106,120H46c-8.291,0 -15,-6.709 -15,-15s6.709,-15 15,-15h60c8.291,0 15,6.709 15,15S114.291,120 106,120z"/>
+    <path android:fillColor="#A8AFF1" android:pathData="M106,272H46c-8.291,0 -15,-6.709 -15,-15s6.709,-15 15,-15h60c8.291,0 15,6.709 15,15C121,265.291 114.291,272 106,272z"/>
+    <path android:fillColor="#A8AFF1" android:pathData="M106,422H46c-8.291,0 -15,-6.709 -15,-15s6.709,-15 15,-15h60c8.291,0 15,6.709 15,15S114.291,422 106,422z"/>
+    <path android:fillColor="#664B34" android:pathData="M421,347c0,8.399 -6.599,15 -15,15H226c-8.401,0 -15,-6.601 -15,-15c0,-8.401 6.599,-15 15,-15h180C414.401,332 421,338.599 421,347z"/>
+    <path android:fillColor="#664B34" android:pathData="M421,407c0,8.399 -6.599,15 -15,15H226c-8.401,0 -15,-6.601 -15,-15c0,-8.401 6.599,-15 15,-15h180C414.401,392 421,398.599 421,407z"/>
+    <path android:fillColor="#E5E5E5" android:pathData="M406,90H226c-8.401,0 -15,6.599 -15,15v60c0,8.399 6.599,15 15,15h180c8.401,0 15,-6.601 15,-15v-60C421,96.599 414.401,90 406,90z"/>
+    <path android:fillColor="#59422D" android:pathData="M421,407c0,8.399 -6.599,15 -15,15h-90v-30h90C414.401,392 421,398.599 421,407z"/>
+    <path android:fillColor="#59422D" android:pathData="M421,347c0,8.399 -6.599,15 -15,15h-90v-30h90C414.401,332 421,338.599 421,347z"/>
+    <path android:fillColor="#D9D9D9" android:pathData="M421,105v60c0,8.399 -6.599,15 -15,15h-90V90h90C414.401,90 421,96.599 421,105z"/>
+</vector>

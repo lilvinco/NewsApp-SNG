@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "472580716259",
+    "firebase_url": "https://notesapp-64f59.firebaseio.com",
+    "project_id": "notesapp-64f59",
+    "storage_bucket": "notesapp-64f59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472580716259:android:3a6b787154778116ecf7d6",
+        "android_client_info": {
+          "package_name": "com.startng.newsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472580716259-33kfnbgku3secmr92iplgoevj3dip8d2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.startng.newsapp",
+            "certificate_hash": "500f6bb6829827694b64d654b10ae1c840f69b12"
+          }
+        },
+        {
+          "client_id": "472580716259-l7hkab978snnhm6r5m4gsqnn5qdbge5b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeIy_nohmo4kV8gumYchq1qkA56xfv-l0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472580716259-l7hkab978snnhm6r5m4gsqnn5qdbge5b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
