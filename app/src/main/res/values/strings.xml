@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">NewsApp</string>
+    <string name="app_name">News<b>App</b></string>
+    <string name="title"><b>Title</b></string>
+    <string name="action_settings">Settings</string>
+    <string name="action_edit">Edit</string>
+    <string name="share_title_bold"><b>Title: </b></string>
     <string-array name="sports_info">
         <item>Nike Enters 10-Year </item>
         <item>Indonesia Masters – Saina</item>
