@@ -1,14 +1,18 @@
 package com.startng.newsapp;
 
+import androidx.annotation.LongDef;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
+import com.google.android.material.tabs.TabLayout;
 import com.startng.newsapp.db.NotesDB;
 import com.startng.newsapp.db.NotesDao;
 
@@ -16,7 +20,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class NoteListActivity extends AppCompatActivity {
+import static com.startng.newsapp.MainActivity.NOTE_EXTRA_Key;
+
+public class NoteListActivity extends AppCompatActivity implements NoteEventListener {
+
+    private static final String TAG = "NoteListActivity";
     private RecyclerView recyclerView;
     private NoteListAdapter adapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -58,6 +66,10 @@ public class NoteListActivity extends AppCompatActivity {
         List<Note> list = dao.getNotes();
         this.notes.addAll(list);
         this.adapter = new NoteListAdapter(notes,this);
+
+        //set listener to adapter
+
+        this.adapter.setListener(this);
         this.recyclerView.setAdapter(adapter);
        // adapter.notifyDataSetChanged();
     }
@@ -72,5 +84,19 @@ public class NoteListActivity extends AppCompatActivity {
         loadNote();
     }
 
+    @Override
+    public void onNoteClick(Note note) {
+        Intent editNote = new Intent(this, MainActivity.class);
+        editNote.putExtra(NOTE_EXTRA_Key, note.getId());
+        startActivity(editNote);
+
+    }
+
+    @Override
+    public void onNoteLongClick(Note note) {
+
+        Log.d(TAG, "onNoteLongClick: " + note.getId());
+
+    }
 }
 

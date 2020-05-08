@@ -150,14 +150,16 @@ public final class NotesDao_Impl implements NotesDao {
       final List<Note> _result = new ArrayList<Note>(_cursor.getCount());
       while(_cursor.moveToNext()) {
         final Note _item;
-        final String _tmpNoteText;
-        _tmpNoteText = _cursor.getString(_cursorIndexOfNoteText);
-        final long _tmpNoteDate;
-        _tmpNoteDate = _cursor.getLong(_cursorIndexOfNoteDate);
-        _item = new Note(_tmpNoteText,_tmpNoteDate);
+        _item = new Note();
         final int _tmpId;
         _tmpId = _cursor.getInt(_cursorIndexOfId);
         _item.setId(_tmpId);
+        final String _tmpNoteText;
+        _tmpNoteText = _cursor.getString(_cursorIndexOfNoteText);
+        _item.setNoteText(_tmpNoteText);
+        final long _tmpNoteDate;
+        _tmpNoteDate = _cursor.getLong(_cursorIndexOfNoteDate);
+        _item.setNoteDate(_tmpNoteDate);
         _result.add(_item);
       }
       return _result;
@@ -181,14 +183,16 @@ public final class NotesDao_Impl implements NotesDao {
       final int _cursorIndexOfNoteDate = CursorUtil.getColumnIndexOrThrow(_cursor, "date");
       final Note _result;
       if(_cursor.moveToFirst()) {
-        final String _tmpNoteText;
-        _tmpNoteText = _cursor.getString(_cursorIndexOfNoteText);
-        final long _tmpNoteDate;
-        _tmpNoteDate = _cursor.getLong(_cursorIndexOfNoteDate);
-        _result = new Note(_tmpNoteText,_tmpNoteDate);
+        _result = new Note();
         final int _tmpId;
         _tmpId = _cursor.getInt(_cursorIndexOfId);
         _result.setId(_tmpId);
+        final String _tmpNoteText;
+        _tmpNoteText = _cursor.getString(_cursorIndexOfNoteText);
+        _result.setNoteText(_tmpNoteText);
+        final long _tmpNoteDate;
+        _tmpNoteDate = _cursor.getLong(_cursorIndexOfNoteDate);
+        _result.setNoteDate(_tmpNoteDate);
       } else {
         _result = null;
       }

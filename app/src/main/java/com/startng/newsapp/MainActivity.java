@@ -3,6 +3,7 @@ package com.startng.newsapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText inputNote;
     private NotesDao dao;
+    private Note temp;
+    public static final String NOTE_EXTRA_Key ="note_id";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,12 @@ public class MainActivity extends AppCompatActivity {
 
         inputNote = findViewById(R.id.input_note);
         dao = NotesDB.getInstance(this).notesDao();
+
+        if (getIntent().getExtras()!=null){
+            int id = getIntent().getExtras().getInt(NOTE_EXTRA_Key,0);
+            temp = dao.getNoteById(id);
+            inputNote.setText(temp.getNoteText());
+        }else temp = new Note();
     }
 
     @Override
@@ -48,10 +57,13 @@ public class MainActivity extends AppCompatActivity {
 
         String text = inputNote.getText().toString();
         if (!text.isEmpty()) {
-
             long date = new Date().getTime();
-            Note note = new Note(text,date);
-            dao.insertNote(note);
+           // Note note = new Note(text,date);
+            temp.setNoteDate(date);
+            temp.setNoteText(text);
+            if (temp.getId() == -1)
+                dao.insertNote(temp);
+            else dao.updateNote(temp);
             finish();
 
         }
