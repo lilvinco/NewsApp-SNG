@@ -1,4 +1,4 @@
-#Tue May 05 15:35:42 WAT 2020
+#Fri May 08 18:42:25 WAT 2020
 base.0=C\:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

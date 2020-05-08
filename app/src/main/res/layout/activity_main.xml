@@ -6,50 +6,110 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView3"
+    <LinearLayout
+        android:id="@+id/top_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:textSize="30sp"
-        android:background="@color/colorPrimary"
-        android:textColor="#FFF"
-        android:textAlignment="center"
-        android:text="TextView"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        android:background="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/textView4"
+        <ImageView
+            android:id="@+id/nav_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_nav_menu" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/bar_title"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Title"
+                android:textAlignment="center"
+                android:fontFamily="cursive"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ImageView
+            android:id="@+id/save_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_menu"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:textSize="24sp"
-        android:textAlignment="center"
-        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@id/top_bar" >
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
 
-        <!--Text view to describe scrollView children-->
-        <TextView
+
+
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="mdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsd"/>
-    </ScrollView>
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <!--Text view to describe scrollView children-->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:hintTextColor="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="mdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj
+                    sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd
+                    cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch
+                     ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd
+                     dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl
+                     dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd
+                     sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd
+                     silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd cdbkhdblhe dbhjfksl dssdhjdbsfghj
+                     sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd
+                     cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsd"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </ScrollView>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

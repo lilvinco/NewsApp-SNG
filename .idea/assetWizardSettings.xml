@@ -14,8 +14,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_star" />
-                            <entry key="sourceFile" value="C:\Users\user\Desktop\icons\624236-notes-and-tasks\svg\004-clipboard-23.svg" />
+                            <entry key="outputName" value="ic_004_enter" />
+                            <entry key="sourceFile" value="C:\Users\user\Desktop\icons\login\svg\004-enter.svg" />
                           </map>
                         </option>
                       </PersistentState>

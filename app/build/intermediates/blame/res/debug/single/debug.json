@@ -1,19 +1,19 @@
 [
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_delete.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_delete.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_facebook.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\drawable-v24\\ic_facebook.xml"
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_share.xml.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\drawable-v24\\ic_share.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_delete.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_delete.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_facebook.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\drawable-v24\\ic_facebook.xml"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_not_editable.png.flat",
@@ -36,6 +36,14 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_save.png"
     },
     {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_004_enter.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_004_enter.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_settings.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_settings.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
     },
@@ -44,44 +52,56 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_nav_menu.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\drawable-v24\\ic_nav_menu.xml"
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_favorite.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_favorite.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher.xml.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_favorite.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_favorite.png"
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_nav_menu.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\drawable-v24\\ic_nav_menu.xml"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_sign_up.xml.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_slack.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\drawable-v24\\ic_slack.xml"
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_smartphone.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_smartphone.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_export.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_export.png"
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_trash_can.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_trash_can.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_note_5.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_note_5.png"
     },
     {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_export.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_export.png"
+    },
+    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_delete.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_delete.png"
     },
     {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_smartphone.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_smartphone.png"
+    },
+    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_notebook_2.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_notebook_2.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_logout.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_logout.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_add.png.flat",
@@ -92,6 +112,10 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_logout.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_logout.png"
+    },
+    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_not_editable.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_not_editable.png"
     },
@@ -100,20 +124,24 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_export.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_import.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_import.png"
-    },
-    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_save.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_save.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_search.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_search.png"
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_import.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_import.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_button_login.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\drawable-v24\\button_login.xml"
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_settings.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_settings.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_logout.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_logout.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_search.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_search.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
@@ -122,6 +150,10 @@
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_smartphone.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_smartphone.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_export.png.flat",
@@ -144,10 +176,6 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_import.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_star.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_star.png"
-    },
-    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
@@ -164,12 +192,12 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_edit_layout.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\drawable-v24\\edit_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_not_editable.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_not_editable.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_trash_can.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_trash_can.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_welcome.xml.flat",
@@ -180,20 +208,32 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_add.xml"
     },
     {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_smartphone.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_smartphone.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_export.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_export.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_trash_can.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_trash_can.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_welcome.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\layout\\activity_welcome.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_export.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_export.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_welcome.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\layout\\activity_welcome.xml"
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\drawable\\background.xml"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
@@ -204,20 +244,48 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_landing_background.png"
     },
     {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_nav.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\layout\\nav_header_nav.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_smartphone.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_smartphone.png"
+    },
+    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_notebook_2.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_notebook_2.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_smartphone.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_smartphone.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_search.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_search.png"
     },
     {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_trash_can.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_trash_can.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_key.xml.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\drawable-v24\\ic_key.xml"
     },
     {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_004_enter.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_004_enter.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_trash_can.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_trash_can.png"
+    },
+    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_search.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_search.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_004_enter.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_004_enter.xml"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_favorite.png.flat",
@@ -228,10 +296,6 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_star.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_star.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
     },
@@ -240,48 +304,48 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_not_editable.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_star.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_star.png"
-    },
-    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_add.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_add.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\menu_save_menu.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\menu\\save_menu.xml"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_favorite.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_favorite.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_menu.xml.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\drawable-v24\\ic_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_not_editable.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_not_editable.xml"
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_settings.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_settings.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable_side_nav_bar.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_delete.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_delete.png"
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_not_editable.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_not_editable.xml"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_save.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_save.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_delete.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_delete.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_export.png.flat",
@@ -300,16 +364,16 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_search.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_button_sign_up.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\drawable-v24\\button_sign_up.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_note_5.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_note_5.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_star.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_star.png"
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_logout.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_logout.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_settings.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_settings.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_note_5.png.flat",
@@ -332,36 +396,56 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_favorite.xml"
     },
     {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\menu_nav_drawer.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\menu\\nav_drawer.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_notebook_2.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_notebook_2.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_smartphone.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_smartphone.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_export.xml.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_export.xml"
     },
     {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_settings.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_settings.png"
+    },
+    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_notebook_2.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_notebook_2.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_star.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_star.png"
-    },
-    {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_import.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_import.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_trash_can.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_trash_can.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_mail.xml.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\drawable-v24\\ic_mail.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_logout.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_logout.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_004_enter.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_004_enter.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_save.xml.flat",
@@ -376,8 +460,28 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_search.png"
     },
     {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_slideshow.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\drawable-v21\\ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_logout.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_logout.png"
+    },
+    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_save.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_save.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_camera.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_004_enter.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_004_enter.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_settings.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_settings.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
@@ -416,16 +520,20 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_delete.png"
     },
     {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_004_enter.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_004_enter.png"
+    },
+    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_delete.xml.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_delete.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_not_editable.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_not_editable.png"
-    },
-    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_not_editable.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_not_editable.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_note_5.xml.flat",
@@ -434,6 +542,10 @@
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_search.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_search.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\menu_nav.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\menu\\nav.xml"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_landing_background.png.flat",
@@ -448,10 +560,6 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\layout\\headline_item.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_star.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_star.png"
-    },
-    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_save.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_save.png"
     },
@@ -460,12 +568,20 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\layout\\activity_new_note.xml"
     },
     {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_gallery.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\drawable-v21\\ic_menu_gallery.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_favorite.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_favorite.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_notebook_2.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_notebook_2.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_settings.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_settings.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
@@ -480,10 +596,6 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_favorite.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_star.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_star.png"
-    },
-    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
@@ -496,6 +608,14 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_import.png"
     },
     {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_logout.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_logout.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_google.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\drawable-v24\\ic_google.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_import.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_import.png"
     },
@@ -504,12 +624,8 @@
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_add.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_google.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\drawable-v24\\ic_google.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_phone_symbol.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\src\\main\\res\\drawable-v24\\ic_phone_symbol.xml"
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_trash_can.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_trash_can.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_delete.png.flat",
@@ -518,6 +634,10 @@
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_notebook_2.png.flat",
         "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_notebook_2.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_004_enter.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_004_enter.png"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\StartNG\\NewsApp-SNG\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_notebook_2.xml.flat",

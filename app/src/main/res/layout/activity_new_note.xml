@@ -4,92 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewNoteActivity">
+    tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/top_bar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        android:background="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:paddingTop="20dp"
-            android:paddingBottom="10dp">
+        <ImageView
+            android:id="@+id/nav_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_nav_menu" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                style="@style/landing_imageViewStart"
-                android:src="@drawable/ic_landing_background" />
 
-            <ImageView
-                android:id="@+id/imageView1"
-                style="@style/landing_imageViewEnd"
-                android:src="@drawable/ic_launcher" />
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/bar_title"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            >
 
-        </LinearLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Title"
+                android:textAlignment="center"
+                android:fontFamily="cursive"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp">
 
-            <ImageView
-                android:id="@+id/imageView2"
-                style="@style/landing_imageViewStart"
-                android:src="@drawable/ic_notebook_2" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-            <ImageView
-                android:id="@+id/imageView3"
-                style="@style/landing_imageViewEnd"
-                android:src="@drawable/ic_note_5" />
 
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/save_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_menu"
+            />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp">
 
-            <ImageView
-                android:id="@+id/imageView4"
-                style="@style/landing_imageViewStart"
-                android:src="@drawable/ic_star" />
-
-            <ImageView
-                android:id="@+id/imageView5"
-                style="@style/landing_imageViewEnd"
-                android:src="@drawable/ic_favorite" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:paddingTop="10dp"
-            android:paddingBottom="20dp">
-
-            <ImageView
-                android:id="@+id/imageView6"
-                style="@style/landing_imageViewStart"
-                android:src="@drawable/ic_import" />
-
-            <ImageView
-                android:id="@+id/imageView7"
-                style="@style/landing_imageViewEnd"
-                android:src="@drawable/ic_export" />
-
-        </LinearLayout>
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar">
+
+        <!--Text view to describe scrollView children-->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/white"
+            android:padding="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pass"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               />
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

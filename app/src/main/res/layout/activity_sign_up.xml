@@ -15,29 +15,27 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="20dp"
         android:src="@drawable/ic_welcome"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.theartofdev.edmodo.cropper.CropImageView xmlns:custom="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/cropImageView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:id="@+id/my_image"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
             android:contentDescription="@string/todo"
-            android:src="@drawable/ic_welcome" />
+            android:background="@drawable/background"
+            android:src="@drawable/ic_user" />
 
         <Button
             android:id="@+id/button"
-            android:layout_width="0dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_gravity="center"
+            android:text="Upload" />
     </LinearLayout>
 
     <LinearLayout
@@ -72,7 +70,7 @@
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorAccent"
+                android:textColor="@color/white"
                 android:textSize="16sp" />
 
 
@@ -202,21 +200,20 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="100dp"
-        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="@id/view2"
         app:layout_constraintStart_toStartOf="@id/view2"
-        app:layout_constraintTop_toBottomOf="@+id/view2"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/view2">
+
         <ImageView
             android:id="@+id/google"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
             android:padding="10dp"
-            android:src="@drawable/ic_google"
-            android:contentDescription="@string/todo" />
+            android:src="@drawable/ic_google" />
 
         <ImageView
             android:id="@+id/facebook"
@@ -224,10 +221,10 @@
             android:layout_height="match_parent"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="20dp"
-            android:paddingTop="10dp"
-            android:src="@drawable/ic_facebook"
             android:layout_weight="1"
-            android:contentDescription="@string/todo" />
+            android:contentDescription="@string/todo"
+            android:paddingTop="10dp"
+            android:src="@drawable/ic_facebook" />
 
     </LinearLayout>
 
