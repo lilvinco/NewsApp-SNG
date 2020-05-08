@@ -1,10 +1,12 @@
 package com.startng.newsapp;
 
 import androidx.annotation.LongDef;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -93,9 +95,43 @@ public class NoteListActivity extends AppCompatActivity implements NoteEventList
     }
 
     @Override
-    public void onNoteLongClick(Note note) {
+    public void onNoteLongClick(final Note note) {
+        new AlertDialog.Builder(this)
+                .setTitle(R.string.main_app)
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.dismiss();
+            }
+        })
+                .setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
 
-        Log.d(TAG, "onNoteLongClick: " + note.getId());
+                        dao.deleteNote(note);
+                        loadNote();
+
+                    }
+                })
+                .setNegativeButton("Share", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                        Intent share = new Intent(Intent.ACTION_SEND);
+                        String text = note.getNoteText() + "\n Created on:" +
+                                NoteUtils.dateFromLong(note.getNoteDate());
+                        String subject = getString(R.string.app_name) +"content";
+
+                        share.setType("text/plain");
+                        share.putExtra(android.content.Intent.EXTRA_SUBJECT, subject);
+                        share.putExtra(android.content.Intent.EXTRA_TEXT, text);
+                        startActivity(Intent.createChooser(share, "Share via"));
+
+                    }
+                })
+
+                .create()
+                .show();
 
     }
 }
