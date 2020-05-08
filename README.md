@@ -4,6 +4,7 @@ A basic android application for beginners that covers topics like Recycler view,
 ![Login](/loginpage.png)
 ![Sign up](/signup.png)
 ![all notes](/all_notes.png)
+![edit notes](/editnote.png)
 ![new note](/new_note.png)
 ![menu](/menu.png)
 ![saved](/savednote.png)
