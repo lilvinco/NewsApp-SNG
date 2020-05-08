@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.startng.newsapp.nav_drawer.NavActivity;
+
 
 public class WelcomeActivity extends AppCompatActivity {
     @Override
@@ -16,7 +18,7 @@ public class WelcomeActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent next = new Intent(WelcomeActivity.this, LoginActivity.class);
+                Intent next = new Intent(WelcomeActivity.this, NavActivity.class);
                 startActivity(next);
                 finish();
             }

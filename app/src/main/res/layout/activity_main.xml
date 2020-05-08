@@ -6,79 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/top_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="15dp"
-        android:background="@color/colorPrimaryDark"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/bar_title"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:layout_weight="2"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/nav_menu"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:padding="5dp"
-            android:src="@drawable/ic_nav_menu" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:fontFamily="cursive"
+            android:text="Title"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
 
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:id="@+id/bar_title"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:layout_weight="2"
-            android:layout_margin="5dp"
-            >
+    </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
-                android:text="Title"
-                android:textAlignment="center"
-                android:fontFamily="cursive"
-                android:textColor="@color/colorAccent"
-                android:textSize="20sp" />
-
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-
-        <ImageView
-            android:id="@+id/save_menu"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:padding="5dp"
-            android:src="@drawable/ic_menu"
-            />
-
-
-    </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/top_bar" >
-
-
+        app:layout_constraintEnd_toEndOf="@id/bar_title"
+        app:layout_constraintStart_toStartOf="@+id/bar_title"
+        app:layout_constraintTop_toBottomOf="@id/bar_title">
 
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2">
@@ -106,7 +74,7 @@
                      sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsdmdnbsmcbch ckjdlcsgsd sdjklsdgj dcjbksdbsd
                      cdbkhdblhe dbhjfksl dssdhjdbsfghj sdsdbjhskdlshd dsbjlsd dhkmsdlm dhsbjlsd silsdh dslsd"
                     android:textColor="@color/white"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
 
 
             </com.google.android.material.textfield.TextInputLayout>

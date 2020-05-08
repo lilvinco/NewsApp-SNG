@@ -14,9 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".nav_drawer.ui.NavActivity"
+            android:name=".nav_drawer.NavActivity"
             android:label="@string/title_activity_nav"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".nav_drawer.ui.NavActivity"
+            android:label="@string/title_activity_nav"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
