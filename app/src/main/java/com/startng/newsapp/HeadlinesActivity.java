@@ -1,48 +1,70 @@
+
 package com.startng.newsapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
-
-public class HeadlinesActivity extends AppCompatActivity {
-    private RecyclerView recyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager layoutManager;
-    int number;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_headlines);
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.Ignore;
+import androidx.room.PrimaryKey;
 
 
-        recyclerView = findViewById(R.id.my_recycler_view);
+@Entity(tableName = "notes")
 
-        // use this setting to improve performance if you know that changes
-        // in content do not change the layout size of the RecyclerView
-        recyclerView.setHasFixedSize(true);
+public class HeadlinesActivity {
+    @PrimaryKey(autoGenerate = true)
+    private int id;
+    @ColumnInfo(name = "text")
+    private String noteText;
+    @ColumnInfo(name = "date")
+    private long noteDate;
 
-        // use a linear layout manager
-        layoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(layoutManager);
+    @Ignore
+    private boolean checked = false;
 
-        // specify an adapter (see also next example)
-        String[] myDataset = getResources().getStringArray(R.array.sports_info);
-        mAdapter = new HeadlinesAdapter(this, myDataset);
-        recyclerView.setAdapter(mAdapter);
-
+    public HeadlinesActivity() {
     }
 
-   /* public void addNumber(View view) {
-        number++;
-        TextView textView = findViewById(R.id.numbertextView);
-        textView.setText(String.valueOf(number));
-    }*/
-}
+    public HeadlinesActivity(String noteText, long noteDate) {
+        this.noteText = noteText;
+        this.noteDate = noteDate;
+    }
 
+    public String getNoteText() {
+        return noteText;
+    }
+
+    public void setNoteText(String noteText) {
+        this.noteText = noteText;
+    }
+
+    public long getNoteDate() {
+        return noteDate;
+    }
+
+    public void setNoteDate(long noteDate) {
+        this.noteDate = noteDate;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public boolean isChecked() {
+        return checked;
+    }
+
+    public void setChecked(boolean checked) {
+        this.checked = checked;
+    }
+
+    @Override
+    public String toString() {
+        return "HeadlinesActivity{" +
+                "id=" + id +
+                ", noteDate=" + noteDate +
+                '}';
+    }
+}
