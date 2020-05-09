@@ -1534,6 +1534,7 @@ id dimensions
 id direct
 id disableHome
 id dropdown_menu
+id editNote
 id edit_query
 id end
 id enterAlways
@@ -1622,6 +1623,7 @@ id none
 id normal
 id noteDetails
 id noteTitle
+id note_item
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -1872,6 +1874,7 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu add_menu
+menu edit_menu
 menu save_menu
 mipmap ic_launcher
 mipmap ic_launcher_round

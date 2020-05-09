@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/note_item"
     android:background="#680E0601">
 
     <androidx.cardview.widget.CardView

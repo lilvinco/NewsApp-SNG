@@ -1,11 +1,5 @@
 package com.startng.newsapp;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -16,6 +10,10 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import java.util.Calendar;
 
@@ -90,7 +88,7 @@ public class AddNote extends AppCompatActivity {
             onBackPressed();
         }
         if(item.getItemId() == R.id.save){
-            Note note = new Note(noteTitle.getText().toString(),noteDetails.getText().toString(),todaysDate,currentTime);
+            Note note = new Note(noteTitle.getText().toString(), noteDetails.getText().toString(), todaysDate, currentTime);
             NoteDatabase sqLiteDatabase = new NoteDatabase(this);
             sqLiteDatabase.addNote(note);
             Toast.makeText(this, "Save btn", Toast.LENGTH_SHORT).show();
@@ -100,7 +98,7 @@ public class AddNote extends AppCompatActivity {
     }
 
     private void goToMain() {
-        Intent i = new Intent(this,MainActivity.class);
+        Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
 

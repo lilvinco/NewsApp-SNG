@@ -1528,6 +1528,10 @@
         "source": "/Users/chrisandasei/.gradle/caches/transforms-2/files-2.1/38d0b14110c3b6afe3e598d06dbd20df/material-1.1.0/res/xml/standalone_badge_gravity_bottom_end.xml"
     },
     {
+        "merged": "/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/build/intermediates/res/merged/debug/menu_edit_menu.xml.flat",
+        "source": "/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/src/main/res/menu/edit_menu.xml"
+    },
+    {
         "merged": "/Users/chrisandasei/AndroidStudioProjects/NewsApp-SNG/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/Users/chrisandasei/.gradle/caches/transforms-2/files-2.1/f5bdf8930f5b0dade80802408310dda6/appcompat-1.1.0/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
