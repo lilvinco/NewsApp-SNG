@@ -69,11 +69,12 @@ public class AlarmActivity extends AppCompatActivity {
             alarmManager.setRepeating(AlarmManager.RTC, time, AlarmManager.INTERVAL_DAY, pi);
             Toast.makeText(this, "Alarm is set", Toast.LENGTH_SHORT).show();
         }
+        scheduleNotification(getNotification("Notes App"));
         finish();
     }
 
-    private void scheduleNotification(Notification notification, int delay) {
-
+    private void scheduleNotification(Notification notification) {
+        int delay = 5000;
         Intent notificationIntent = new Intent(this, MyAlarmReceiver.class);
         notificationIntent.putExtra(MyAlarmReceiver.NOTIFICATION_ID, 1);
         notificationIntent.putExtra(MyAlarmReceiver.NOTIFICATION, notification);
