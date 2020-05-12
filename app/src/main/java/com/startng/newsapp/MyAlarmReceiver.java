@@ -11,5 +11,6 @@ public class MyAlarmReceiver extends BroadcastReceiver {
         Log.d("MyApp", "Alarm just fired");
 //        NotificationScheduler.showNotification(context, MainActivity.class,
 //                "You have 5 unwatched videos", "Watch them now?");
+
     }
 }

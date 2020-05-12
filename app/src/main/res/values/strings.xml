@@ -23,6 +23,7 @@
     <string name="confirm_sure">Are you sure you want to delete this note?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="set_alarm">Set Alarm</string>
 
     <string-array name="font_size_values">
         <item>12</item>

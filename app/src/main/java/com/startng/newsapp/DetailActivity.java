@@ -83,6 +83,7 @@ public class DetailActivity extends AppCompatActivity {
             //respond to Reminder click
             case R.id.reminder:
                 //TODO: Work on Reminder Click
+                startActivity(new Intent(this, AlarmActivity.class));
                 break;
             //respond to Delete click
             case R.id.delete:

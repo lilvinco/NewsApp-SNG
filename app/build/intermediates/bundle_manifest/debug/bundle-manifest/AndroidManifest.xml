@@ -20,6 +20,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.startng.newsapp.AlarmActivity" />
         <activity android:name="com.startng.newsapp.SettingsActivity" />
         <activity
             android:name="com.startng.newsapp.DetailActivity"
@@ -37,7 +38,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> <!-- registering the receiver -->
+        <receiver
+            android:name="com.startng.newsapp.MyAlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>
