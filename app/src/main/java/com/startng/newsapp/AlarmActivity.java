@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.os.SystemClock;
 import android.view.View;
 import android.widget.TimePicker;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -49,6 +48,7 @@ public class AlarmActivity extends AppCompatActivity {
                             timePicker.getCurrentMinute(), 0);
                 }
                 setAlarm(calendar.getTimeInMillis());
+                scheduleNotification(getNotification("Notes App"));
             }
         });
     }
@@ -63,13 +63,12 @@ public class AlarmActivity extends AppCompatActivity {
         //creating a pending intent using the intent
         PendingIntent pi = PendingIntent.getBroadcast(this, 0, i, 0);
 
-
         //setting the repeating alarm that will be fired every day
-        if (alarmManager != null) {
-            alarmManager.setRepeating(AlarmManager.RTC, time, AlarmManager.INTERVAL_DAY, pi);
-            Toast.makeText(this, "Alarm is set", Toast.LENGTH_SHORT).show();
-        }
-        scheduleNotification(getNotification("Notes App"));
+//        if (alarmManager != null) {
+//            alarmManager.setRepeating(AlarmManager.RTC, time, AlarmManager.INTERVAL_DAY, pi);
+//            Toast.makeText(this, "Alarm is set", Toast.LENGTH_SHORT).show();
+//        }
+
         finish();
     }
 
