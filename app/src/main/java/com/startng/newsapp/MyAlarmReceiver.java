@@ -11,7 +11,7 @@ public class MyAlarmReceiver extends BroadcastReceiver {
 
     public static String NOTIFICATION_ID = "notification-id";
     public static String NOTIFICATION = "notification";
-    
+
     @Override
     public void onReceive(Context context, Intent intent) {
         Log.d("MyApp", "Alarm just fired");

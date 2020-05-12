@@ -1,10 +1,12 @@
 package com.startng.newsapp;
 
 import android.app.AlarmManager;
+import android.app.Notification;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.View;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -24,7 +26,7 @@ public class AlarmActivity extends AppCompatActivity {
         setContentView(R.layout.activity_alarm);
 
         //getting the timepicker object
-        timePicker = (TimePicker) findViewById(R.id.timePicker);
+        timePicker = findViewById(R.id.timePicker);
 
         //attaching clicklistener on button
         findViewById(R.id.buttonAlarm).setOnClickListener(new View.OnClickListener() {
@@ -68,5 +70,27 @@ public class AlarmActivity extends AppCompatActivity {
             Toast.makeText(this, "Alarm is set", Toast.LENGTH_SHORT).show();
         }
         finish();
+    }
+
+    private void scheduleNotification(Notification notification, int delay) {
+
+        Intent notificationIntent = new Intent(this, MyAlarmReceiver.class);
+        notificationIntent.putExtra(MyAlarmReceiver.NOTIFICATION_ID, 1);
+        notificationIntent.putExtra(MyAlarmReceiver.NOTIFICATION, notification);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        long futureInMillis = SystemClock.elapsedRealtime() + delay;
+        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+        if (alarmManager != null) {
+            alarmManager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, futureInMillis, pendingIntent);
+        }
+    }
+
+    private Notification getNotification(String content) {
+        Notification.Builder builder = new Notification.Builder(this);
+        builder.setContentTitle("Scheduled Notification");
+        builder.setContentText(content);
+        builder.setSmallIcon(R.drawable.ic_launcher_background);
+        return builder.build();
     }
 }
