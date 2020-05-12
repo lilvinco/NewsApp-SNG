@@ -3,7 +3,8 @@
 <br><br>
 
 <br>
-**Features**<br>
+<b>Features</b>
+<br>
 Sort Titles in Alphabetical Order<br>
 Navigation Drawer<br>
 Floating button<br>
