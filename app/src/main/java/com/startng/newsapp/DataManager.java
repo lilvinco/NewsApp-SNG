@@ -9,8 +9,8 @@ import static com.startng.newsapp.NoteDBContract.*;
 
 public class DataManager {
 
-    public static ArrayList<Notes> fetchAllNotes(NoteDBHelper helper) {
-        ArrayList<Notes> notes = new ArrayList<>();
+    public static ArrayList<MyNotes> fetchAllNotes(NoteDBHelper helper) {
+        ArrayList<MyNotes> notes = new ArrayList<>();
         SQLiteDatabase database = helper.getWritableDatabase();
 
         String[] columns = {NoteEntry.COLUMN_ID,
@@ -37,15 +37,15 @@ public class DataManager {
             String title = cursor.getString(positionTitle);
             String content = cursor.getString(positionContent);
 
-            notes.add(new Notes(ID, title, content));
+            notes.add(new MyNotes(ID, title, content));
         }
         cursor.close();
         return notes;
     }
 
-    public static Notes fetchEmployee(NoteDBHelper helper, int noteID) {
+    public static MyNotes fetchNote(NoteDBHelper helper, int noteID) {
         SQLiteDatabase database = helper.getWritableDatabase();
-        Notes notes = null;
+        MyNotes myNotes = new MyNotes();
         String[] columns = {NoteEntry.COLUMN_ID,
                 NoteEntry.COLUMN_TITLE,
                 NoteEntry.COLUMN_CONTENT};
@@ -73,11 +73,18 @@ public class DataManager {
             String title = cursor.getString(positionTitle);
             String content = cursor.getString(positionContent);
 
-            notes = new Notes(ID, title, content);
+            myNotes = new MyNotes(ID, title, content);
         }
         cursor.close();
-        return notes;
+        return myNotes;
     }
 
+    public static boolean deleteNote(NoteDBHelper helper, int noteID){
+        SQLiteDatabase database = helper.getWritableDatabase();
 
+        String whereClause = NoteEntry.COLUMN_ID + " LIKE ?";
+        String[] whereArgs = {String.valueOf(noteID)};
+
+        return database.delete(NoteEntry.TABLE_NAME,whereClause, whereArgs) > 0;
+    }
 }

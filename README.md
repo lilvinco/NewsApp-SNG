@@ -3,7 +3,13 @@
 <br><br>
 
 <br>
-Used SQLite DB
+Features
+Sort Titles in Alphabetical Order
+Navigation Drawer
+Floating button
+Share notes with friends
+
+Used SQLite DB - to manage 
 <br>
 
 

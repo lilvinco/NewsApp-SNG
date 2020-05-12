@@ -1827,7 +1827,9 @@ string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
 string close_navigation_drawer
+string confirm_sure
 string default_web_client_id
+string delete_note
 string enable_dark_mode
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -1877,8 +1879,9 @@ string mtrl_picker_toggle_to_calendar_input_mode
 string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
+string myNotes
+string no
 string note_title
-string notes
 string open_navigation_drawer
 string password_toggle_content_description
 string path_password_eye
@@ -1889,6 +1892,7 @@ string profile
 string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
+string yes
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

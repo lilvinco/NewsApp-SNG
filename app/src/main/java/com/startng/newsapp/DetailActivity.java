@@ -1,6 +1,7 @@
 package com.startng.newsapp;
 
 import android.content.ContentValues;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -11,19 +12,24 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import static com.startng.newsapp.NoteDBContract.NoteEntry;
 
 public class DetailActivity extends AppCompatActivity {
-    public final static String NOTE_TITLE_TAG = "title";
-    public final static String NOTE_CONTENT_TAG = "body";
+    public final static String NOTE_ID_TAG = "NOTE_ID";
 
     private EditText titleEditText;
     private EditText contentEditText;
 
     private NoteDBHelper databaseHelper;
     private SQLiteDatabase database;
+    private int notedID;
+
+    private String title;
+    private String content;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,10 +38,6 @@ public class DetailActivity extends AppCompatActivity {
 
         titleEditText = findViewById(R.id.editTextNoteTitle);
         contentEditText = findViewById(R.id.editTextNoteContent);
-
-        String title = "";
-        String content = "";
-
         //setup back button
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -44,12 +46,20 @@ public class DetailActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         if (intent != null) {
-            title = intent.getStringExtra(NOTE_TITLE_TAG);
-            content = intent.getStringExtra(NOTE_CONTENT_TAG);
+            int defaultValue = -1;
+            notedID = getIntent().getIntExtra(NOTE_ID_TAG, defaultValue);
+            if (notedID != defaultValue) {
+                MyNotes myNotes = new MyNotes();
+                databaseHelper = new NoteDBHelper(this);
+                myNotes = DataManager.fetchNote(databaseHelper, notedID);
 
-            titleEditText.setText(title);
-            contentEditText.setText(content);
+                titleEditText.setText(myNotes.getNoteTitle());
+                contentEditText.setText(myNotes.getNoteContent());
+            }
         }
+
+        title = titleEditText.getText().toString();
+        content = contentEditText.getText().toString();
     }
 
     @Override
@@ -64,7 +74,6 @@ public class DetailActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             //respond to Save click
             case R.id.save:
-                //TODO: Work on Save Click
                 saveNote();
                 break;
             //respond to Category click
@@ -77,11 +86,11 @@ public class DetailActivity extends AppCompatActivity {
                 break;
             //respond to Delete click
             case R.id.delete:
-                //TODO: Work on Delete Click
+                deleteNote();
                 break;
             //respond to Share click
             case R.id.share:
-                //TODO: Work on Share Click
+                shareNotes();
                 break;
 
         }
@@ -89,9 +98,32 @@ public class DetailActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    private void deleteNote() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(R.string.confirm_sure)
+                .setTitle(R.string.delete_note)
+                .setCancelable(false)
+                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        DataManager.deleteNote(databaseHelper, notedID);
+                        finish();
+                    }
+                })
+                .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+
+    }
+
     private void saveNote() {
-        String title = titleEditText.getText().toString();
-        String content = contentEditText.getText().toString();
+        title = titleEditText.getText().toString();
+        content = contentEditText.getText().toString();
 
         if (title.length() != 0) {
             databaseHelper = new NoteDBHelper(this);
@@ -108,6 +140,20 @@ public class DetailActivity extends AppCompatActivity {
             finish();
         } else {
             titleEditText.setError("Required Field");
+        }
+    }
+
+    private void shareNotes(){
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TITLE, title);
+        intent.putExtra(Intent.EXTRA_SUBJECT, title);
+        intent.putExtra(Intent.EXTRA_TEXT, content);
+
+        Intent chooser = Intent.createChooser(intent,"Share your note with...");
+        // Verify that the intent will resolve to an activity
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(chooser);
         }
     }
 

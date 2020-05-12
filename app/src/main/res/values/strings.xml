@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Notes..</string>
     <string name="note_title">Note Title</string>
-    <string name="notes">Notes</string>
+    <string name="myNotes">Notes</string>
     <string name="action_save">Save</string>
     <string name="category">Categories</string>
     <string name="action_category">Category</string>
@@ -19,6 +19,10 @@
     <string name="font_size">Font Size</string>
     <string name="font">Font</string>
     <string name="enable_dark_mode">Enable Dark Mode</string>
+    <string name="delete_note">Delete Note...</string>
+    <string name="confirm_sure">Are you sure you want to delete this note?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 
     <string-array name="font_size_values">
         <item>12</item>

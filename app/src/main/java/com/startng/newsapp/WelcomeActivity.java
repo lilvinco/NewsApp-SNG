@@ -20,12 +20,17 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 
-public class WelcomeActivity extends AppCompatActivity  {
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+public class WelcomeActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
-    private NotesAdapter mAdapter;
+    private MyNotesAdapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
     private DrawerLayout drawerLayout;
     private NoteDBHelper databaseHelper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,14 +60,8 @@ public class WelcomeActivity extends AppCompatActivity  {
     }
 
     private void setUpRecyclerView() {
-//        ArrayList<Notes> notes = new ArrayList<>();
-//        notes.add(new Notes("Tales", "Boys in the street"));
-//        notes.add(new Notes("Tales ver2", "In part 3 of the FirebaseUI Firestore tutorial, we will finally create our FirestoreRecyclerAdapter and display the documents from the Firestore database in our app.\n" +
-//                "The FirestoreRecyclerAdapter is a subclass of the normal RecyclerView.Adapter and takes care of"));
-
-
         databaseHelper = new NoteDBHelper(this);
-        mAdapter = new NotesAdapter(this);
+        mAdapter = new MyNotesAdapter(this);
         mAdapter.setNotes(DataManager.fetchAllNotes(databaseHelper));
         //setup recyclerview
         recyclerView = findViewById(R.id.my_recycler_view);
@@ -106,11 +105,18 @@ public class WelcomeActivity extends AppCompatActivity  {
 
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        mAdapter.setNotes(DataManager.fetchAllNotes(databaseHelper));
+        recyclerView.setAdapter(mAdapter);
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_welcome, menu);
 //
         //MenuItem menuItem = findViewById(R.id.app_bar_search);
-        SearchView searchView =(SearchView) menu.findItem(R.id.app_bar_search).getActionView();
+        SearchView searchView = (SearchView) menu.findItem(R.id.app_bar_search).getActionView();
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -136,9 +142,7 @@ public class WelcomeActivity extends AppCompatActivity  {
             layoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
             item.setIcon(R.drawable.ic_view_linear);
         }
-        mAdapter.notifyDataSetChanged();
         recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setAdapter(mAdapter);
     }
 
     @Override
@@ -148,11 +152,22 @@ public class WelcomeActivity extends AppCompatActivity  {
                 changeLayoutManager(item);
                 break;
             case R.id.app_bar_sort:
+                sortNoteTitle();
                 break;
         }
         return super.onOptionsItemSelected(item);
     }
 
-
+    private void sortNoteTitle() {
+        ArrayList<MyNotes> myNotesArrayList = DataManager.fetchAllNotes(databaseHelper);
+        Collections.sort(myNotesArrayList, new Comparator<MyNotes>() {
+            @Override
+            public int compare(MyNotes myNotes, MyNotes myNotes2) {
+                return myNotes.getNoteTitle().compareTo(myNotes2.getNoteTitle());
+            }
+        });
+        mAdapter.setNotes(myNotesArrayList);
+        recyclerView.setAdapter(mAdapter);
+    }
 }
 

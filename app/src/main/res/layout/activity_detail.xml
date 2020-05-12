@@ -21,8 +21,8 @@
         android:inputType="textAutoCorrect" />
     <EditText
         android:id="@+id/editTextNoteContent"
-        android:autofillHints="@string/notes"
-        android:hint="@string/notes"
+        android:autofillHints="@string/myNotes"
+        android:hint="@string/myNotes"
         android:importantForAutofill="no"
         android:background="@null"
         android:textSize="@dimen/note_content_size"

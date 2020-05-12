@@ -1,6 +1,7 @@
 package com.startng.newsapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,24 +15,24 @@ import java.util.ArrayList;
 
 import static android.text.Layout.JUSTIFICATION_MODE_INTER_WORD;
 
-public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHolder> {
+public class MyNotesAdapter extends RecyclerView.Adapter<MyNotesAdapter.NotesViewHolder> {
 
-    private ArrayList<Notes> notes;
-    private LayoutInflater inflater;
+    private ArrayList<MyNotes> notes;
+    //private LayoutInflater inflater;
 
     private Context context;
 
-    NotesAdapter(ArrayList<Notes> notes){
-        this.notes = notes;
-    }
+//    MyNotesAdapter(ArrayList<MyNotes> notes){
+//        this.notes = notes;
+//    }
 
-    NotesAdapter(Context context){
+    MyNotesAdapter(Context context){
         this.context = context;
         notes = new ArrayList<>();
     }
 
-    void setNotes(ArrayList<Notes> notesArrayList) {
-        notes = notesArrayList;
+    void setNotes(ArrayList<MyNotes> myNotesArrayList) {
+        notes = myNotesArrayList;
         notifyDataSetChanged();
     }
 
@@ -44,7 +45,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
 
     @Override
     public void onBindViewHolder(@NonNull NotesViewHolder holder, int position) {
-        final Notes currentNote = notes.get(position);
+        final MyNotes currentNote = notes.get(position);
         holder.setData(currentNote.getNoteTitle(), currentNote.getNoteContent(), position);
     }
 
@@ -64,7 +65,6 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
             noteTitleTextView = itemView.findViewById(R.id.textViewTitle);
             noteContentTextView = itemView.findViewById(R.id.textViewBody);
 
-
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 noteContentTextView.setJustificationMode(JUSTIFICATION_MODE_INTER_WORD);
             }
@@ -72,11 +72,9 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-//                Intent intent = new Intent(context.getApplicationContext(),DetailActivity.class);
-//                intent.putExtra(DetailActivity.NOTE_TITLE_TAG, notes.get(currentPosition).getNoteTitle());
-//                intent.putExtra(DetailActivity.NOTE_CONTENT_TAG, notes.get(currentPosition).getNoteContent());
-//                Log.v("MApp", "Position for Detail Activity " + currentPosition);
-//                context.startActivity(intent);
+                Intent intent = new Intent(context.getApplicationContext(),DetailActivity.class);
+                intent.putExtra(DetailActivity.NOTE_ID_TAG, notes.get(currentPosition).getID());
+                context.startActivity(intent);
                 }
             });
         }
