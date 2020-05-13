@@ -18,12 +18,15 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
 
+        bodyTextView = findViewById(R.id.textViewBody);
+
         Spinner spinnerTextSize = findViewById(R.id.textViewSizeSpinner);
         spinnerTextSize.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 float size = Float.parseFloat(parent.getItemAtPosition(position).toString());
                 //Todo: implement font size change
+                //bodyTextView.setTextSize(size);
             }
 
             @Override
