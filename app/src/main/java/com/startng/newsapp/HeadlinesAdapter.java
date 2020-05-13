@@ -2,6 +2,8 @@ package com.startng.newsapp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -11,6 +13,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.lifecycle.LiveData;
 import androidx.recyclerview.widget.RecyclerView;
@@ -57,6 +60,7 @@ public class HeadlinesAdapter extends RecyclerView.Adapter<HeadlinesAdapter.MyVi
                 }
             });
             holder.parent1.setOnLongClickListener(new View.OnLongClickListener() {
+
                 @Override
                 public boolean onLongClick(View v) {
                     PopupMenu popupMenu = new PopupMenu(mContext, v);

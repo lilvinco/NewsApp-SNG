@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-22:12
+ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-27:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Derek\.gradle\caches\transforms-2\files-2.1\522d5cc41e0add1313b98aa46881f2c9\material-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Derek\.gradle\caches\transforms-2\files-2.1\cb99e77638f7aea73fdfbb0798f74a2b\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Derek\.gradle\caches\transforms-2\files-2.1\019045dec5e38f76b552841946c88194\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
@@ -38,25 +38,25 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Derek\.gradle\caches
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\Derek\.gradle\caches\transforms-2\files-2.1\4385220b87d099087e22282875ec20dc\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Derek\.gradle\caches\transforms-2\files-2.1\25d8934de3004385e90543e0b354fff1\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Derek\.gradle\caches\transforms-2\files-2.1\1653319b2d58e30ed9313b0c2df5947e\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-27:12
 	package
 		ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:3:5-34
 		INJECTED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-22:12
+		ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-27:12
 		INJECTED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-22:12
+		ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:1-27:12
 		INJECTED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:5:5-20:19
+ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:5:5-25:19
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Derek\.gradle\caches\transforms-2\files-2.1\522d5cc41e0add1313b98aa46881f2c9\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Derek\.gradle\caches\transforms-2\files-2.1\522d5cc41e0add1313b98aa46881f2c9\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Derek\.gradle\caches\transforms-2\files-2.1\019045dec5e38f76b552841946c88194\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -80,29 +80,35 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\De
 	android:roundIcon
 		ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:7:9-38
 	android:allowBackup
 		ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:11:9-40
 activity#com.startng.newsapp.MainActivity
-ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:9-50
+ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:9-16:20
 	android:name
 		ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:12:19-47
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:13-15:53
+	android:value
+		ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:17-51
+	android:name
+		ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:14:17-63
 activity#com.startng.newsapp.HeadlinesActivity
-ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:9-19:20
+ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:18:9-24:20
 	android:name
-		ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:13:19-52
+		ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:18:19-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:14:13-18:29
+ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:17-69
+ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:15:25-66
+		ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:17:17-77
+ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:17:27-74
+		ADDED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml:22:27-74
 uses-sdk
 INJECTED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Derek\AndroidStudioProjects\NewsApp-SNG\app\src\main\AndroidManifest.xml

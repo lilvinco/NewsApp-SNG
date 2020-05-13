@@ -5,6 +5,8 @@ import androidx.lifecycle.ViewModelProvider;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -32,33 +34,45 @@ public static final String EXTRA_REPLY = "com.startng.newsapp.REPLY";
         editText1 = findViewById(R.id.textView3);
         editText2 = findViewById(R.id.textView4);
         Button button = findViewById(R.id.button1);
-        button.setText("Save");
+        button.setVisibility(View.GONE);
 
         mWordViewModel = new ViewModelProvider(this).get((NotesViewModel.class));
 
         if ( (noteBook1 = (NoteBook) getIntent().getSerializableExtra("stuff")) != null) {
             Objects.requireNonNull(getSupportActionBar()).setTitle(noteBook1.getTitle());
-            button.setText("Update");
             update = true;
             editText1.setText(noteBook1.getTitle());
             editText2.setText(noteBook1.getContent());
         }
 
-        button.setOnClickListener(v -> {
-            Intent intent = new Intent();
-            if (update){
-                noteBook1.setContent(editText2.getText().toString());
-                noteBook1.setTitles(editText1.getText().toString());
-                mWordViewModel.update(noteBook1);
-                intent.putExtra(EXTRA_REPLY, noteBook1);
-                setResult(RESULT_OK, intent);
-            }else {
-                noteBook1 = new NoteBook(editText1.getText().toString(), editText2.getText().toString());
-                mWordViewModel.insert(noteBook1);
-                intent.putExtra(EXTRA_REPLY, noteBook1);
-                setResult(RESULT_OK, intent);
-            }
-            finish();
-        });
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
     }
-}
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.main_activity_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected (MenuItem menuItem){
+        switch (menuItem.getItemId()){
+            case R.id.done:
+                Intent intent = new Intent();
+                if (update){
+                    noteBook1.setContent(editText2.getText().toString());
+                    noteBook1.setTitles(editText1.getText().toString());
+                    mWordViewModel.update(noteBook1);
+                    intent.putExtra(EXTRA_REPLY, noteBook1);
+                    setResult(RESULT_OK, intent);
+                }else {
+                    noteBook1 = new NoteBook(editText1.getText().toString(), editText2.getText().toString());
+                    mWordViewModel.insert(noteBook1);
+                    intent.putExtra(EXTRA_REPLY, noteBook1);
+                    setResult(RESULT_OK, intent);
+                }
+                finish();
+        }
+        return super.onOptionsItemSelected(menuItem);
+    }
+    }
+

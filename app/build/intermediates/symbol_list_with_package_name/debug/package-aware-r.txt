@@ -822,6 +822,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color icons8_background
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1353,6 +1354,7 @@ drawable ic_add_black_24dp
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_delete_sweep_black_24dp
+drawable ic_done_black_24dp
 drawable ic_edit_black_24dp
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
@@ -1364,6 +1366,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable icons8
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1504,6 +1507,7 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
+id done
 id dont_delete
 id dropdown_menu
 id edit_query
@@ -1599,6 +1603,7 @@ id password_toggle
 id peekHeight
 id percent
 id pin
+id pretext
 id progress_circular
 id progress_horizontal
 id radio
@@ -1627,6 +1632,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id share
 id shortcut
 id showCustom
 id showHome
@@ -1760,6 +1766,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_headlines
 layout activity_main
+layout contents
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1829,9 +1836,13 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu delete
 menu delete_all_options
+menu main_activity_menu
 menu popup_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap icons8
+mipmap icons8_foreground
+mipmap icons8_round
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description
