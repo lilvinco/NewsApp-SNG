@@ -36,8 +36,10 @@
                 android:id="@+id/titleText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="casual"
                 android:text="Title"
                 android:textSize="24sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -51,20 +53,10 @@
                 android:maxLines="1"
                 android:text="Content Text"
                 android:textSize="14sp"
-                app:layout_constraintEnd_toStartOf="@+id/dateText"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@id/titleText"
                 app:layout_constraintTop_toBottomOf="@id/titleText" />
-
-            <TextView
-                android:id="@+id/dateText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingStart="8dp"
-                android:text="25/11/2020"
-                app:layout_constraintEnd_toEndOf="@id/titleText"
-                app:layout_constraintTop_toTopOf="@id/contentText" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

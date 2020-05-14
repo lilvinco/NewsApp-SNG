@@ -89,6 +89,9 @@ public class HeadlinesAdapter extends RecyclerView.Adapter<HeadlinesAdapter.MyVi
         notifyDataSetChanged();
     }
 
+    public NoteBook getNoteAt(int position){
+        return noteBook.get(position);
+    }
     // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
@@ -102,14 +105,12 @@ public class HeadlinesAdapter extends RecyclerView.Adapter<HeadlinesAdapter.MyVi
         // each data item is just a string in this case
         TextView textView;
         TextView textView2;
-        TextView textView3;
         ConstraintLayout parent1;
 
         public MyViewHolder(@NonNull View v) {
             super(v);
             textView = v.findViewById(R.id.titleText);
             textView2 = v.findViewById(R.id.contentText);
-            textView3 = v.findViewById(R.id.dateText);
             parent1 = v.findViewById(R.id.parent);
         }
     }

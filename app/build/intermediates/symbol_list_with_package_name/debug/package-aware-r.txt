@@ -1490,7 +1490,6 @@ id coordinator
 id custom
 id customPanel
 id cut
-id dateText
 id date_picker_actions
 id decor_content_parent
 id default_activity_button

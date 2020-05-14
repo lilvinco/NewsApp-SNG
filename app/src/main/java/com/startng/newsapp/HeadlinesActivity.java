@@ -1,9 +1,11 @@
 package com.startng.newsapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -63,6 +65,26 @@ public class HeadlinesActivity extends AppCompatActivity implements UpdateIntera
             Intent intent = new Intent(HeadlinesActivity.this, MainActivity.class);
             startActivityForResult(intent, NEW_WORD_ACTIVITY_REQUEST_CODE);
         });
+
+        new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT) {
+            @Override
+            public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
+                return false;
+            }
+
+            @Override
+            public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
+                new AlertDialog.Builder(viewHolder.itemView.getContext()).setTitle("Delete").setMessage("Proceed to Delete?")
+                        .setPositiveButton("Yes", (dialog, which) -> {
+                            mWordViewModel.delete(mAdapter.getNoteAt(viewHolder.getAdapterPosition()));
+                            dialog.dismiss();
+                        }).setNegativeButton("No", (dialog, which) -> {
+                            mAdapter.notifyDataSetChanged();
+                            dialog.cancel();
+                })
+                        .create().show();
+            }
+        }).attachToRecyclerView(recyclerView);
     }
 
     /* public void addNumber(View view) {
