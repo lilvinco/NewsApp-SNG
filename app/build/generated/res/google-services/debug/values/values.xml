@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">328820565972-1eet7aee0vla46c3bftj97u4hn4qq9lg.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://newsapp-d8df5.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">328820565972</string>
+    <string name="google_api_key" translatable="false">AIzaSyCp3w0m-FFLr0kUu3fKmvbhsKi6LqmYHH4</string>
+    <string name="google_app_id" translatable="false">1:328820565972:android:2f024f4ecf060d66995841</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCp3w0m-FFLr0kUu3fKmvbhsKi6LqmYHH4</string>
+    <string name="google_storage_bucket" translatable="false">newsapp-d8df5.appspot.com</string>
+    <string name="project_id" translatable="false">newsapp-d8df5</string>
+</resources>

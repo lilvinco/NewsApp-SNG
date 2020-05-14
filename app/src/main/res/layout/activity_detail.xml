@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+    <!--TODO: Navigation Drawer is outstanding-->
+
+    <EditText
+        android:id="@+id/editTextNoteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@null"
+        android:importantForAutofill="no"
+        android:hint="@string/note_title"
+        android:textSize="@dimen/note_title_size"
+        android:autofillHints="@string/note_title"
+        android:inputType="textAutoCorrect" />
+    <EditText
+        android:id="@+id/editTextNoteContent"
+        android:autofillHints="@string/myNotes"
+        android:hint="@string/myNotes"
+        android:importantForAutofill="no"
+        android:background="@null"
+        android:textSize="@dimen/note_content_size"
+        android:gravity="top"
+        android:paddingStart="16dp"
+        android:layout_marginTop="6dp"
+        android:paddingEnd="16dp"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/editTextNoteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>
