@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">@color/demoWhite</color>
+    <color name="colorAccent">#0277bd</color>
+
+    <color name="darkGrey">#212121</color>
+
+    <!-- Lighter colors for note background -->
+    <color name="demoWhite">#FAFAFA</color>
+    <color name="demoBlue">#b3e5fc</color>
+    <color name="demoRed">#ffcccb</color>
+    <color name="demoGreen">#c8e6c9</color>
+    <color name="demoYellow">#fff9c4</color>
+    <color name="demoPurple">#e1bee7</color>
+    <color name="demoOrange">#ffe0b2</color>
+    <color name="demoAsh">#cfcfcf</color>
+
+    <array name="slider_colors">
+        <item>@color/demoWhite</item>
+        <item>@color/demoRed</item>
+        <item>@color/demoPurple</item>
+        <item>@color/demoBlue</item>
+        <item>@color/demoGreen</item>
+        <item>@color/demoYellow</item>
+        <item>@color/demoOrange</item>
+        <item>@color/demoAsh</item>
+    </array>
+
+
 </resources>

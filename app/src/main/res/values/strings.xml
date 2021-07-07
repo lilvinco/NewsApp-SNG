@@ -1,16 +1,17 @@
 <resources>
     <string name="app_name">NewsApp</string>
-    <string-array name="sports_info">
-        <item>Nike Enters 10-Year </item>
-        <item>Indonesia Masters – Saina</item>
-        <item>College Basketball 2018–19</item>
-        <item>Local bowler lands 132 perfect games, shares his secret for success!</item>
-        <item>Sierra solos to win at womens Cadel Evans Great Ocean Road Race!</item>
-        <item>Tiger Woods Friday live blog:</item>
-        <item>The 5km fun run was organised by Ironman</item>
-        <item>Soccer insider notes: Liverpool not the only Premier League club eyeing Weston McKennie!</item>
-        <item>Chloe Grimme, a USA Swimming Scholastic All American 1!</item>
-        <item>Table Tennis Federation Revokes Soumyajit Ghoshs Suspension, 9 Months After Rape Allegations!</item>
-        <item>2019 Australian Open odds, predictions for mens finals!</item>
-    </string-array>
+
+    <string name="toolbar_title">Notes</string>
+    <string name="empty_view_title_text">You don\'t have any Notes…</string>
+    <string name="empty_view_subtitle_text">Get started by adding a Note</string>
+    <string name="text">Text</string>
+    <string name="add_a_note">Add a note</string>
+    <string name="edit_a_note">Edit note</string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="delete_dialog_msg">Delete this note?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+
 </resources>
